@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ASSET/unti-kongu/kousuke.unity
+- path: Assets/Scenes/orumi.unity
   isLoaded: 1
   isActive: 1

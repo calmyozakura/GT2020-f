@@ -70,6 +70,7 @@
     <Compile Include="Assets\script\hunka.cs" />
     <Compile Include="Assets\script\hunkaSW.cs" />
     <Compile Include="Assets\script\Inseki.cs" />
+    <Compile Include="Assets\script\kamera.cs" />
     <Compile Include="Assets\script\Kill.cs" />
     <Compile Include="Assets\script\kiriO.cs" />
     <Compile Include="Assets\script\MagmaCont.cs" />
