@@ -11,6 +11,8 @@ TagManager:
   - Line
   - Inseki
   - In
+  - Magma
+  - Stone
   layers:
   - Default
   - TransparentFX

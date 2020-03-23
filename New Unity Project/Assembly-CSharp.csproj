@@ -74,6 +74,7 @@
     <Compile Include="Assets\script\Kill.cs" />
     <Compile Include="Assets\script\kiriO.cs" />
     <Compile Include="Assets\script\MagmaCont.cs" />
+    <Compile Include="Assets\script\Nakazato.cs" />
     <Compile Include="Assets\script\Player_MoL.cs" />
     <Compile Include="Assets\script\Player_Move_3.cs" />
     <Compile Include="Assets\script\PlayerMo.cs" />
