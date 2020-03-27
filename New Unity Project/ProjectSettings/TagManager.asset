@@ -12,7 +12,11 @@ TagManager:
   - Inseki
   - In
   - Magma
+<<<<<<< HEAD
+  - M_Attack1
+=======
   - Stone
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
