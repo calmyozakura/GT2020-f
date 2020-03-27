@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMo : MonoBehaviour {
 
 
-    float vector = 0.1f;
+    public float vector = 0.1f;
+    public float vector2 = 0.1f;
     bool  Yoin = false;
    public bool Iswitch = false;
     public float playerU = 0;
@@ -18,7 +19,7 @@ public class PlayerMo : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.UpArrow))//上
         {
-            this.transform.position += new Vector3(0, +vector, 0);
+            this.transform.position += new Vector3(0, +vector2, 0);
             playerU = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow))//左
