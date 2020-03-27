@@ -61,7 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ASSET\ki\NewBehaviourScript.cs" />
     <Compile Include="Assets\camera.cs" />
+    <Compile Include="Assets\M_Attack1Active.cs" />
     <Compile Include="Assets\Rotation.cs" />
     <Compile Include="Assets\script\CameraCont.cs" />
     <Compile Include="Assets\script\ChangeGravity.cs" />
@@ -73,6 +75,8 @@
     <Compile Include="Assets\script\kamera.cs" />
     <Compile Include="Assets\script\Kill.cs" />
     <Compile Include="Assets\script\kiriO.cs" />
+    <Compile Include="Assets\script\M_Attack1Cont.cs" />
+    <Compile Include="Assets\script\M_Attacksponer.cs" />
     <Compile Include="Assets\script\MagmaCont.cs" />
     <Compile Include="Assets\script\Player_MoL.cs" />
     <Compile Include="Assets\script\Player_Move_3.cs" />

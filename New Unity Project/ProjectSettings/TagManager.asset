@@ -11,6 +11,8 @@ TagManager:
   - Line
   - Inseki
   - In
+  - Magma
+  - M_Attack1
   layers:
   - Default
   - TransparentFX
