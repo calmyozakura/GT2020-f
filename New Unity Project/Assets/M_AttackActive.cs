@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class M_Attack1Active : MonoBehaviour
+public class M_AttackActive : MonoBehaviour
 {
-    public GameObject M_Attack1;
+    public GameObject M_Attack;
     public int ActiveCount=0;
     public bool ActiveFlg;
     // Use this for initialization
@@ -17,7 +17,7 @@ public class M_Attack1Active : MonoBehaviour
     {
         if (ActiveFlg)
         {
-            if (!M_Attack1.activeSelf)
+            if (!M_Attack.activeSelf)
             {
                 ActiveFlg = false;
 
@@ -29,7 +29,7 @@ public class M_Attack1Active : MonoBehaviour
             ActiveCount +=1;
             if(ActiveCount>=180)//３秒後に
             {
-                M_Attack1.gameObject.SetActive(true);//アクティブ
+                M_Attack.gameObject.SetActive(true);//アクティブ
                 ActiveCount = 0;
                 ActiveFlg = true;
             }

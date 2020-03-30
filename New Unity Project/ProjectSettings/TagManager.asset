@@ -3,6 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
+  tags: []
+=======
   tags:
   - Yougan
   - In
@@ -12,6 +15,7 @@ TagManager:
   - YUKA
   - Speed
   - Goal
+>>>>>>> master
   layers:
   - Default
   - TransparentFX

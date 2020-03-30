@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/ASSET/ki/ri.unity
+=======
 - path: Assets/ASSET/yu/ore.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
