@@ -36,18 +36,18 @@ public class youganMOVE : MonoBehaviour {
 
         //オブジェクト拡大
         this.transform.localScale = new Vector3(vector, 3, 1);
-        vector += 0.03f;
+        vector += 0.05f;
         //等速アニメーション
-        this.transform.position += new Vector3(0.015f, 0, 0);
+        this.transform.position += new Vector3(0.025f, 0, 0);
 
         //加速アニメーション
         //this.transform.position += new Vector3(vector, 0, 0);
         // this.transform.localScale = new Vector3(4, 1, 1);
     }
 
-    private void OnCollisionEnter(Collision other)
+   
+    private void OnTriggerEnter(Collider other)
     {
-        
         if (other.gameObject.tag == "In")
         {
             Destroy(other.gameObject, movelate);   //4秒後に隕石が消える
@@ -56,8 +56,7 @@ public class youganMOVE : MonoBehaviour {
             moveflg = false;
             movecount += movelate;
 
-        }        
-            //moveflg = true;  
+        }
     }
 }
 

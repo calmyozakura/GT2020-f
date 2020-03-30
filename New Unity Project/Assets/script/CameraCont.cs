@@ -16,6 +16,6 @@ public class CameraCont : MonoBehaviour {
         //キャラの座標+オフセットの位置に移動する
         //transform.position = target.position + offset;
 
-        transform.Translate(0.03f, 0, 0);
+        transform.Translate(offset.x, 0, 0);
     }
 }
