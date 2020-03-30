@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Yougan
+  - In
+  - Stone
+  - Magma
+  - Inseki
+  - YUKA
+  - Speed
+  - Goal
+>>>>>>> master
   layers:
   - Default
   - TransparentFX

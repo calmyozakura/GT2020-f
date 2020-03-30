@@ -987,6 +987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Iswitch: 0
+  playerU: 0
 --- !u!1 &898262033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,6 +1548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Iswitch: 0
+  playerU: 0
 --- !u!95 &1323360608
 Animator:
   serializedVersion: 3
@@ -1681,6 +1683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
+  movelate: 4
 --- !u!65 &1483061655
 BoxCollider:
   m_ObjectHideFlags: 0
