@@ -4,13 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - YUKA
-  - Speef
-  - Speed
   - Yougan
-  - Line
-  - Inseki
   - In
+  - Stone
+  - Magma
+  - Inseki
+  - YUKA
+  - Speed
+  - Goal
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
