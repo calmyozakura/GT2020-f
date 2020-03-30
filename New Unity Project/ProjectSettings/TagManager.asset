@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - YUKA
-  - Speef
-  - Speed
-  - Yougan
-  - Line
-  - Inseki
-  - In
-  - Magma
-<<<<<<< HEAD
-  - M_Attack1
-=======
-  - Stone
->>>>>>> master
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -26,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
