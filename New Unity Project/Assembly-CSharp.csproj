@@ -64,6 +64,7 @@
     <Compile Include="Assets\ASSET\ki\NewBehaviourScript.cs" />
     <Compile Include="Assets\ASSET\yu\sp\CameraCONT.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Glag.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\Goal.cs" />
     <Compile Include="Assets\ASSET\yu\sp\INSEKI.cs" />
     <Compile Include="Assets\ASSET\yu\sp\KILL.cs" />
     <Compile Include="Assets\ASSET\yu\sp\NAKAZATO.cs" />

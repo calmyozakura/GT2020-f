@@ -40,16 +40,6 @@ public class PLAYERCO : MonoBehaviour {
             this.gameObject.SetActive(false);
         }
     }
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Goal")
-        {
-            other.gameObject.GetComponent<Renderer>().material.color = new Color(1, 0, 0, 1);
-            rB.AddForce(-rbVelo.x * 0.8f, 0, -rbVelo.z * 0.8f, ForceMode.Impulse);
-            //goalText.enabled = true;
-            goalOn = true;
-        }
-    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Kill")
