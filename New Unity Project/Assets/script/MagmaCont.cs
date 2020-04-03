@@ -37,15 +37,15 @@ public class MagmaCont : MonoBehaviour
         //}
 
         //   }
-        //private void OnCollisionEnter(Collision other)
-        //{
-
-        //    if (other.gameObject.tag == "In")//岩に当たったら
-        //    {
-        //        magma.SetFloat("Atack1Para", 0.0f);//一時停止
-        //        Stopflg = true;
-        //    }
-        //    //moveflg = true;  
-        //}
+       
     }
+    //private void OnCollisionEnter(Collision other)
+    //    {
+
+    //        if (other.gameObject.tag == "In")//岩に当たったら
+    //        {
+              
+    //        }
+    //        //moveflg = true;  
+    //    }
 }
