@@ -9,6 +9,10 @@ TagManager:
   - Goal
   - Stone
   - Magma
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
