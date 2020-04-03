@@ -6,7 +6,7 @@ public class Playeroyako : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-       transform.parent = GameObject.Find("MoveFloor").transform;
+       //transform.parent = GameObject.Find("MoveFloor").transform;
     }
 	
 	// Update is called once per frame

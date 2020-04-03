@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - In
+  - Yougan
+  - Goal
+  - Stone
+  - Magma
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
