@@ -18,7 +18,8 @@ public class Nakazato : MonoBehaviour {
     {
         if (other.gameObject.tag == "Stone")
         {
-            if (Input.GetKey(KeyCode.C))
+            if (Input.GetKey(KeyCode.C)||Input.GetButton("DS4_Triangle"))
+
             {
                 Destroy(other.gameObject);
             }

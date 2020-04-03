@@ -60,7 +60,7 @@ public class PlayerMo : MonoBehaviour {
         //コントローラー
         if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
         {
-            this.transform.position += new Vector3(0, +vector, 0);
+            this.transform.position += new Vector3(0, +vector2, 0);
             playerU = 1;
         }
 

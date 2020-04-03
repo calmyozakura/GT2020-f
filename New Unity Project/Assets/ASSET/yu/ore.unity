@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8dec4d5a236c14c8c034612dd98dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  M_Attack1: {fileID: 729496986}
+  M_Attack: {fileID: 0}
   ActiveCount: 0
   ActiveFlg: 0
 --- !u!95 &649954421 stripped
@@ -1014,15 +1014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41820bb38356e324f97973fdf05bb91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack1: {fileID: 729496988}
-  Attak1count: 0
+  Attack: {fileID: 0}
+  Attakcount: 0
   Stopflg: 0
-  M_Attack1Pivot: {fileID: 729496986}
---- !u!95 &729496988 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 95416634999385564, guid: d2c09022d2fc2834a913c75c7652f119,
-    type: 2}
-  m_PrefabInternal: {fileID: 1085910617}
+  M_AttackPivot: {fileID: 0}
 --- !u!1 &742505079
 GameObject:
   m_ObjectHideFlags: 0
