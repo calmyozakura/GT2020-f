@@ -62,11 +62,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ASSET\ki\NewBehaviourScript.cs" />
+    <Compile Include="Assets\ASSET\ki\Scripts\Breakrock_1.cs" />
+    <Compile Include="Assets\ASSET\ki\Scripts\M_Attack_Cont_ki.cs" />
+    <Compile Include="Assets\ASSET\ki\Scripts\M_AttackActive_Ki.cs" />
+    <Compile Include="Assets\ASSET\ki\Scripts\MagmaCont_Ki.cs" />
     <Compile Include="Assets\ASSET\yu\sp\CameraCONT.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\CheckClickEvent.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Glag.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Goal.cs" />
     <Compile Include="Assets\ASSET\yu\sp\INSEKI.cs" />
     <Compile Include="Assets\ASSET\yu\sp\KILL.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\life.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\LifeGauge.cs" />
     <Compile Include="Assets\ASSET\yu\sp\NAKAZATO.cs" />
     <Compile Include="Assets\ASSET\yu\sp\PLAYERCO.cs" />
     <Compile Include="Assets\ASSET\yu\sp\PLAYERMO.cs" />
