@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/orumi.unity
     guid: 9cf67b084932f6a41901745ecc01163c
-  - enabled: 1
+  - enabled: 0
     path: Assets/ASSET/yu/stage2.unity
     guid: 9a73595f54d46e542a752e9ec524267a
   - enabled: 1
