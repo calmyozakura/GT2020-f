@@ -52,7 +52,7 @@ public class Goal : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("stage2");
+            SceneManager.LoadScene("stage3");
         }
     }
     //public void LoadScene()

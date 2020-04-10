@@ -49,7 +49,7 @@ public class Glag : MonoBehaviour {
             {
 
                 //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
-                gx = -3f;
+                gx = -5f;
                 gy = 3f;
                 gz = 0;
 
@@ -101,7 +101,7 @@ public class Glag : MonoBehaviour {
 
                 grabflg = true;
                 this.transform.Translate(0.0f, 1.0f, 0.0f);
-                gx = -3f;
+                gx = -5f;
                 gy = 3f;
                 gz = 0;
             }
