@@ -34,7 +34,7 @@ RenderSettings:
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
+  m_ReflectionBounces: 2
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
@@ -1193,7 +1193,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 692508629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 289.1, y: -4.1352, z: 2.0027}
+  m_LocalPosition: {x: 289.1, y: -5.1, z: 2.0027}
   m_LocalScale: {x: 9.944092, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 524770848}
@@ -2009,7 +2009,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1079064572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -170, y: 15.8, z: 0}
+  m_LocalPosition: {x: 287.4, y: 15.8, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1290260192}
@@ -3134,8 +3134,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1532094003}
   m_LocalRotation: {x: 0.000045564775, y: 0.00029022485, z: -0.0004982672, w: 0.9999999}
-  m_LocalPosition: {x: 289.1, y: -0.14, z: 1}
-  m_LocalScale: {x: 9.944092, y: 3, z: 3}
+  m_LocalPosition: {x: 289.1, y: -0.6, z: 1}
+  m_LocalScale: {x: 9.944092, y: 3.9271169, z: 3}
   m_Children: []
   m_Father: {fileID: 524770848}
   m_RootOrder: 6
@@ -3433,7 +3433,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1825644900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -159.9, y: 15, z: -35}
+  m_LocalPosition: {x: 285.2, y: 15, z: -35}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
