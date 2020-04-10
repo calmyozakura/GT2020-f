@@ -8,12 +8,13 @@ public class PlayerMo : MonoBehaviour {
     public float vector = 0.1f;
     public float vector2 = 0.1f;
     bool  Yoin = false;
-   public bool Iswitch = false;
+    public bool Iswitch = false;
     public float playerU = 0;
 
-    //public bool JumpState = false; //２段以上のジャンプ防止
-
-
+    public AudioClip Jump;
+    AudioSource audioSource;
+    
+   // public bool JumpState = false; //２段以上のジャンプ防止
 
     SpriteRenderer Dinasor; //恐竜の画像
     float Axis_UD, Axis_LR, Axis2_UD,Axis2_LR; // Axis = 十字　Axis2 = アナログパッド
@@ -21,8 +22,13 @@ public class PlayerMo : MonoBehaviour {
 
 
     void Start () {
+
         this.Dinasor = GetComponent<SpriteRenderer>();
         Dinasor.flipX = true;
+
+
+        this.audioSource = gameObject.GetComponent<AudioSource>();//音の取り込み
+        audioSource.clip = Jump;
     }
 	
 	// Update is called once per frame
@@ -79,8 +85,7 @@ public class PlayerMo : MonoBehaviour {
             // this.transform.localScale = new Vector3(1, 1, 1);
         }
 
-
-        if (Yoin == true)
+            if (Yoin == true)
         {
             YOIN();
         }
@@ -124,6 +129,7 @@ public class PlayerMo : MonoBehaviour {
         {
             Iswitch = true;
         }
+
     }
 
     public bool Insekiswitch()
