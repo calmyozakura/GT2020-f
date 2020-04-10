@@ -26,7 +26,7 @@ public class life : MonoBehaviour {
         Debug.Log(hp);
     }
     //　ダメージ処理メソッド（全削除＆HP分作成）
-    public void Damage(int damage)
+    public int Damage(int hp,int damage)
     {
         hp -= damage;
         //　0より下の数値にならないようにする
@@ -36,9 +36,10 @@ public class life : MonoBehaviour {
         {
             lifeGauge.SetLifeGauge(hp);
         }
+        return hp;
     }
     //　ダメージ処理メソッド（ダメージ数分だけアイコンを削除）
-    public void Damage2(int damage)
+    public int Damage2(int damage)
     {
         hp -= damage;
         if (hp < 0)
@@ -51,6 +52,7 @@ public class life : MonoBehaviour {
         {
             lifeGauge.SetLifeGauge2(damage);
         }
+        return hp;
     }
     
 }

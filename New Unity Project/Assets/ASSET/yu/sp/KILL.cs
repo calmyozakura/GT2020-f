@@ -23,9 +23,10 @@ public class KILL : MonoBehaviour {
 
     void Update()
     {
-        if (HP == 0)
+        Debug.Log(HP);
+        if (HP <= 0)
         {
-            Debug.Log(HP);
+            //Debug.Log(HP);
             oveText.enabled = true;
             Destroy(gameObject);
         }

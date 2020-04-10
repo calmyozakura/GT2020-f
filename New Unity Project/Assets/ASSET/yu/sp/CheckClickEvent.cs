@@ -6,18 +6,33 @@ using UnityEngine.UI;
 
 public class CheckClickEvent : MonoBehaviour {
 
-    //　主人公キャラクターのダメージ処理スクリプト
     [SerializeField]
     private life life;
+    [SerializeField] private int HP;
 
-    void OnTriggerEnter(Collider other)
+    life script; //UnityChanScriptが入る変数
+
+    public Text oveText;
+
+    void Start()
+    {
+        oveText.enabled = false;
+    }
+
+        void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.tag == "Yougan")
         {
 
             Debug.Log("ダメージ");
-            life.Damage(1);
+            HP = life.Damage(HP,1);
+            if (HP <= 0)
+            {
+                Debug.Log(HP);
+                oveText.enabled = true;
+                Destroy(gameObject);
+            }
         }
     }
 }

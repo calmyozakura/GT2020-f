@@ -1886,7 +1886,6 @@ GameObject:
   - component: {fileID: 1079064576}
   - component: {fileID: 1079064573}
   - component: {fileID: 1079064575}
-  - component: {fileID: 1079064574}
   - component: {fileID: 1079064578}
   m_Layer: 0
   m_Name: Player
@@ -1907,19 +1906,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalOn: 0
---- !u!114 &1079064574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1079064572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 340a7d58c82f2df4e892e4fb1ae7d042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: {fileID: 1529513073}
-  oveText: {fileID: 308695058}
 --- !u!114 &1079064575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1973,7 +1959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa1a8a77ef37df44f98cbb1b181fbaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: {fileID: 0}
+  life: {fileID: 1529513079}
+  HP: 3
+  oveText: {fileID: 308695058}
 --- !u!23 &1079064579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3403,7 +3391,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1691543757}
   - component: {fileID: 1691543756}
-  - component: {fileID: 1691543755}
   - component: {fileID: 1691543754}
   - component: {fileID: 1691543753}
   - component: {fileID: 1691543752}
@@ -3471,19 +3458,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magmaSpeed: {x: 0.02, y: 0, z: 0}
   magma: {fileID: 0}
---- !u!114 &1691543755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1691543750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 340a7d58c82f2df4e892e4fb1ae7d042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: {fileID: 0}
-  oveText: {fileID: 0}
 --- !u!95 &1691543756
 Animator:
   serializedVersion: 3
