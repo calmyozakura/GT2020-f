@@ -94,6 +94,7 @@
     <Compile Include="Assets\ASSET\yu\sp\PLAYERMO.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Replay.cs" />
     <Compile Include="Assets\ASSET\yu\sp\SceneReload.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\Stone.cs" />
     <Compile Include="Assets\ASSET\yu\sp\YOUGANMOVE.cs" />
     <Compile Include="Assets\camera.cs" />
     <Compile Include="Assets\M_AttackActive.cs" />
