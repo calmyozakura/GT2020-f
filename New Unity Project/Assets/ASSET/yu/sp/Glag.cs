@@ -9,7 +9,7 @@ public class Glag : MonoBehaviour {
 
     [SerializeField] private GameObject Playertmp;
 
-    public bool grabflg = false;    //falseだったら動く　//trueだったら止める
+    public bool grabflg;    //falseだったら動く　//trueだったら止める
 
     PlayerMo script; //UnityChanScriptが入る変数
 
@@ -22,6 +22,8 @@ public class Glag : MonoBehaviour {
     //ゲーム起動時に呼び出される
     void Start()
     {
+        grabflg = false;
+
         //Rigidbodyを取得
         rb = GetComponent<Rigidbody>();
 
@@ -38,7 +40,7 @@ public class Glag : MonoBehaviour {
     void Update()
     {
 
-        //Debug.Log(script.playerU);
+        Debug.Log(grabflg);
         if (grabflg == true)
         {
             tmp = Playertmp.transform.position;
@@ -89,23 +91,23 @@ public class Glag : MonoBehaviour {
     private void OnCollisionStay(Collision other)
     {
 
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "In")
         {
+            if (grabflg == false) { 
+                // 上に移動
+                if (Input.GetKey(KeyCode.Space) && grabflg == false)
+                {
 
-            // 上に移動
-            if (Input.GetKey(KeyCode.Space) && grabflg == false)
-            {
+                    //重力を動かす
+                    rb.isKinematic = true;
 
-                //重力を動かす
-                rb.isKinematic = true;
-
-                grabflg = true;
-                this.transform.Translate(0.0f, 1.0f, 0.0f);
-                gx = -5f;
-                gy = 3f;
-                gz = 0;
+                    grabflg = true;
+                    this.transform.Translate(0.0f, 1.0f, 0.0f);
+                    gx = -5f;
+                    gy = 3f;
+                    gz = 0;
+                }
             }
-
         }
     }
 }

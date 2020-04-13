@@ -836,19 +836,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
   m_PrefabInternal: {fileID: 260767950}
---- !u!114 &260767952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 260767951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playertmp: {fileID: 1430516871}
-  grabflg: 0
 --- !u!65 &260767953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2287,7 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce639c649ca3a940b425ea9a344fdc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1205660553}
   offset: {x: 0.05, y: 0, z: 0}
 --- !u!81 &1115258784
 AudioListener:
@@ -2346,7 +2333,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1115258782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.6, y: 14.18, z: -30.05}
+  m_LocalPosition: {x: -49.89, y: 12.5, z: -30.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2449,6 +2436,7 @@ GameObject:
   - component: {fileID: 1205660548}
   - component: {fileID: 1205660547}
   - component: {fileID: 1205660554}
+  - component: {fileID: 1205660555}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2580,6 +2568,19 @@ MonoBehaviour:
   life: {fileID: 194543781}
   HP: 3
   oveText: {fileID: 1040135967}
+--- !u!114 &1205660555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205660546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Playertmp: {fileID: 1932955845}
+  grabflg: 0
 --- !u!1 &1212588824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,19 +3075,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
   m_PrefabInternal: {fileID: 1412775874}
---- !u!114 &1412775876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412775875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playertmp: {fileID: 1430516871}
-  grabflg: 0
 --- !u!65 &1412775877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3402,19 +3390,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
   m_PrefabInternal: {fileID: 1476696251}
---- !u!114 &1476696253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1476696252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playertmp: {fileID: 1430516871}
-  grabflg: 0
 --- !u!65 &1476696254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3508,19 +3483,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
   m_PrefabInternal: {fileID: 1515175285}
---- !u!114 &1515175287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1515175286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playertmp: {fileID: 1430516871}
-  grabflg: 0
 --- !u!65 &1515175288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4324,19 +4286,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
   m_PrefabInternal: {fileID: 1932955844}
---- !u!114 &1932955846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1932955845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playertmp: {fileID: 1430516871}
-  grabflg: 0
 --- !u!65 &1932955847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4600,19 +4549,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
   m_PrefabInternal: {fileID: 2124098158}
---- !u!114 &2124098160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2124098159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playertmp: {fileID: 1430516871}
-  grabflg: 0
 --- !u!65 &2124098161
 BoxCollider:
   m_ObjectHideFlags: 0

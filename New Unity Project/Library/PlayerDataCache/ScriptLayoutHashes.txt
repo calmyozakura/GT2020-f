@@ -1,8 +1,7 @@
 WindowsStandalone
 PlayerPath?
-D:/FグルプのFはファンキーのF/Build/Build.exe
+D:/FグルプのFはファンキーのF/Build2/Build2.exe
 SceneListBegin?
-Assets/ASSET/yu/ore.unity
 Assets/ASSET/yu/stage3.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
