@@ -2436,7 +2436,6 @@ GameObject:
   - component: {fileID: 1205660548}
   - component: {fileID: 1205660547}
   - component: {fileID: 1205660554}
-  - component: {fileID: 1205660555}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2459,6 +2458,7 @@ MonoBehaviour:
   vector2: 0.12
   Iswitch: 0
   playerU: 0
+  grabflg: 0
 --- !u!114 &1205660548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2568,19 +2568,6 @@ MonoBehaviour:
   life: {fileID: 194543781}
   HP: 3
   oveText: {fileID: 1040135967}
---- !u!114 &1205660555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1205660546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8590dda8e9457fb48aaead4bdc9de73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playertmp: {fileID: 1932955845}
-  grabflg: 0
 --- !u!1 &1212588824
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,6 +4300,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!114 &1932955851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1932955845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0accd1d96b6c5d42a30e4e430f3cb0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Playertmp: {fileID: 1205660546}
+  Grabflg: 0
 --- !u!1 &1997293695
 GameObject:
   m_ObjectHideFlags: 0

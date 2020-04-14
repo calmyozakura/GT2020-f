@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stone : MonoBehaviour {
+public class Stone : MonoBehaviour
+{
 
     //変数を作る
     Rigidbody rb;
-
+    
     [SerializeField] private GameObject Playertmp;
 
     //public bool grabflg;    //falseだったら動く　//trueだったら止める
     public bool Grabflg;
 
-    PlayerMo script; //UnityChanScriptが入る変数
+    PLAYERMO script; //UnityChanScriptが入る変数
 
     Vector3 tmp;
 
@@ -28,7 +29,7 @@ public class Stone : MonoBehaviour {
         //Rigidbodyを取得
         rb = GetComponent<Rigidbody>();
 
-        script = Playertmp.GetComponent<PlayerMo>(); //unitychanの中にあるUnityChanScriptを取得して変数に格納する
+        script = Playertmp.GetComponent<PLAYERMO>(); //unitychanの中にあるUnityChanScriptを取得して変数に格納する
 
         tmp = Playertmp.transform.position;
         Playertmp.transform.position = new Vector3(tmp.x, tmp.y, tmp.z);
@@ -40,14 +41,6 @@ public class Stone : MonoBehaviour {
 
     void Update()
     {
-        if(script.grabflg == true)
-        {
-            Grabflg = true;
-
-        }else
-        {
-            Grabflg = false;
-        }
 
         Debug.Log(Grabflg);
         if (Grabflg == true)
@@ -97,25 +90,22 @@ public class Stone : MonoBehaviour {
         }
     }
 
-    private void OnCollisionStay(Collision other)
+    void OnCollisionStay(Collision other)
     {
 
-        if (other.gameObject.tag == "In" && Grabflg == false)
+        if (other.gameObject.tag == "Player")
         {
-                // 上に移動
-                if (Grabflg == false)
-                {
+            if (script.grabflg == true)
+            {
+                //重力を止める
+                rb.isKinematic = true;
 
-                    //重力を止める
-                    rb.isKinematic = true;
-
-                    //script.grabflg = true;
-                    this.transform.Translate(0.0f, 1.0f, 0.0f);
-                    gx = -5f;
-                    gy = 3f;
-                    gz = 0;
-                }
-            
+                Grabflg = true;
+                this.transform.Translate(0.0f, 1.0f, 0.0f);
+                gx = -5f;
+                gy = 3f;
+                gz = 0;
+            }
         }
     }
 }
