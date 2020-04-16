@@ -9,10 +9,11 @@ public class PLAYERMO : MonoBehaviour {
     bool Yoin = false;
     public bool Iswitch = false;
     public float playerU = 0;
-
+    public bool grabflg = false;
     //public bool JumpState = false; //２段以上のジャンプ防止
+    //private Stone Stone;
 
-
+    Stone spript;
 
     //SpriteRenderer Dinasor; //恐竜の画像
     float Axis_UD, Axis_LR, Axis2_UD, Axis2_LR; // Axis = 十字　Axis2 = アナログパッド
@@ -87,16 +88,6 @@ public class PLAYERMO : MonoBehaviour {
         }
     }
 
-    void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.tag == "Speed")
-        {
-            Debug.Log("a");
-            // this.transform.position += new Vector3(100, 0, 0);
-            vector = 0.5f;
-        }
-
-    }
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Speed")
@@ -117,7 +108,30 @@ public class PLAYERMO : MonoBehaviour {
             vector -= 0.01f;
         }
     }
+    void OnCollisionStay(Collision other)
+    {
 
+        if (other.gameObject.tag == "In")
+        {
+           
+            
+                // 上に移動
+                if (Input.GetKey(KeyCode.Space) && grabflg == false)
+                {
+                    grabflg = true;
+                   
+                }
+            
+        }
+    }
+    public bool GRABflg()
+    {
+        return grabflg;
+    }
+}
+   
+
+        
     //void OnCollisionEnter(Collision collision)
     //{
 
@@ -131,4 +145,3 @@ public class PLAYERMO : MonoBehaviour {
     //{
     //    return Iswitch;
     //}
-}

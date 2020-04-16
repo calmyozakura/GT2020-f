@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PLAYERCO : MonoBehaviour {
 
+    
     private Rigidbody rB;
     private Vector3 rbVelo;
 
@@ -16,6 +17,7 @@ public class PLAYERCO : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        
         rB = GetComponent<Rigidbody>();
         //goalText.enabled = false;
         goalOn = false;
@@ -40,16 +42,17 @@ public class PLAYERCO : MonoBehaviour {
             this.gameObject.SetActive(false);
         }
     }
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "Kill")
-        {
-            //  explosion.transform.position = this.transform.position;
-            this.gameObject.SetActive(false);
-            //  Debug.Log(explosion.name);
-            // failText.enabled = true;
-            // explosion.Play();
+    //private void OnCollisionEnter(Collision other)
+    //{
+    //    if (other.gameObject.tag == "Kill")
+    //    {
+            
+    //        //  explosion.transform.position = this.transform.position;
+    //        this.gameObject.SetActive(false);
+    //        //  Debug.Log(explosion.name);
+    //        // failText.enabled = true;
+    //        // explosion.Play();
 
-        }
-    }
+    //    }
+    //}
 }
