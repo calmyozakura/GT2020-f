@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class playerCo : MonoBehaviour{
 
@@ -58,6 +59,7 @@ public class playerCo : MonoBehaviour{
             //  Debug.Log(explosion.name);
             // failText.enabled = true;
             // explosion.Play();
+            
         }
     }
 }

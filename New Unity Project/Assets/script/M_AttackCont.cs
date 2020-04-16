@@ -22,7 +22,7 @@ public class M_AttackCont : MonoBehaviour
         if (Stopflg)
         {
             Attakcount += 1;
-            if (Attakcount >= 60)
+            if (Attakcount >= 20)
             {
                 Attakcount = 0;
                 Stopflg = false;
@@ -48,15 +48,15 @@ public class M_AttackCont : MonoBehaviour
         }
         //moveflg = true;  
     }
-    private void OnCollisionEnter(Collision other)
-    {
+    //private void OnCollisionEnter(Collision other)
+    //{
 
-        if (other.gameObject.tag == "In")//岩に当たったら
-        {
-            Attack.SetFloat("AttackPara", 0.0f);//一時停止
-                                                // Destroy(M_AttackPivot.gameObject, 1.0f);//デストロイ
-            Stopflg = true;
-        }
-        //moveflg = true;  
-    }
+    //    if (other.gameObject.tag == "In")//岩に当たったら
+    //    {
+    //        Attack.SetFloat("AttackPara", 0.0f);//一時停止
+    //                                            // Destroy(M_AttackPivot.gameObject, 1.0f);//デストロイ
+    //        Stopflg = true;
+    //    }
+    //    //moveflg = true;  
+    //}
 }

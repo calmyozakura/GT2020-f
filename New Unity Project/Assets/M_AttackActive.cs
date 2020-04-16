@@ -27,7 +27,7 @@ public class M_AttackActive : MonoBehaviour
         if (!ActiveFlg)//非アクティブだったら
         {
             ActiveCount +=1;
-            if(ActiveCount>=180)//３秒後に
+            if(ActiveCount>=60)//３秒後に
             {
                 M_Attack.gameObject.SetActive(true);//アクティブ
                 ActiveCount = 0;
