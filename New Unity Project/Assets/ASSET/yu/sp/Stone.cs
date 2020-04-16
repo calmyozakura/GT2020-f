@@ -12,8 +12,8 @@ public class Stone : MonoBehaviour
 
     //public bool grabflg;    //falseだったら動く　//trueだったら止める
     public bool Grabflg;
-
-    PLAYERMO script; //UnityChanScriptが入る変数
+    private float waitTimer = 0;
+    Glag script; //UnityChanScriptが入る変数
 
     Vector3 tmp;
 
@@ -29,7 +29,7 @@ public class Stone : MonoBehaviour
         //Rigidbodyを取得
         rb = GetComponent<Rigidbody>();
 
-        script = Playertmp.GetComponent<PLAYERMO>(); //unitychanの中にあるUnityChanScriptを取得して変数に格納する
+        script = Playertmp.GetComponent<Glag>(); //unitychanの中にあるUnityChanScriptを取得して変数に格納する
 
         tmp = Playertmp.transform.position;
         Playertmp.transform.position = new Vector3(tmp.x, tmp.y, tmp.z);
@@ -79,13 +79,14 @@ public class Stone : MonoBehaviour
 
             }
 
-            if (Input.GetKey(KeyCode.W) && Grabflg == true)
+            if (Input.GetKey(KeyCode.Space) && Grabflg == true &&  ++waitTimer / 6 == 3)
             {
 
                 //重力を戻す
                 rb.isKinematic = false;
-
+                Grabflg = false;
                 script.grabflg = false;
+                waitTimer = 0;
             }
         }
     }
@@ -95,16 +96,22 @@ public class Stone : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            if (script.grabflg == true)
+            if (script.grabflg == false)
             {
-                //重力を止める
-                rb.isKinematic = true;
-
-                Grabflg = true;
-                this.transform.Translate(0.0f, 1.0f, 0.0f);
-                gx = -5f;
-                gy = 3f;
-                gz = 0;
+                if (Input.GetKey(KeyCode.Space)&&Grabflg == false)
+                {
+                   
+                    
+                        //重力を止める
+                        rb.isKinematic = true;
+                        script.grabflg = true;
+                        Grabflg = true;
+                        this.transform.Translate(0.0f, 1.0f, 0.0f);
+                        gx = -5f;
+                        gy = 3f;
+                        gz = 0;
+                    
+                }
             }
         }
     }

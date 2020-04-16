@@ -35,7 +35,7 @@ public class PLAYERCO : MonoBehaviour {
             rbVelo = rB.velocity;
         }
         height = this.GetComponent<Transform>().position;
-        if (height.y <= -3.0f)
+        if (height.y <= -30.0f)
         {
             // explosion.transform.position = this.transform.position;
             // explosion.play();

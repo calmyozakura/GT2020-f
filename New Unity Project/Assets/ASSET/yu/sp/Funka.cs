@@ -27,18 +27,27 @@ public class Funka : MonoBehaviour
 
     void Update()
     {
-        if (script.hunkaFlg == true)
+        //if (script.hunkaFlg == true)
+        //{
+        //    Invoke("Founka", 3);
+        //}
+    }
+
+    private void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.tag != "In")
         {
-            Invoke("Founka", 3);
+            if (script.hunkaFlg == true)
+            {
+                Invoke("Founka", 3);
+            }
         }
     }
 
 
-
-
-
     void Founka()
     {
+       
         //オブジェクト拡大
         height = this.GetComponent<Transform>().position;
         if (height.y > 5)

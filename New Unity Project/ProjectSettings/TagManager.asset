@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Yougan
+  - Stone
+  - In
+  - Magma
+  - Goal
+  - Inseki
+  - Stone2
   layers:
   - Default
   - TransparentFX
