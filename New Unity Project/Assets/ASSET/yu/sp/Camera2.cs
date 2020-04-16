@@ -41,7 +41,7 @@ public class Camera2 : MonoBehaviour {
         //{
         //    transform.Translate(offset.x, 0, 0);
         //}
-        offset.x = ((Playertmp.transform.position.x - Yougantmp.transform.position.x) / 2);
+        offset.x = ((Playertmp.transform.position.x - Yougantmp.transform.position.x - Yougantmp.transform.position.x /2 ) / 2);
 
         //transform.Translate(offset.x, 0, 0);
         
