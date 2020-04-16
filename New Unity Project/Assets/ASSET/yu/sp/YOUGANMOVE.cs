@@ -10,7 +10,7 @@ public class YOUGANMOVE : MonoBehaviour {
     [SerializeField] private float movelate = 4f;    //動かなくなったら、次に動くまでの秒数
     private float movecount;
 
-    float vector = 0.1f;
+    float vector = 0.05f;
 
     void Start()
     {
@@ -36,9 +36,9 @@ public class YOUGANMOVE : MonoBehaviour {
 
         //オブジェクト拡大
         //this.transform.localScale = new Vector3(vector, 3, 1);
-        vector += 0.05f;
+       
         //等速アニメーション
-        this.transform.position += new Vector3(0.05f, 0, 0);
+        this.transform.position += new Vector3(vector, 0, 0);
 
         //加速アニメーション
         //this.transform.position += new Vector3(vector, 0, 0);
@@ -56,6 +56,12 @@ public class YOUGANMOVE : MonoBehaviour {
             moveflg = false;
             movecount += movelate;
 
+        }
+
+    
+        if(other.gameObject.tag == "Speed")
+        {
+            vector += 0.02f;
         }
     }
 }
