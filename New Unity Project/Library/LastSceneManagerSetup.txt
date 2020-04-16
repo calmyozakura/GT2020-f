@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
 - path: Assets/ASSET/ki/ri.unity
-=======
-- path: Assets/ASSET/yu/stage2.unity
->>>>>>> master
-=======
-- path: Assets/ASSET/yu/stage2.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1
