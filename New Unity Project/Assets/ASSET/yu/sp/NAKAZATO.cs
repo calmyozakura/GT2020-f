@@ -13,8 +13,8 @@ public class NAKAZATO : MonoBehaviour {
 
     void Update()
     {
-        float fps = 1f / Time.deltaTime;
-        Debug.LogFormat("{0}fps", fps);
+        //float fps = 1f / Time.deltaTime;
+        //Debug.LogFormat("{0}fps", fps);
     }
 
     private void OnTriggerStay(Collider other)
@@ -30,6 +30,7 @@ public class NAKAZATO : MonoBehaviour {
             {
                 Debug.Log(nakazato);
                 Destroy(other.gameObject);
+                nakazato = 3;
             }
         }
     }

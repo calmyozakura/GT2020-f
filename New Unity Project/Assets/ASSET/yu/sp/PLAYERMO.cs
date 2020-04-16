@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PLAYERMO : MonoBehaviour {
+public class PLAYERMO : MonoBehaviour
+{
 
     public float vector = 0.1f;
     public float vector2 = 0.1f;
@@ -108,27 +109,28 @@ public class PLAYERMO : MonoBehaviour {
             vector -= 0.01f;
         }
     }
-    void OnCollisionStay(Collision other)
-    {
+}
+//    void OnCollisionStay(Collision other)
+//    {
 
-        if (other.gameObject.tag == "In")
-        {
+//        if (other.gameObject.tag == "In")
+//        {
            
             
-                // 上に移動
-                if (Input.GetKey(KeyCode.Space) && grabflg == false)
-                {
-                    grabflg = true;
+//                // 上に移動
+//                if (Input.GetKey(KeyCode.Space) && grabflg == false)
+//                {
+//                    grabflg = true;
                    
-                }
+//                }
             
-        }
-    }
-    public bool GRABflg()
-    {
-        return grabflg;
-    }
-}
+//        }
+//    }
+//    public bool GRABflg()
+//    {
+//        return grabflg;
+//    }
+//}
    
 
         
