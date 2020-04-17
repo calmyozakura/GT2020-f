@@ -3881,7 +3881,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841323784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fce639c649ca3a940b425ea9a344fdc5, type: 3}
   m_Name: 
@@ -3974,7 +3974,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841323784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61891fb73972cb24c8a3ec02d66162b3, type: 3}
   m_Name: 
@@ -4372,6 +4372,7 @@ MonoBehaviour:
   Iswitch: 0
   playerU: 0
   grabflg: 0
+  MagumaSPD: 0
 --- !u!114 &1999151510
 MonoBehaviour:
   m_ObjectHideFlags: 0

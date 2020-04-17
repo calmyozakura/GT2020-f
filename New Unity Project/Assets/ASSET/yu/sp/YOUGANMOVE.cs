@@ -9,8 +9,10 @@ public class YOUGANMOVE : MonoBehaviour {
     public bool moveflg = true;   //true：動く false：動かない
     [SerializeField] private float movelate = 4f;    //動かなくなったら、次に動くまでの秒数
     private float movecount;
-
+    private PLAYERMO PLAYERMO;
     float vector = 0.05f;
+
+    PLAYERMO script; //UnityChanScriptが入る変数
 
     void Start()
     {
@@ -22,6 +24,10 @@ public class YOUGANMOVE : MonoBehaviour {
 
     void Update()
     {
+        //if (script.MagumaSPD == true)
+        //{
+        //    vector += 0.02f;
+        //}
         if (movecount > 0)
         {
             movecount -= Time.deltaTime;

@@ -11,6 +11,7 @@ public class PLAYERMO : MonoBehaviour
     public bool Iswitch = false;
     public float playerU = 0;
     public bool grabflg = false;
+    public bool MagumaSPD = false;
     //public bool JumpState = false; //２段以上のジャンプ防止
     //private Stone Stone;
 
@@ -109,23 +110,17 @@ public class PLAYERMO : MonoBehaviour
             vector -= 0.01f;
         }
     }
-}
-//    void OnCollisionStay(Collision other)
-//    {
 
-//        if (other.gameObject.tag == "In")
-//        {
-           
-            
-//                // 上に移動
-//                if (Input.GetKey(KeyCode.Space) && grabflg == false)
-//                {
-//                    grabflg = true;
-                   
-//                }
-            
-//        }
-//    }
+   void OnCollisionStay(Collision other)
+   {
+
+     if (other.gameObject.tag == "Speed")
+       {
+
+        MagumaSPD = true;
+                   }
+   }
+}
 //    public bool GRABflg()
 //    {
 //        return grabflg;

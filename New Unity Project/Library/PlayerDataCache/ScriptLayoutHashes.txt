@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/oeoem/Desktop/Mono/Mono.exe
+C:/Users/oeoem/Desktop/stage2/stage2.exe
 SceneListBegin?
 Assets/MasterScenes/Stage2.unity
 SceneListEnd?
@@ -17,6 +17,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Fool
+5b0e66c45897ae04c7ce65e7a20a8181 Assembly-CSharp.dll:.DinoAnim
 7a0bb6e64a1eb2c31c35d0c05f5e0230 Assembly-CSharp.dll:.Rotation
 e917832d8d12a8e05d6fa5fdc1326bae Assembly-CSharp.dll:.ScrollingUVs_Layers
 993599b167232d744e504fca009fca26 Assembly-CSharp.dll:.YOUGANMOVE
@@ -140,7 +141,7 @@ c6e7d8a0362f58224af9319615782e40 Assembly-CSharp.dll:.CameraCONT
 c84a1c8efdcd3a1e938b726211bd154e Assembly-CSharp.dll:.CheckClickEvent
 cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp.dll:UnityStandardAssets.Water.PlanarReflection
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Water.Displace
-83f746867414a1257909940ead3fb57d Assembly-CSharp.dll:.PLAYERMO
+dbf4b23087fb18bbd5a4ac795d20abd5 Assembly-CSharp.dll:.PLAYERMO
 9376585700000babfc3d3e7a947aa8f8 Assembly-CSharp.dll:.KILL
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.surfing
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Water.WaterBasic
@@ -148,7 +149,7 @@ a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.surfing
 e84404b63ceb046b3c01ce63a8d8f369 Assembly-CSharp.dll:.MagmaCont
 5b63ea5c79001e0b56d9c8bff49220f6 Assembly-CSharp.dll:.Player_Move_3
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.INSEKI
-150b14d8b0f54814d4bf3942c565f2fc Assembly-CSharp.dll:.Breakrock_1
+487cdd67eb50f59e11ac1cd30353e067 Assembly-CSharp.dll:.Breakrock_1
 2590935d078ca28c0e9631df7a6ca00c Assembly-CSharp.dll:.PlayerC
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TankMovement
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -166,7 +167,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 21984f001d5a114ee9fbf62810ee8eb7 Assembly-CSharp.dll:UnityStandardAssets.Water.SpecularLighting
-5bfa75d4b8b8181e42783c0adc0ec294 Assembly-CSharp.dll:.NAKAZATO3
 2c62b9ae79b8b54dd7b55fa7d311452b Assembly-CSharp.dll:UnityStandardAssets.Water.Water
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.cameraC
 09d8f663b3e5924a9b5fd096be029f73 Assembly-CSharp.dll:.hunkaSW
@@ -208,4 +208,6 @@ df386a86ea6ec97d7a00df63a508e363 Assembly-CSharp.dll:.M_AttackActive
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.hunka
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Speed
 c0186252e3b039a24c030ab4b527de63 Assembly-CSharp.dll:.M_Attack_Cont_ki
+e69bbf6a73d04dcd436bf32604ad4cb0 Assembly-CSharp.dll:.NAKAZATO3
+61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera4
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２

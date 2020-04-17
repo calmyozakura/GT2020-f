@@ -7,7 +7,7 @@ public class NAKAZATO3 : MonoBehaviour
     private float WaitTimer=0;
     public int nakazato;
     public bool iwa;
-    public GameObject part;
+    public GameObject part1;
     void Start()
     {
         nakazato = 3;
@@ -22,7 +22,7 @@ public class NAKAZATO3 : MonoBehaviour
 
         if (iwa == true)
         {
-            part.gameObject.SetActive(true);
+          //  part.gameObject.SetActive(true);
 
         }
             
@@ -37,6 +37,7 @@ public class NAKAZATO3 : MonoBehaviour
             {
                 if (++WaitTimer / 6 == 2)
                 {
+                    part1.gameObject.SetActive(true);
                     nakazato -= 1;
                     WaitTimer = 0;
                     iwa = true;
