@@ -33,7 +33,8 @@ public class NAKAZATO3 : MonoBehaviour
     {
         if (other.gameObject.tag == "Stone2")
         {
-            if (Input.GetKey(KeyCode.C))
+            if (Input.GetKey(KeyCode.C)
+              ||Input.GetButton("DS4_Circle"))
             {
                 if (++WaitTimer / 6 == 2)
                 {
