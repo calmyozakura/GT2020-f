@@ -12,6 +12,7 @@ TagManager:
   - Inseki
   - Stone2
   - Speed
+  - turi
   layers:
   - Default
   - TransparentFX

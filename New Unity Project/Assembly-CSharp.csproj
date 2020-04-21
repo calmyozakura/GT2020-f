@@ -71,7 +71,10 @@
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\breakYO.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\cameraC.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\Createeffect.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\nowTime.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerC.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerM.cs" />
     <Compile Include="Assets\ASSET\ki\NewBehaviourScript.cs" />
@@ -129,6 +132,7 @@
     <Compile Include="Assets\script\surfing.cs" />
     <Compile Include="Assets\script\youganMOVE.cs" />
     <Compile Include="Assets\TankMovement.cs" />
+    <None Include="Assets\ASSET\kei\Assset\ErbGameArt\Procedural fire\Shaders\FireSphere.shader" />
     <None Include="Assets\ASSET\Ultra Skybox Fog\Shaders\UltraSkyboxFog.shader" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water (Basic)\DO_NOT_WORK_IN_VR.txt" />
     <None Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
@@ -139,6 +143,7 @@
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\DO_NOT_WORK_IN_VR.txt" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\ReadMe.txt" />
+    <None Include="Assets\ASSET\kei\Assset\ErbGameArt\Procedural fire\Demo scene\Readme.txt" />
     <None Include="Assets\ASSET\Ultra Skybox Fog\Manual.txt" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
