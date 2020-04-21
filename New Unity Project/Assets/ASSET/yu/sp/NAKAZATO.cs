@@ -21,7 +21,8 @@ public class NAKAZATO : MonoBehaviour {
     {
         if (other.gameObject.tag == "Stone")
         {
-            if (Input.GetKey(KeyCode.C))
+            if (Input.GetKey(KeyCode.C)
+              ||Input.GetButton("DS4_Circle"))
             {
                 nakazato -= 1;
                 

@@ -120,13 +120,17 @@ public class PLAYERMO : MonoBehaviour
         MagumaSPD = true;
                    }
    }
+
 }
+
+
 //    public bool GRABflg()
 //    {
 //        return grabflg;
 //    }
 //}
    
+ 
 
         
     //void OnCollisionEnter(Collision collision)
