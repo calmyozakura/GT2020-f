@@ -2,7 +2,7 @@ WindowsStandalone
 PlayerPath?
 C:/Users/oeoem/Desktop/ビルド/ビルド.exe
 SceneListBegin?
-Assets/ASSET/kei/ta.unity
+Assets/MasterScenes/Stage1.unity
 SceneListEnd?
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -119,6 +119,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 df386a86ea6ec97d7a00df63a508e363 Assembly-CSharp.dll:.M_AttackActive_Ki
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+880dcd4ce34977a141c700fa2f6b9986 Assembly-CSharp.dll:.Createeffect
 eab4c3c8836b4ad8737ce9c42b7f9f67 Assembly-CSharp.dll:.M_Attacksponer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneReload
 09d8f663b3e5924a9b5fd096be029f73 Assembly-CSharp.dll:.HUnkaSW
@@ -132,6 +133,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.breakYO
 61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera2
 f89bb76359cbac8db51f1e5b05df4c9f Assembly-CSharp.dll:.PlayerMo
 61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera3
@@ -144,6 +146,7 @@ cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp.dll:UnityStandardAssets.Water.P
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Water.Displace
 61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera4
 dbf4b23087fb18bbd5a4ac795d20abd5 Assembly-CSharp.dll:.PLAYERMO
+db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.CameraCont1
 9376585700000babfc3d3e7a947aa8f8 Assembly-CSharp.dll:.KILL
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.surfing
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Water.WaterBasic
@@ -199,17 +202,17 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.Funka
 fde4892ce10282f3d912c48fa7871d6c Assembly-CSharp.dll:.Stone
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal
+2b4eb022695c364b140df90542b0ef1b Assembly-CSharp.dll:.youganMOVE1
 ede304fe60ba6a58e836fc2647572973 Assembly-CSharp.dll:.camera
 df386a86ea6ec97d7a00df63a508e363 Assembly-CSharp.dll:.M_AttackActive
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Water.GerstnerDisplace
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.kamera
 000154ac376187512f66f18489df2215 Assembly-CSharp.dll:.grab
 6746ad828d32ad6e5c07a63950fd4be6 Assembly-CSharp.dll:UnityStandardAssets.Water.WaterTile
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.nowTime
 826c23b114e8b17ea59f7c2d380326a4 Assembly-CSharp.dll:.playerCo
 2bf25054163d14d6c349e7ffa47dbf32 Assembly-CSharp.dll:.PlayerM
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Playeroyako
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.hunka
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Speed
 c0186252e3b039a24c030ab4b527de63 Assembly-CSharp.dll:.M_Attack_Cont_ki
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.breakYO
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.nowTime
