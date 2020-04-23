@@ -3,6 +3,8 @@ PlayerPath?
 C:/Users/oeoem/Desktop/ビルド/ビルド.exe
 SceneListBegin?
 Assets/MasterScenes/Stage1.unity
+Assets/MasterScenes/Stage2.unity
+Assets/MasterScenes/Stage3.unity
 SceneListEnd?
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -117,6 +119,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.YouganATK
 df386a86ea6ec97d7a00df63a508e363 Assembly-CSharp.dll:.M_AttackActive_Ki
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 880dcd4ce34977a141c700fa2f6b9986 Assembly-CSharp.dll:.Createeffect
@@ -124,6 +127,7 @@ eab4c3c8836b4ad8737ce9c42b7f9f67 Assembly-CSharp.dll:.M_Attacksponer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneReload
 09d8f663b3e5924a9b5fd096be029f73 Assembly-CSharp.dll:.HUnkaSW
 b685924242c1dedce936510beb214a0e Assembly-CSharp.dll:.life
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.breakI
 2b4eb022695c364b140df90542b0ef1b Assembly-CSharp.dll:.youganMOVE
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
@@ -140,6 +144,7 @@ f89bb76359cbac8db51f1e5b05df4c9f Assembly-CSharp.dll:.PlayerMo
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.CameraCont
 52071389db163d0d9db9f0096216c974 Assembly-CSharp.dll:.LifeGauge
 c6e7d8a0362f58224af9319615782e40 Assembly-CSharp.dll:.CameraCONT
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.breakS
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Inseki
 c84a1c8efdcd3a1e938b726211bd154e Assembly-CSharp.dll:.CheckClickEvent
 cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp.dll:UnityStandardAssets.Water.PlanarReflection
