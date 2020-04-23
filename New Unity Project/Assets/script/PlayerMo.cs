@@ -7,11 +7,13 @@ public class PlayerMo : MonoBehaviour
     public bool grabflg = false;
 
     public float vector = 0.1f;
-    public float vector2 = 0.1f;
+    public float vector2 = 0.2f;
     bool Yoin = false;
     public bool Iswitch = false;
     public float playerU = 0;
 
+    Rigidbody rb;
+   
     //public bool JumpState = false; //２段以上のジャンプ防止
 
 
@@ -25,7 +27,7 @@ public class PlayerMo : MonoBehaviour
     {
         this.Dinasor = GetComponent<SpriteRenderer>();
         Dinasor.flipX = true;
-
+        rb = this.gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -34,7 +36,7 @@ public class PlayerMo : MonoBehaviour
         //キーボード
         if (Input.GetKey(KeyCode.UpArrow))//上
         {
-            this.transform.position += new Vector3(0, +vector2, 0);
+            this.transform.position += new Vector3(0, +vector2*0.5f, 0);
             playerU = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow))//左
@@ -62,9 +64,10 @@ public class PlayerMo : MonoBehaviour
         Axis2_UD = Input.GetAxis("DS4_L_JoystickUD");
 
         //コントローラー
-        if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
+        if (Input.GetButtonDown("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
         {
-            this.transform.position += new Vector3(0, +vector, 0);
+            //this.transform.position += new Vector3(0, (+vector)*2500f, 0);
+            //this.rb.AddForce(0, 2500f, 0,ForceMode.Force);
             playerU = 1;
         }
 
