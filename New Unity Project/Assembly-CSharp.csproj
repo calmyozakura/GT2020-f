@@ -71,12 +71,15 @@
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\breakI.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\breakS.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\breakYO.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\cameraC.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\Createeffect.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\nowTime.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerC.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerM.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\YouganATK.cs" />
     <Compile Include="Assets\ASSET\ki\NewBehaviourScript.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\Breakrock_1.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\BreakTreeCont.cs" />
