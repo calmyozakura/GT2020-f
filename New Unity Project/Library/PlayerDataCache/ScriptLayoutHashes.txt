@@ -1,8 +1,10 @@
 WindowsStandalone
 PlayerPath?
-D:/FグルプのFはファンキーのF/BuildCamera/BuildCamera.exe
+C:/Users/oeoem/Desktop/全ステージ/全ステージ.exe
 SceneListBegin?
 Assets/MasterScenes/Stage1.unity
+Assets/MasterScenes/Stage2.unity
+Assets/MasterScenes/Stage3.unity
 SceneListEnd?
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Sound
@@ -156,6 +158,7 @@ cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp.dll:UnityStandardAssets.Water.P
 61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera4
 a9fa90eb26649eb856928c81d0dd97a8 Assembly-CSharp.dll:.PLAYERMO
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.CameraCont1
+80da3bf3747118249a2e465bf0821abd Assembly-CSharp.dll:.nagare
 9376585700000babfc3d3e7a947aa8f8 Assembly-CSharp.dll:.KILL
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.spiderweb
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.surfing
@@ -206,6 +209,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+2716fc22dbe4918eea100a5410bb6b29 Assembly-CSharp.dll:.G
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Replay
 2b4eb022695c364b140df90542b0ef1b Assembly-CSharp.dll:.kiriO
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
@@ -227,3 +231,5 @@ e6323e01d619877b43af9119a038ca8a Assembly-CSharp.dll:.heart
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.hunka
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Speed
 c0186252e3b039a24c030ab4b527de63 Assembly-CSharp.dll:.M_Attack_Cont_ki
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.リジ
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.lasthasi

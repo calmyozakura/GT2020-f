@@ -67,7 +67,7 @@ public class YOUGANMOVE : MonoBehaviour {
     
         if(other.gameObject.tag == "Speed")
         {
-            vector += 0.02f;
+            vector += 0.01f;
         }
     }
 }

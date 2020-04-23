@@ -35,7 +35,7 @@ public class surfer : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-           transform.parent = GameObject.Find("Player").transform;
+          // transform.parent = GameObject.Find("Player").transform;
             vector = 0.3f;
         }
         else vector = 0.03f;

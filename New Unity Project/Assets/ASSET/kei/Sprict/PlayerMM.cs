@@ -119,7 +119,12 @@ public class PlayerMM : MonoBehaviour {
 
             MagumaSPD = true;
         }
+        if(other.gameObject.tag == "slider")
+        {
+            transform.parent = GameObject.Find("board").transform;
+        }
     }
+
 
 }
 

@@ -1068,8 +1068,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -293, y: 146.08365}
-  m_SizeDelta: {x: 220, y: 100}
+  m_AnchoredPosition: {x: -286, y: 108}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586119248
 MonoBehaviour:
@@ -1103,7 +1103,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "C\u30AD\u30FC\u3067\u5CA9\u3001\u6728\u3092\u7834\u58CA\nSPACE\u30AD\u30FC\u3067\u5CA9\u3092\u6301\u3064\nA,D\u30AD\u30FC\u3067\u5CA9\u306E\u65B9\u5411\u79FB\u52D5"
+  m_Text: "C\u30AD\u30FC\u3067\u5CA9\u3001\u6728\u3092\u7834\u58CA         A\u3067\u30B8\u30E3\u30F3\u30D7\u3001X\u3067\u5CA9\u7834\u58CA\u3001\nSPACE\u30AD\u30FC\u3067\u5CA9\u3092\u6301\u3064\u3000Y\u3067\u5CA9\u3092\u3082\u3064\u3000\u53F3\u30B9\u30C6\u30A3\u30C3\u30AF\u3067\u5CA9\u79FB\u52D5\nA,D\u30AD\u30FC\u3067\u5CA9\u306E\u65B9\u5411\u79FB\u52D5\u3000\u5DE6\u30B9\u30C6\u30A3\u30C3\u30AF\u3067\u79FB\u52D5"
 --- !u!222 &586119249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1559,8 +1559,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862224733}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 123.91275, y: -3.9352, z: 0.875}
-  m_LocalScale: {x: 98.033295, y: 10, z: 7}
+  m_LocalPosition: {x: 124.34, y: -3.9352, z: 0.875}
+  m_LocalScale: {x: 97.18324, y: 10, z: 7}
   m_Children: []
   m_Father: {fileID: 1870797245}
   m_RootOrder: 9
@@ -4316,7 +4316,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e08d894d1a4dca746a9673007d5c706d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 179.64
+      value: 179.94
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e08d894d1a4dca746a9673007d5c706d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4356,7 +4356,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e08d894d1a4dca746a9673007d5c706d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 16.42683
+      value: 19.537119
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e08d894d1a4dca746a9673007d5c706d, type: 3}
       propertyPath: m_LocalScale.z

@@ -16,6 +16,8 @@ TagManager:
   - K
   - item
   - Sa
+  - spider
+  - slider
   layers:
   - Default
   - TransparentFX
