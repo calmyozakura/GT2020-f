@@ -6,7 +6,6 @@ public class Sound : MonoBehaviour
 {
     private AudioSource[] sources;
 
-    bool jumpflg;
 
     //GameObject player;
 
@@ -29,8 +28,8 @@ public class Sound : MonoBehaviour
         Axis2_LR = Input.GetAxis("DS4_L_JoystickLR");
         Axis2_UD = Input.GetAxis("DS4_L_JoystickUD");
 
-        if (Input.GetButtonDown("DS4_Cross")
-            || (Axis_UD > 0 || Axis2_UD < 0)
+        if (Input.GetButton("DS4_Cross")
+            || Axis_UD > 0 || Axis2_UD < 0
             || Input.GetKey(KeyCode.UpArrow)
             )
         {
