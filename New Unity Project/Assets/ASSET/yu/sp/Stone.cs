@@ -15,6 +15,8 @@ public class Stone : MonoBehaviour
     private float waitTimer = 0;
     Glag script; //UnityChanScriptが入る変数
 
+    float axis_R_UD, axis_R_LR;//右スティック
+    
     Vector3 tmp;
 
     float gx;   //このゲームオブジェクトの調整用変数
@@ -42,13 +44,18 @@ public class Stone : MonoBehaviour
     void Update()
     {
 
+
+
         Debug.Log(Grabflg);
         if (Grabflg == true)
         {
             tmp = Playertmp.transform.position;
+            axis_R_LR = Input.GetAxis("DS4_R_JoystickLR");
+            axis_R_UD = Input.GetAxis("DS4_R_JoystickUD");
+
             //this.transform.position = new Vector3(tmp.x-3, tmp.y+3, tmp.z);
             this.transform.position = new Vector3(tmp.x + gx, tmp.y + gy, tmp.z + gz);
-
+            { 
             if (Input.GetKey(KeyCode.A) && Grabflg == true)
             {
 
@@ -79,7 +86,7 @@ public class Stone : MonoBehaviour
 
             }
 
-            if (Input.GetKey(KeyCode.Space) && Grabflg == true &&  ++waitTimer / 6 == 3)
+            if (Input.GetKey(KeyCode.Space)  && Grabflg == true &&  ++waitTimer / 6 == 3)
             {
 
                 //重力を戻す
@@ -87,6 +94,49 @@ public class Stone : MonoBehaviour
                 Grabflg = false;
                 script.grabflg = false;
                 waitTimer = 0;
+            }
+            }
+
+            {
+                if (axis_R_LR < 0 && Grabflg == true)
+                {
+
+                    //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
+                    gx = -5f;
+                    gy = 3f;
+                    gz = 0;
+
+                }
+
+                if (axis_R_UD < 0 && Grabflg == true)
+                {
+
+                    //this.transform.position = new Vector3(tmp.x , tmp.y + 4, tmp.z);
+                    gx = 0;
+                    gy = 4f;
+                    gz = 0;
+
+                }
+
+                if (axis_R_LR > 0 && Grabflg == true)
+                {
+
+                    //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
+                    gx = 4f;
+                    gy = 3f;
+                    gz = 0;
+
+                }
+
+                if (Input.GetButton("DS4_Triangle") && Grabflg == true && ++waitTimer / 6 == 3)
+                {
+
+                    //重力を戻す
+                    rb.isKinematic = false;
+                    Grabflg = false;
+                    script.grabflg = false;
+                    waitTimer = 0;
+                }
             }
         }
     }
@@ -98,7 +148,7 @@ public class Stone : MonoBehaviour
         {
             if (script.grabflg == false)
             {
-                if (Input.GetKey(KeyCode.Space)&&Grabflg == false)
+                if (Input.GetKey(KeyCode.Space)|| Input.GetButton("DS4_Triangle") && Grabflg == false)
                 {
                    
                     
@@ -114,5 +164,6 @@ public class Stone : MonoBehaviour
                 }
             }
         }
+
     }
 }

@@ -34,6 +34,12 @@ public class CheckClickEvent : MonoBehaviour {
                 Destroy(gameObject);
             }
         }
+        if(other.gameObject.tag == "item")
+        {
+            HP = life.recovery(HP, 1);
+
+            Destroy(other.gameObject);
+        }
     }
 }
 

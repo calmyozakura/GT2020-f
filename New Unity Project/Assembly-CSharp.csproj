@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ASSET\isa\Sound.cs" />
+    <Compile Include="Assets\ASSET\kei\Assset\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
@@ -71,15 +73,18 @@
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\breakDOWN.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\breakI.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\breakS.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\breakYO.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\cameraC.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\Createeffect.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\heart.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\nowTime.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerC.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerM.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerMM.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\SStone.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\surfer.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\YouganATK.cs" />
     <Compile Include="Assets\ASSET\ki\NewBehaviourScript.cs" />

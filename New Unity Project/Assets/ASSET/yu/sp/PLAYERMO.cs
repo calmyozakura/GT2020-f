@@ -70,7 +70,7 @@ public class PLAYERMO : MonoBehaviour
         //コントローラー
         if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
         {
-            this.transform.position += new Vector3(0, +vector, 0);
+            this.transform.position += new Vector3(0, +vector*1.62f, 0);
             playerU = 1;
         }
 
