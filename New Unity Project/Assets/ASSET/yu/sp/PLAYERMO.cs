@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PLAYERMO : MonoBehaviour
 {
-
-    public float vector = 0.1f;
-    public float vector2 = 0.1f;
+    
+    
+    public float Speed = 0.02f;
+    public float vector = 0.07f;
+    public float vector2 = 0.2f;
     bool Yoin = false;
     public bool Iswitch = false;
     public float playerU = 0;
@@ -31,6 +33,10 @@ public class PLAYERMO : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(vector);
+        
+        
+
         //キーボード
         if (Input.GetKey(KeyCode.UpArrow))//上
         {
@@ -88,6 +94,8 @@ public class PLAYERMO : MonoBehaviour
         {
             YOIN();
         }
+
+       
     }
 
     void OnCollisionExit(Collision collision)
@@ -118,9 +126,26 @@ public class PLAYERMO : MonoBehaviour
        {
 
         MagumaSPD = true;
-                   }
+       }
    }
 
+
+    void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.tag == "spider")
+        {
+            vector = Speed;
+           
+        }  
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "spider")
+        {
+            vector = 0.07f;
+
+        }
+    }
 }
 
 

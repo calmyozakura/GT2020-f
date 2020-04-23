@@ -64,7 +64,7 @@ public class Stone : MonoBehaviour
 
                 //this.transform.position = new Vector3(tmp.x , tmp.y + 4, tmp.z);
                 gx = 0;
-                gy = 4f;
+                gy = 8f;
                 gz = 0;
 
             }
@@ -73,7 +73,7 @@ public class Stone : MonoBehaviour
             {
 
                 //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
-                gx = 4f;
+                gx = 7f;
                 gy = 3f;
                 gz = 0;
 

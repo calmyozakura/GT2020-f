@@ -14,6 +14,7 @@ TagManager:
   - Speed
   - turi
   - K
+  - spider
   layers:
   - Default
   - TransparentFX
