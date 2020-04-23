@@ -86,7 +86,7 @@ public class Stone : MonoBehaviour
 
             }
 
-            if (Input.GetKey(KeyCode.Space) || Input.GetButton("DS4_Triangle") && Grabflg == true &&  ++waitTimer / 6 == 3)
+            if (Input.GetKey(KeyCode.Space)  && Grabflg == true &&  ++waitTimer / 6 == 3)
             {
 
                 //重力を戻す
