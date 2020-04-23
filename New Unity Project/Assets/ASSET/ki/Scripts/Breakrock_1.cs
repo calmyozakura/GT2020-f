@@ -5,7 +5,8 @@ using UnityEngine;
 public class Breakrock_1 : MonoBehaviour
 {
     public GameObject iwa;
-    public GameObject part;
+    public GameObject part1;
+    public GameObject part2;
 
 	// Use this for initialization
 	void Start ()
@@ -18,8 +19,8 @@ public class Breakrock_1 : MonoBehaviour
     {
         if (iwa==null)
         {
-            part.gameObject.SetActive(true);
-
+            part1.gameObject.SetActive(true);
+            part2.gameObject.SetActive(true);
         }
     }
 }
