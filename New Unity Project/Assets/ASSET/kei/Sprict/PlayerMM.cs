@@ -6,7 +6,7 @@ public class PlayerMM : MonoBehaviour {
 
 
     public float vector = 0.1f;
-    public float vector2 = 0.1f;
+    public float vector2 = 0.2f;
     bool Yoin = false;
     public bool Iswitch = false;
     public float playerU = 0;

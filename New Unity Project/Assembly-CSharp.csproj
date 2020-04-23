@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ASSET\kei\Assset\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\ASSET\kei\Sprict\breakYO.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\cameraC.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\Createeffect.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\heart.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\nowTime.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerC.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\PlayerM.cs" />

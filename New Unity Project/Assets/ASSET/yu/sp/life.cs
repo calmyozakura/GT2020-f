@@ -38,6 +38,18 @@ public class life : MonoBehaviour {
         }
         return hp;
     }
+    public int recovery(int hp, int damage)
+    {
+        hp += damage;
+
+        hp = Mathf.Max(0, hp);
+
+        if(hp >= 0)
+        {
+            lifeGauge.SetLifeGauge(hp);
+        }
+        return hp;
+    }
     //　ダメージ処理メソッド（ダメージ数分だけアイコンを削除）
     public int Damage2(int damage)
     {
