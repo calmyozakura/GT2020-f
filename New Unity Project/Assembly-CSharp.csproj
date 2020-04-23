@@ -83,6 +83,7 @@
     <Compile Include="Assets\ASSET\ki\Scripts\MagmaCont_Ki.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Camera2.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Camera3.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\Camera4.cs" />
     <Compile Include="Assets\ASSET\yu\sp\CameraCONT.cs" />
     <Compile Include="Assets\ASSET\yu\sp\CheckClickEvent.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Funka.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\ASSET\yu\sp\life.cs" />
     <Compile Include="Assets\ASSET\yu\sp\LifeGauge.cs" />
     <Compile Include="Assets\ASSET\yu\sp\NAKAZATO.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\NAKAZATO3.cs" />
     <Compile Include="Assets\ASSET\yu\sp\PLAYERCO.cs" />
     <Compile Include="Assets\ASSET\yu\sp\PLAYERMO.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Replay.cs" />
@@ -102,6 +104,7 @@
     <Compile Include="Assets\ASSET\yu\sp\YOUGANMOVE.cs" />
     <Compile Include="Assets\camera.cs" />
     <Compile Include="Assets\M_AttackActive.cs" />
+    <Compile Include="Assets\MasterScenes\Goal２.cs" />
     <Compile Include="Assets\Rotation.cs" />
     <Compile Include="Assets\script\CameraCont.cs" />
     <Compile Include="Assets\script\ChangeGravity.cs" />
