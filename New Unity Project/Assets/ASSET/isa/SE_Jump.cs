@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sound : MonoBehaviour
+public class SE_Jump: MonoBehaviour
 {
     private AudioSource[] sources;
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class breakS : MonoBehaviour {
 
+    public AudioSource[] source;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -19,7 +21,7 @@ public class breakS : MonoBehaviour {
         if (other.gameObject.tag == "In")
         {
             Destroy(gameObject);
-
+            source[0].Play();
         }
     }
 }
