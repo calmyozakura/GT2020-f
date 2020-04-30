@@ -30,7 +30,17 @@ public class CameraCONT : MonoBehaviour {
     {
         if(script.moveflg == true)
         {
-            transform.Translate(offset.x, 0, 0);
+            transform.Translate(offset.x, offset.y,offset.z);
+
+
+            //Transform myTransform = this.transform;
+
+
+            //Vector3 worldAngle = myTransform.eulerAngles;
+            ////worldAngle.x = 10.0f; // ワールド座標を基準に、x軸を軸にした回転を10度に変更
+            //worldAngle.y = 10.0f; // ワールド座標を基準に、y軸を軸にした回転を10度に変更
+            //worldAngle.z = 10.0f; // ワールド座標を基準に、z軸を軸にした回転を10度に変更
+            //myTransform.Rotate(0, worldAngle.y, worldAngle.z);
         }
 
 

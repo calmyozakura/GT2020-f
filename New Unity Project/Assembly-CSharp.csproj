@@ -122,6 +122,8 @@
     <Compile Include="Assets\ASSET\yu\sp\YOUGANMOVE.cs" />
     <Compile Include="Assets\camera.cs" />
     <Compile Include="Assets\M_AttackActive.cs" />
+    <Compile Include="Assets\MasterScenes\camera5.cs" />
+    <Compile Include="Assets\MasterScenes\camera6.cs" />
     <Compile Include="Assets\MasterScenes\Goal２.cs" />
     <Compile Include="Assets\Rotation.cs" />
     <Compile Include="Assets\script\CameraCont.cs" />
