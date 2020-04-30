@@ -19,12 +19,11 @@ public class BreakTreeCont : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Attack")
         {
-          if(Input.GetKeyDown("c"))
-            {
-                BTree_anim.SetBool("BreakFlg", true);
-            }
+          
+           BTree_anim.SetBool("BreakFlg", true);
+            
            
 
         }

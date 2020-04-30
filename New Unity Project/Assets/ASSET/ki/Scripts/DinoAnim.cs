@@ -6,7 +6,11 @@ public class DinoAnim : MonoBehaviour
 {
     public Animator Dino_Anim;
 
-    public bool StopFlg;//止めるためのフラグ
+    public bool StopFlg=false;//
+
+    public bool AttackFlg=false;
+    public bool StoneFlg = false;
+
 
 	// Use this for initialization
 	void Start ()
@@ -56,9 +60,41 @@ public class DinoAnim : MonoBehaviour
 
         if (Input.GetKeyDown("c"))              //押すと
         {
-            Dino_Anim.SetBool("Attack_1", true);    //アタックモーション
-            
+            if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Attack_1"))
+                Dino_Anim.SetBool("Attack_2", true);    //アタックモーション
+
+            else if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Attack_2"))
+                     Dino_Anim.SetBool("Attack_3", true);    //アタックモーション
+
+            else 
+                     Dino_Anim.SetBool("Attack_1", true);    //アタックモーション
+
+            AttackFlg = true;
+        }
+        if (Dino_Anim.IsInTransition(0))
+        {
+            AttackFlg = false;
+        }
+        if(AttackFlg==false)
+        {
+            Dino_Anim.SetBool("Attack_1", false);
+            Dino_Anim.SetBool("Attack_2", false);
+            Dino_Anim.SetBool("Attack_3", false);
         }
 
+
+        if (Input.GetKeyDown("space"))              //押すと
+        {
+            Dino_Anim.SetBool("Stone", true);    //石拾いモーション
+            StoneFlg = true;
+        }
+        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Stone_1"))
+        {
+            StoneFlg = false;
+        }
+        if (StoneFlg == false)
+        {
+            Dino_Anim.SetBool("Stone", false);
+        }
     }
 }

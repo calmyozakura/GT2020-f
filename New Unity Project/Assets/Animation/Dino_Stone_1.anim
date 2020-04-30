@@ -1377,7 +1377,35 @@ AnimationClip:
       m_RotationOrder: 4
     path: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2/Spine.001/UpperLeg.001.R"
   m_ScaleCurves: []
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: StoneFlg
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 461b0ee063fe29a4ab31c02f457829e7, type: 3}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -1462,6 +1490,13 @@ AnimationClip:
       script: {fileID: 0}
       typeID: 4
       customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 0
+      attribute: 461213124
+      script: {fileID: 11500000, guid: 461b0ee063fe29a4ab31c02f457829e7, type: 3}
+      typeID: 114
+      customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 968973715
@@ -5254,6 +5289,34 @@ AnimationClip:
     path: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2/Spine.001/UpperLeg.001.R/LowerLeg.001.R/LowerLeg.002.R"
     classID: 4
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: StoneFlg
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 461b0ee063fe29a4ab31c02f457829e7, type: 3}
   m_EulerEditorCurves:
   - curve:
       serializedVersion: 2

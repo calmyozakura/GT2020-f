@@ -23,4 +23,17 @@ public class Breakrock_1 : MonoBehaviour
             part2.gameObject.SetActive(true);
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Attack")
+        {
+
+            Destroy(iwa.gameObject);//デストロイ
+            part1.gameObject.SetActive(true);
+            part2.gameObject.SetActive(true);
+
+
+        }
+    }
 }
