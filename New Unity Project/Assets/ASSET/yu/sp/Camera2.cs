@@ -42,17 +42,17 @@ public class Camera2 : MonoBehaviour {
         //    transform.Translate(offset.x, 0, 0);
         //}
         offset.x = ((Playertmp.transform.position.x - Yougantmp.transform.position.x - Yougantmp.transform.position.x /2 ) / 2);
-          if(Playertmp.transform.position.x - Yougantmp.transform.position.x <= 20)
+        if (Playertmp.transform.position.x - Yougantmp.transform.position.x <= 20)
         {
             startPosition.z -= 0.05f;
         }
-        else if(Playertmp.transform.position.x - Yougantmp.transform.position.x <= 50)
+        else if (Playertmp.transform.position.x - Yougantmp.transform.position.x <= 50)
         {
             startPosition.z -= 0.03f;
         }
-        else if (Playertmp.transform.position.x - Yougantmp.transform.position.x <= 100)
+        else if (Playertmp.transform.position.x - Yougantmp.transform.position.x >= 50 && startPosition.z < -50)
         {
-            startPosition.z += 0.01f;
+            startPosition.z += 0.03f;
         }
 
         TAKASA = Playertmp.transform.position.y - 1;
