@@ -69,5 +69,12 @@ public class YOUGANMOVE : MonoBehaviour {
         {
             vector += 0.01f;
         }
+
+
+        if(other.gameObject.tag == "Sa")
+        {
+            vector = 0.07f;
+        }
     }
+    
 }

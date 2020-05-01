@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0b50f7cfc8b044aa8d51d8ff5c0051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.04
+  Speed: 0.05
   vector: 0.07
   vector2: 0.15
   Iswitch: 0
@@ -1311,7 +1311,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2bfd2dc7085671149ab9e99bbe9fa180, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.521
+  m_Volume: 0.075
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2486,7 +2486,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d6ae77143d60b114590c8c2e551c123a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.301
+  m_Volume: 0.158
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3154,6 +3154,7 @@ GameObject:
   - component: {fileID: 1394275695}
   - component: {fileID: 1394275694}
   - component: {fileID: 1394275693}
+  - component: {fileID: 1394275699}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -3167,9 +3168,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1394275691}
-  m_LocalRotation: {x: -0.05727881, y: 0.002408326, z: -0.00013746602, w: -0.9983553}
-  m_LocalPosition: {x: 60.734344, y: 25.630123, z: -53.799744}
-  m_LocalScale: {x: 17.457527, y: 1.9800222, z: 0.14489408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.4, y: 8.5, z: -40}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3270,6 +3271,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1394275699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1394275691}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b561ef63a58b814bb3470d22d62ffeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Playertmp: {fileID: 0}
+  offset: {x: 0.01, y: 0, z: 0}
+  Youganflg: 0
 --- !u!1 &1405206469
 GameObject:
   m_ObjectHideFlags: 0
@@ -4642,7 +4657,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "4/27 12\u664236\u520600\u79D2"
+  m_Text: "4/30 13\u664230\u520600\u79D2"
 --- !u!222 &1903592173
 CanvasRenderer:
   m_ObjectHideFlags: 0

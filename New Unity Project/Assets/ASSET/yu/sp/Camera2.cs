@@ -9,7 +9,7 @@ public class Camera2 : MonoBehaviour {
 
     //  public Transform target;//キャラの座標の入れ物
     public Vector3 offset;//キャラからの距離
-                          
+    public float TAKASA;                      
     public bool Youganflg, Playerflg;
     Vector3 tmp, tmp1;              //tmp 溶岩；tmp1　プレイヤー
     YOUGANMOVE script;
@@ -42,9 +42,24 @@ public class Camera2 : MonoBehaviour {
         //    transform.Translate(offset.x, 0, 0);
         //}
         offset.x = ((Playertmp.transform.position.x - Yougantmp.transform.position.x - Yougantmp.transform.position.x /2 ) / 2);
+        if (Playertmp.transform.position.x - Yougantmp.transform.position.x <= 20)
+        {
+            startPosition.z -= 0.05f;
+        }
+        else if (Playertmp.transform.position.x - Yougantmp.transform.position.x <= 50)
+        {
+            startPosition.z -= 0.03f;
+        }
+        else if (Playertmp.transform.position.x - Yougantmp.transform.position.x >= 50 && startPosition.z < -50)
+        {
+            startPosition.z += 0.03f;
+        }
 
-        //transform.Translate(offset.x, 0, 0);
-        
-        transform.position = new Vector3(Playertmp.transform.position.x - offset.x, startPosition.y, startPosition.z);
+        TAKASA = Playertmp.transform.position.y - 1;
+
+       // if (Playertmp.transform.position.y == 1) startPosition.y = 12f;
+            //transform.Translate(offset.x, 0, 0);
+
+            transform.position = new Vector3(Playertmp.transform.position.x - offset.x, startPosition.y + TAKASA, startPosition.z );
     }
 }
