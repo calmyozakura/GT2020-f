@@ -93,7 +93,7 @@ public class grab : MonoBehaviour {
         {
 
             // 上に移動
-            if (Input.GetKey(KeyCode.Space) && grabflg == false)
+            if ((Input.GetKey(KeyCode.Space)||Input.GetButton("DS4_TRIANGLE")) && grabflg == false)
             {
                
              //重力を動かす

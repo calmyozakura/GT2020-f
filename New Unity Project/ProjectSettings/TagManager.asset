@@ -11,8 +11,13 @@ TagManager:
   - Goal
   - Inseki
   - Stone2
-  - Rock
-  - Attack
+  - Speed
+  - turi
+  - K
+  - item
+  - Sa
+  - spider
+  - slider
   layers:
   - Default
   - TransparentFX

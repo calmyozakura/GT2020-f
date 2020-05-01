@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class PLAYERMO : MonoBehaviour
 {
-
-    public float vector = 0.1f;
-    public float vector2 = 0.1f;
+    
+    
+    public float Speed = 0.02f;
+    public float vector = 0.07f;
+    public float vector2 = 0.2f;
     bool Yoin = false;
     public bool Iswitch = false;
     public float playerU = 0;
     public bool grabflg = false;
+    public bool MagumaSPD = false;
     //public bool JumpState = false; //２段以上のジャンプ防止
     //private Stone Stone;
 
@@ -30,6 +33,10 @@ public class PLAYERMO : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(vector);
+        
+        
+
         //キーボード
         if (Input.GetKey(KeyCode.UpArrow))//上
         {
@@ -63,7 +70,7 @@ public class PLAYERMO : MonoBehaviour
         //コントローラー
         if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
         {
-            this.transform.position += new Vector3(0, +vector, 0);
+            this.transform.position += new Vector3(0, +vector*1.62f, 0);
             playerU = 1;
         }
 
@@ -87,6 +94,8 @@ public class PLAYERMO : MonoBehaviour
         {
             YOIN();
         }
+
+       
     }
 
     void OnCollisionExit(Collision collision)
@@ -109,29 +118,44 @@ public class PLAYERMO : MonoBehaviour
             vector -= 0.01f;
         }
     }
-}
-//    void OnCollisionStay(Collision other)
-//    {
 
-//        if (other.gameObject.tag == "In")
-//        {
+   void OnCollisionStay(Collision other)
+   {
+
+     if (other.gameObject.tag == "Speed")
+       {
+
+        MagumaSPD = true;
+       }
+   }
+
+
+    void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.tag == "spider")
+        {
+            vector = Speed;
            
-            
-//                // 上に移動
-//                if (Input.GetKey(KeyCode.Space) && grabflg == false)
-//                {
-//                    grabflg = true;
-                   
-//                }
-            
-//        }
-//    }
+        }  
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "spider")
+        {
+            vector = 0.07f;
+
+        }
+    }
+}
+
+
 //    public bool GRABflg()
 //    {
 //        return grabflg;
 //    }
 //}
    
+ 
 
         
     //void OnCollisionEnter(Collision collision)

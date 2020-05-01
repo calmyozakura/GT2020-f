@@ -17,7 +17,7 @@ public class BreakTreeCont : MonoBehaviour
     {
 
     }
-    private void OnTriggerStay(Collider other)
+    private void OnCollisionEnter(Collider other)
     {
         if (other.gameObject.tag == "Attack")
         {
