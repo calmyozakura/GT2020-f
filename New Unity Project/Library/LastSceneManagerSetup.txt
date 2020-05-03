@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ASSET/yu/Scenes/MST.unity
+- path: Assets/ASSET/ki/ri.unity
   isLoaded: 1
   isActive: 1
