@@ -6,9 +6,9 @@ public class PLAYERMO : MonoBehaviour
 {
     
     
-    public float Speed = 0.12f;
-    public float vector = 0.15f;
-    public float vector2 = 0.2f;
+    public float Speed;
+    public float vector;
+    public float vector2;
     bool Yoin = false;
     public bool Iswitch = false;
     public float playerU = 0;
@@ -142,7 +142,7 @@ public class PLAYERMO : MonoBehaviour
     {
         if (other.gameObject.tag == "spider")
         {
-            vector = 0.15f;
+            vector = 0.12f;
 
         }
     }

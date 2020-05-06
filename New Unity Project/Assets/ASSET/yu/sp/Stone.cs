@@ -9,6 +9,7 @@ public class Stone : MonoBehaviour
     Rigidbody rb;
     
     [SerializeField] private GameObject Playertmp;
+    [SerializeField] private float movelate = 4f;    //動かなくなったら、次に動くまでの秒数
 
     //public bool grabflg;    //falseだったら動く　//trueだったら止める
     public bool Grabflg;
@@ -165,5 +166,17 @@ public class Stone : MonoBehaviour
             }
         }
 
+    }
+    void OnParticleCollision(GameObject other)
+    {
+        if (other.gameObject.tag == "Yougan")
+        {
+            Destroy(gameObject, movelate);   //4秒後に隕石が消える
+            //}
+            Debug.Log("当たった!");
+            //moveflg = false;
+            //movecount += movelate;
+
+        }
     }
 }

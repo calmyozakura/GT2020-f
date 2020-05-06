@@ -22,19 +22,19 @@ public class CheckClickEvent : MonoBehaviour {
         void OnTriggerEnter(Collider other)
     {
 
-        //if (other.gameObject.tag == "Yougan")
-        //{
+        if (other.gameObject.tag == "Yougan")
+        {
 
-        //    Debug.Log("ダメージ");
-        //    HP = life.Damage(HP,1);
-        //    if (HP <= 0)
-        //    {
-        //        Debug.Log(HP);
-        //        oveText.enabled = true;
-        //        Destroy(gameObject);
-        //    }
-        //}
-        if(other.gameObject.tag == "item")
+            Debug.Log("ダメージ");
+            HP = life.Damage(HP, 1);
+            if (HP <= 0)
+            {
+                Debug.Log(HP);
+                oveText.enabled = true;
+                Destroy(gameObject);
+            }
+        }
+        if (other.gameObject.tag == "item")
         {
             HP = life.recovery(HP, 1);
 
