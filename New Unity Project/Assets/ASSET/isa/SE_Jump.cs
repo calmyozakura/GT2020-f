@@ -10,13 +10,14 @@ public class SE_Jump: MonoBehaviour
     //GameObject player;
 
     bool SE_JUMP;//false ジャンプしていない
+    bool Ground;//地面についたか
 
     float Axis_UD, Axis_LR, Axis2_UD, Axis2_LR; // Axis = 十字　Axis2 = アナログパッド
     void Start()
     {
         sources = gameObject.GetComponents<AudioSource>();
 
-        SE_JUMP = false;
+        SE_JUMP = false;Ground = false;
     }
 
 
@@ -32,12 +33,13 @@ public class SE_Jump: MonoBehaviour
             || Axis_UD > 0 || Axis2_UD < 0
             || Input.GetKey(KeyCode.UpArrow)
             )
-        {
+        {   Ground = false;
 
             if(SE_JUMP == false)//ジャンプの単発処理
             {
                 sources[0].Play();
                 SE_JUMP = true;
+                
             }
            
         }
@@ -47,6 +49,12 @@ public class SE_Jump: MonoBehaviour
     void OnCollisionEnter(Collision other) {
 
         SE_JUMP = false;
+
+        if (Ground == false)//ジャンプの単発処理
+        {
+            sources[0].Play();
+            Ground = true;
+        }
     }
  
 }
