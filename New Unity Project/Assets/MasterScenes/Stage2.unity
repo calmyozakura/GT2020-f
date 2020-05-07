@@ -1692,6 +1692,26 @@ Prefab:
       propertyPath: TrailModule.ribbonCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 198727218771644280, guid: a2e80693456a32f439682df1aaa63a42,
+        type: 2}
+      propertyPath: TriggerModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198727218771644280, guid: a2e80693456a32f439682df1aaa63a42,
+        type: 2}
+      propertyPath: TriggerModule.collisionShape0
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 198727218771644280, guid: a2e80693456a32f439682df1aaa63a42,
+        type: 2}
+      propertyPath: TriggerModule.radiusScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198727218771644280, guid: a2e80693456a32f439682df1aaa63a42,
+        type: 2}
+      propertyPath: TriggerModule.inside
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 135140955122809866, guid: a2e80693456a32f439682df1aaa63a42, type: 2}
     - {fileID: 65034568214595052, guid: a2e80693456a32f439682df1aaa63a42, type: 2}
@@ -4468,6 +4488,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!1 &1976014567 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1832104156411882, guid: a2e80693456a32f439682df1aaa63a42,
+    type: 2}
+  m_PrefabInternal: {fileID: 505017377}
+--- !u!65 &1976014570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976014567}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.5}
+  m_Center: {x: 1, y: -0.5, z: 0.5}
 --- !u!1 &2141916781
 GameObject:
   m_ObjectHideFlags: 0
