@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ASSET/ki/ri.unity
+- path: Assets/ASSET/ki/Scene/Stage2_ki.unity
   isLoaded: 1
   isActive: 1
