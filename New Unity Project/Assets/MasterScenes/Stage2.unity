@@ -1134,6 +1134,11 @@ Prefab:
       propertyPath: Playertmp
       value: 
       objectReference: {fileID: 2096483454}
+    - target: {fileID: 82808671289243594, guid: ca0ccb7235c858e4a817bfee2ebb36a6,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b6dd1f687a1e7ec4b8f733d5bc38b81e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca0ccb7235c858e4a817bfee2ebb36a6, type: 2}
   m_IsPrefabParent: 0
@@ -4021,6 +4026,7 @@ MonoBehaviour:
   Yougantmp: {fileID: 1849061531}
   Playertmp: {fileID: 1999151507}
   offset: {x: 0, y: 0, z: 0}
+  TAKASA: 0
   Youganflg: 0
   Playerflg: 0
 --- !u!81 &1841323787
