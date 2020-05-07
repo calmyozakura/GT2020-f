@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/ASSET/ki/Scene/Stage2_ki.unity
-=======
-<<<<<<< HEAD
-- path: Assets/MasterScenes/Stage3.unity
-=======
 - path: Assets/MasterScenes/Stage2.unity
->>>>>>> 579aaa4ba98338fc5d76eedd9e04e4d95b9b214c
->>>>>>> master
   isLoaded: 1
   isActive: 1
