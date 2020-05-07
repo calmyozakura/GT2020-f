@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YOUGANMOVE : MonoBehaviour {
+public class YOUGANMOVE : MonoBehaviour
+{
 
     [SerializeField] private float moveSpeed;
 
@@ -10,7 +11,7 @@ public class YOUGANMOVE : MonoBehaviour {
     [SerializeField] private float movelate = 4f;    //動かなくなったら、次に動くまでの秒数
     private float movecount;
     private PLAYERMO PLAYERMO;
-    float vector = 0.05f;
+    public float vector = 0.05f;
 
     PLAYERMO script; //UnityChanScriptが入る変数
 
@@ -42,7 +43,7 @@ public class YOUGANMOVE : MonoBehaviour {
 
         //オブジェクト拡大
         //this.transform.localScale = new Vector3(vector, 3, 1);
-       
+
         //等速アニメーション
         this.transform.position += new Vector3(vector, 0, 0);
 
@@ -54,27 +55,30 @@ public class YOUGANMOVE : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "In")
-        {
-            Destroy(other.gameObject, movelate);   //4秒後に隕石が消える
-            //}
-            //Debug.Log("当たった!");
-            moveflg = false;
-            movecount += movelate;
+        
 
-        }
 
-    
-        if(other.gameObject.tag == "Speed")
+        if (other.gameObject.tag == "Speed")
         {
             vector += 0.01f;
         }
 
 
-        if(other.gameObject.tag == "Sa")
+        if (other.gameObject.tag == "Sa")
         {
             vector = 0.07f;
         }
     }
-    
+    //void OnParticleCollision(GameObject other)
+    //{
+    //    if (other.gameObject.tag == "In")
+    //    {
+    //        Destroy(other.gameObject, movelate);   //4秒後に隕石が消える
+    //        //}
+    //        Debug.Log("当たった!");
+    //        moveflg = false;
+    //        movecount += movelate;
+
+    //    }
+    //}
 }

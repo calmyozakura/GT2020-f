@@ -26,7 +26,7 @@ public class CheckClickEvent : MonoBehaviour {
         {
 
             Debug.Log("ダメージ");
-            HP = life.Damage(HP,1);
+            HP = life.Damage(HP, 1);
             if (HP <= 0)
             {
                 Debug.Log(HP);
@@ -34,11 +34,28 @@ public class CheckClickEvent : MonoBehaviour {
                 Destroy(gameObject);
             }
         }
-        if(other.gameObject.tag == "item")
+        if (other.gameObject.tag == "item")
         {
             HP = life.recovery(HP, 1);
 
             Destroy(other.gameObject);
+        }
+
+    }
+    void OnParticleCollision(GameObject other)
+    {
+        //Debug.Log("衝突");
+        if (other.gameObject.tag == "Yougan")
+        {
+
+            Debug.Log("ダメージ");
+            HP = life.Damage(HP, 1);
+            if (HP <= 0)
+            {
+                Debug.Log(HP);
+                oveText.enabled = true;
+                Destroy(gameObject);
+            }
         }
     }
 }

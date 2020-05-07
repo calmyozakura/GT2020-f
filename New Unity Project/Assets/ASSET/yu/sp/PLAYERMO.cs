@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PLAYERMO : MonoBehaviour
 {
-    
-    
-    public float Speed = 0.02f;
-    public float vector = 0.07f;
-    public float vector2 = 0.2f;
+    private float rotate2;
+    public float rotate;
+    public float Speed;
+    public float vector;
+    public float vector2;
     bool Yoin = false;
     public bool Iswitch = false;
     public float playerU = 0;
@@ -22,7 +22,7 @@ public class PLAYERMO : MonoBehaviour
     //SpriteRenderer Dinasor; //恐竜の画像
     float Axis_UD, Axis_LR, Axis2_UD, Axis2_LR; // Axis = 十字　Axis2 = アナログパッド
 
-
+    private Vector3 Position;
 
     //void Start()
     //{
@@ -34,8 +34,13 @@ public class PLAYERMO : MonoBehaviour
     void Update()
     {
         Debug.Log(vector);
-        
-        
+
+        // transformを取得
+        Transform myTransform = this.transform;
+
+        //Position.Rotate = new Vector3(0, rotate2, 0);           //プレイヤー回転
+        transform.Rotate(new Vector3(0, rotate2, 0));
+
 
         //キーボード
         if (Input.GetKey(KeyCode.UpArrow))//上
@@ -45,6 +50,10 @@ public class PLAYERMO : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftArrow))//左
         {
+            if (playerU == 3 || playerU == 0)
+            {
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
             this.transform.position += new Vector3(-vector, 0, 0);
             playerU = 2;
             //Dinasor.flipX = false;
@@ -52,6 +61,10 @@ public class PLAYERMO : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.RightArrow))//右
         {
+            if (playerU == 2)
+            {
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
             playerU = 3;
             this.transform.position += new Vector3(+vector, 0, 0);
             //Dinasor.flipX = true;
@@ -142,7 +155,7 @@ public class PLAYERMO : MonoBehaviour
     {
         if (other.gameObject.tag == "spider")
         {
-            vector = 0.07f;
+            vector = 0.12f;
 
         }
     }
