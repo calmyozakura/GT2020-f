@@ -3315,6 +3315,7 @@ GameObject:
   - component: {fileID: 1394275694}
   - component: {fileID: 1394275693}
   - component: {fileID: 1394275699}
+  - component: {fileID: 1394275700}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -3445,6 +3446,17 @@ MonoBehaviour:
   Playertmp: {fileID: 0}
   offset: {x: 0.01, y: 0, z: 0}
   Youganflg: 0
+--- !u!114 &1394275700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1394275691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260b6320d6d960443a19b159f999daa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1405206469
 GameObject:
   m_ObjectHideFlags: 0
