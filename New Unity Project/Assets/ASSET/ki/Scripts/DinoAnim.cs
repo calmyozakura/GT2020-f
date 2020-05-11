@@ -12,8 +12,10 @@ public class DinoAnim : MonoBehaviour
     public bool StoneFlg = false;
 
 
-	// Use this for initialization
-	void Start ()
+    float Axis_LR, Axis_UD, Axis2_LR, Axis2_UD;//十字キー 及び 左スティック の 軸の取得
+    　
+    // Use this for initialization
+    void Start ()
     {
 		
 	}
@@ -23,6 +25,13 @@ public class DinoAnim : MonoBehaviour
     {
         if(!StopFlg)       //攻撃してると入らない
         {
+
+            //十字&左アナログパッド、両方の軸を取得
+            Axis_LR = Input.GetAxis("DS4_L_CrossLR");
+            Axis_UD = Input.GetAxis("DS4_L_CrossUD");
+
+            Axis2_LR = Input.GetAxis("DS4_L_JoystickLR");
+            Axis2_UD = Input.GetAxis("DS4_L_JoystickUD");
 
             if (Input.GetKeyUp(KeyCode.LeftArrow))  //はなすと
             {
@@ -35,7 +44,10 @@ public class DinoAnim : MonoBehaviour
                 Dino_Anim.SetBool("Run", false);    //止まるモーション
             }
 
-
+            else if (Axis_LR == 0&& Axis2_LR == 0) //はなすと
+            {
+                Dino_Anim.SetBool("Run", false);    //止まるモーション
+            }
             else if (Input.GetKey(KeyCode.LeftArrow)
                       && Input.GetKey(KeyCode.RightArrow))//両方押すと
             {
@@ -43,22 +55,26 @@ public class DinoAnim : MonoBehaviour
             }
 
 
-            else if (Input.GetKey(KeyCode.LeftArrow))      //左を押すと
+            else if (Input.GetKey(KeyCode.LeftArrow)
+                || Axis_LR  < 0 
+                || Axis2_LR < 0)      //左を押すと
             {
                 Dino_Anim.SetBool("Run", true);     //走るモーション
             }
 
 
-            else if (Input.GetKey(KeyCode.RightArrow))   //右を押すと
+            else if (Input.GetKey(KeyCode.RightArrow)
+                || Axis_LR  > 0 
+                || Axis2_LR > 0)   //右を押すと
             {
                 Dino_Anim.SetBool("Run", true);     //走るモーション
             }
         }
-       
+
+        
 
 
-
-        if (Input.GetKeyDown("c"))              //押すと
+        if (Input.GetKeyDown("c")||Input.GetButton("DS4_Circle"))              //押すと
         {
             if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Attack_1"))
                 Dino_Anim.SetBool("Attack_2", true);    //アタックモーション
@@ -83,7 +99,7 @@ public class DinoAnim : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown("space"))              //押すと
+        if (Input.GetKeyDown("space")||Input.GetButton("DS4_Triangle"))              //押すと
         {
             Dino_Anim.SetBool("Stone", true);    //石拾いモーション
             StoneFlg = true;
