@@ -1066,7 +1066,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4845936931154746, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 259.1
+      value: 50.4
       objectReference: {fileID: 0}
     - target: {fileID: 4845936931154746, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1202,6 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0b50f7cfc8b044aa8d51d8ff5c0051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotate: 0
   Speed: 0.09
   vector: 0.12
   vector2: 0.15
@@ -1549,7 +1550,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4660579835744388, guid: a2e80693456a32f439682df1aaa63a42, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.312
+      value: -5.185
       objectReference: {fileID: 0}
     - target: {fileID: 4660579835744388, guid: a2e80693456a32f439682df1aaa63a42, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1711,6 +1712,11 @@ Prefab:
         type: 2}
       propertyPath: TriggerModule.inside
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198727218771644280, guid: a2e80693456a32f439682df1aaa63a42,
+        type: 2}
+      propertyPath: simulationSpeed
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 135140955122809866, guid: a2e80693456a32f439682df1aaa63a42, type: 2}
