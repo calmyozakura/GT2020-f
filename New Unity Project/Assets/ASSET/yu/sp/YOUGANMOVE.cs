@@ -13,6 +13,8 @@ public class YOUGANMOVE : MonoBehaviour
     private PLAYERMO PLAYERMO;
     public float vector = 0.05f;
 
+    public AudioSource source;
+
     PLAYERMO script; //UnityChanScriptが入る変数
 
     void Start()
@@ -23,7 +25,7 @@ public class YOUGANMOVE : MonoBehaviour
     // Update is called once per frame
 
 
-    void Update()
+    void FixedUpdate()
     {
         //if (script.MagumaSPD == true)
         //{
@@ -52,12 +54,8 @@ public class YOUGANMOVE : MonoBehaviour
         // this.transform.localScale = new Vector3(4, 1, 1);
     }
 
-
     private void OnTriggerEnter(Collider other)
     {
-        
-
-
         if (other.gameObject.tag == "Speed")
         {
             vector += 0.01f;

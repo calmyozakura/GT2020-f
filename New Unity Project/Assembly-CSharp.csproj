@@ -121,6 +121,7 @@
     <Compile Include="Assets\ASSET\yu\sp\NAKAZATO3.cs" />
     <Compile Include="Assets\ASSET\yu\sp\PLAYERCO.cs" />
     <Compile Include="Assets\ASSET\yu\sp\PLAYERMO.cs" />
+    <Compile Include="Assets\ASSET\yu\sp\Poz.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Replay.cs" />
     <Compile Include="Assets\ASSET\yu\sp\SceneReload.cs" />
     <Compile Include="Assets\ASSET\yu\sp\spiderweb.cs" />

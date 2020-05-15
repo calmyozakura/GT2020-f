@@ -31,7 +31,7 @@ public class PLAYERMO : MonoBehaviour
     //}
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Debug.Log(vector);
 
@@ -83,19 +83,28 @@ public class PLAYERMO : MonoBehaviour
         //コントローラー
         if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
         {
-            this.transform.position += new Vector3(0, +vector*1.62f, 0);
+            this.transform.position += new Vector3(0, +vector*1.55f, 0);
             playerU = 1;
         }
 
         if (Axis_LR < 0 || Axis2_LR < 0)//左
-        {
+            
+        {   if (playerU == 3 || playerU == 0)
+            {
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
             this.transform.position += new Vector3(-vector, 0, 0);
             playerU = 2;
             //Dinasor.flipX = false;
-            //  this.transform.localScale = new Vector3(-1, 1, 1);
+            //  this.transform.localScale = new Vector3(-vector, 1, 1);
         }
         else if (Axis_LR > 0 || Axis2_LR > 0)//右
+            
         {
+            if (playerU == 2)
+            {
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
             playerU = 3;
             this.transform.position += new Vector3(+vector, 0, 0);
             //Dinasor.flipX = true;

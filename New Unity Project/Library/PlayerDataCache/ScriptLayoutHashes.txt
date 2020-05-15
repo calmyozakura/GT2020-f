@@ -1,11 +1,12 @@
 WindowsStandalone
 PlayerPath?
-D:/FグルプのFはファンキーのF/stage2/stage2.exe
+D:/F-team/Stage1/Stage1.exe
 SceneListBegin?
-Assets/MasterScenes/Stage2.unity
+Assets/MasterScenes/Stage1.unity
 SceneListEnd?
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SE_Jump
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FPSView
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -24,7 +25,7 @@ aea515452fdfa8863dd04fed9fc3b554 Assembly-CSharp.dll:.DinoAnim
 fde4892ce10282f3d912c48fa7871d6c Assembly-CSharp.dll:.SStone
 7a0bb6e64a1eb2c31c35d0c05f5e0230 Assembly-CSharp.dll:.Rotation
 e917832d8d12a8e05d6fa5fdc1326bae Assembly-CSharp.dll:.ScrollingUVs_Layers
-828dcee69881973870021b2c629471e1 Assembly-CSharp.dll:.YOUGANMOVE
+d918b5b669f81732730115074fb5ff44 Assembly-CSharp.dll:.YOUGANMOVE
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -145,6 +146,7 @@ f89bb76359cbac8db51f1e5b05df4c9f Assembly-CSharp.dll:.PlayerMo
 61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera3
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.surfer
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.CameraCont
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneChanger
 52071389db163d0d9db9f0096216c974 Assembly-CSharp.dll:.LifeGauge
 c6e7d8a0362f58224af9319615782e40 Assembly-CSharp.dll:.CameraCONT
 dbf4b23087fb18bbd5a4ac795d20abd5 Assembly-CSharp.dll:.PlayerMM
@@ -212,6 +214,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Stage
 2716fc22dbe4918eea100a5410bb6b29 Assembly-CSharp.dll:.G
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Replay
 2b4eb022695c364b140df90542b0ef1b Assembly-CSharp.dll:.kiriO
@@ -223,6 +226,7 @@ a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.Funka
 ede304fe60ba6a58e836fc2647572973 Assembly-CSharp.dll:.camera
 df386a86ea6ec97d7a00df63a508e363 Assembly-CSharp.dll:.M_AttackActive
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.リジ
+7c9cd018de917e97a4463992cd3f695c Assembly-CSharp.dll:.Poz
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Water.GerstnerDisplace
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.kamera
 000154ac376187512f66f18489df2215 Assembly-CSharp.dll:.grab

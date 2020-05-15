@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Br : MonoBehaviour {
 
+    //public AudioSource source;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,6 +20,7 @@ public class Br : MonoBehaviour {
     {
         if (other.gameObject.tag == "Yougan")
         {
+            //source.Play();
             Destroy(gameObject);  
         }
     }
