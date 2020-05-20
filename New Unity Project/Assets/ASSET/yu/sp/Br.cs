@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Br : MonoBehaviour {
 
-    //public AudioSource source;
-
+    //音用
+    AudioSource source;
+    public AudioClip clip;
 	// Use this for initialization
 	void Start () {
-		
+        source = gameObject.GetComponent<AudioSource>();//再生オブジェクト特定
 	}
 	
 	// Update is called once per frame
@@ -20,7 +21,7 @@ public class Br : MonoBehaviour {
     {
         if (other.gameObject.tag == "Yougan")
         {
-            //source.Play();
+            AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
             Destroy(gameObject);  
         }
     }

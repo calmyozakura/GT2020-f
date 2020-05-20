@@ -456,6 +456,7 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bad3aeb072b86cb4bb7248869f0c6a9d, type: 2}
+<<<<<<< HEAD
     - target: {fileID: 95959930314072418, guid: af990fa0ebfeff441b8673160d157c8e,
         type: 2}
       propertyPath: m_Enabled
@@ -466,6 +467,13 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 114825020229262252, guid: af990fa0ebfeff441b8673160d157c8e,
+        type: 2}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a10272eac22a074ab746ceda4bf923f, type: 3}
+>>>>>>> tatsuki929
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
   m_IsPrefabParent: 0
@@ -523,7 +531,7 @@ MonoBehaviour:
   Iswitch: 0
   playerU: 0
   grabflg: 0
-  MagumaSPD: 0
+  MagumaSPD: 1
 --- !u!114 &39826563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,6 +703,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &39826570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39826558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8704f0f75c07b5642825fd0b9d398fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: b6dd1f687a1e7ec4b8f733d5bc38b81e, type: 3}
+  randomizePitch: 1
+  pitchRange: 0.1
 --- !u!1 &123425344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,6 +1498,7 @@ MonoBehaviour:
   Playertmp: {fileID: 39826558}
   movelate: 4
   Grabflg: 0
+  clip: {fileID: 8300000, guid: e0ce1602461c09c418265f1e6519795f, type: 3}
 --- !u!65 &528986802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2008,6 +2032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da062059d83b8eb4fa94a35a2cd48abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
 --- !u!65 &728430564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4027,6 +4052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da062059d83b8eb4fa94a35a2cd48abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
 --- !u!65 &1285522230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4407,6 +4433,7 @@ MonoBehaviour:
   Playertmp: {fileID: 39826558}
   movelate: 4
   Grabflg: 0
+  clip: {fileID: 8300000, guid: e0ce1602461c09c418265f1e6519795f, type: 3}
 --- !u!65 &1672381639
 BoxCollider:
   m_ObjectHideFlags: 0

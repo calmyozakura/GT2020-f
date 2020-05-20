@@ -2055,6 +2055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0b50f7cfc8b044aa8d51d8ff5c0051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotate: 0
   Speed: 0.05
   vector: 0.07
   vector2: 0.15
@@ -2088,6 +2089,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dino_Anim: {fileID: 95711387568163900}
+  StopFlg: 0
+  AttackFlg: 0
+  StoneFlg: 0
+  clip: {fileID: 8300000, guid: 7a10272eac22a074ab746ceda4bf923f, type: 3}
 --- !u!114 &114574026123031180
 MonoBehaviour:
   m_ObjectHideFlags: 1
