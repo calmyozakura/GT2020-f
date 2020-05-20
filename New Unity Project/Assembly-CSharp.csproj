@@ -67,6 +67,7 @@
     <Compile Include="Assets\ASSET\isa\SE_Break.cs" />
     <Compile Include="Assets\ASSET\isa\SE_Jump.cs" />
     <Compile Include="Assets\ASSET\isa\Stage.cs" />
+    <Compile Include="Assets\ASSET\isa\他人のスクリプト\FootstepSEPlayerSimple.cs" />
     <Compile Include="Assets\ASSET\isa\他人のスクリプト\SceneObject.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
