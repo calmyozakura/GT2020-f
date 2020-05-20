@@ -3,23 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CheckClickEvent : MonoBehaviour {
 
+    string sceneName;
     [SerializeField]
     private life life;
     [SerializeField] private int HP;
 
     life script; //UnityChanScriptが入る変数
 
-    public Text oveText;
+    //public Text oveText;
 
     void Start()
     {
-        oveText.enabled = false;
+        //oveText.enabled = false;
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
-        void OnTriggerEnter(Collider other)
+    void Update()
+    {
+        //if (HP <= 0)
+        //{
+        //    SceneManager.LoadScene("Over");
+        //}    
+    }
+
+    void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.tag == "Yougan")
@@ -30,8 +41,9 @@ public class CheckClickEvent : MonoBehaviour {
             if (HP <= 0)
             {
                 Debug.Log(HP);
-                oveText.enabled = true;
+                //oveText.enabled = true;
                 Destroy(gameObject);
+                SceneManager.LoadScene("Over");
             }
         }
         if (other.gameObject.tag == "item")
@@ -40,7 +52,7 @@ public class CheckClickEvent : MonoBehaviour {
 
             Destroy(other.gameObject);
         }
-
+        
     }
     void OnParticleCollision(GameObject other)
     {
@@ -53,10 +65,11 @@ public class CheckClickEvent : MonoBehaviour {
             if (HP <= 0)
             {
                 Debug.Log(HP);
-                oveText.enabled = true;
+                //oveText.enabled = true;
                 Destroy(gameObject);
+                SceneManager.LoadScene("Over");
             }
         }
-    }
+    }  
 }
 

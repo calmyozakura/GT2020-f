@@ -1722,6 +1722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7c74c44f421a4985cb5d57f3fb831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  die: 0
 --- !u!114 &620861958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3161,11 +3162,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1010227841}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7347e85d59b428f42aa76979e60bd37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseUI: {fileID: 803789984}
   pauseUIPrefab: {fileID: 803789984}
 --- !u!1 &1085414248
 GameObject:
@@ -3417,6 +3419,7 @@ MonoBehaviour:
   moveflg: 1
   movelate: 4
   vector: 0.07
+  source: {fileID: 0}
 --- !u!23 &1126651920
 MeshRenderer:
   m_ObjectHideFlags: 0

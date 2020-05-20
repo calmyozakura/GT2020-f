@@ -13,7 +13,7 @@ public class YOUGANMOVE : MonoBehaviour
     private PLAYERMO PLAYERMO;
     public float vector = 0.05f;
 
-    public AudioSource source;
+    //public AudioSource source;
 
     PLAYERMO script; //UnityChanScriptが入る変数
 
