@@ -509,7 +509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: {fileID: 513770961}
   HP: 3
-  oveText: {fileID: 1085414249}
 --- !u!114 &39826562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,7 +716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &90959593
 ParticleSystemRenderer:
   serializedVersion: 5
@@ -787,7 +786,7 @@ ParticleSystem:
   simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -5813,6 +5812,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 226510868}
+  - component: {fileID: 226510869}
   - component: {fileID: 226510867}
   - component: {fileID: 226510866}
   m_Layer: 0
@@ -5821,7 +5821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &226510866
 ParticleSystemRenderer:
   serializedVersion: 5
@@ -10488,6 +10488,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
+--- !u!114 &226510869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226510865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d4e9caa3c8dc343a37097693b63f2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dino: {fileID: 39826558}
 --- !u!1 &329375340
 GameObject:
   m_ObjectHideFlags: 0
@@ -11400,6 +11412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7c74c44f421a4985cb5d57f3fb831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  die: 0
 --- !u!114 &620861958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13041,7 +13054,6 @@ MonoBehaviour:
   moveflg: 1
   movelate: 4
   vector: 0.07
-  source: {fileID: 0}
 --- !u!23 &1126651920
 MeshRenderer:
   m_ObjectHideFlags: 0

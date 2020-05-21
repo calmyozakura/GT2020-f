@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ASSET/kei/Game.unity
+- path: Assets/MasterScenes/Over.unity
   isLoaded: 1
   isActive: 1
