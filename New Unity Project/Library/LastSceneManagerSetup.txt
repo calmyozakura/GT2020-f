@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/ASSET/kei/Game.unity
-=======
-- path: Assets/MasterScenes/Stage2.unity
->>>>>>> tatsuki929
+- path: Assets/MasterScenes/Stage1.unity
   isLoaded: 1
   isActive: 1

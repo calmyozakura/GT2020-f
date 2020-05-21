@@ -12,7 +12,7 @@ public class DinoAnim : MonoBehaviour
     public bool StoneFlg = false;
 
     bool jump;
-    bool hit;
+    public bool hit;
 
     AudioSource source;
     public AudioClip clip;
@@ -22,7 +22,8 @@ public class DinoAnim : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        jump = true; hit = true;
+        jump = true; hit = true ;
+        source = gameObject.GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -98,11 +99,20 @@ public class DinoAnim : MonoBehaviour
 
             AttackFlg = true;
 
-            if(hit == true)//音声単発処理
+            //hit = false;
+
+            if (hit == false)//音声単発処理
             {
-                hit = false;
                 source.PlayOneShot(clip, 1);
+                hit = true;
+                
             }
+        }
+        
+
+        if (!Input.GetButton("DS4_Circle"))
+        {
+            hit = false;
         }
         if (Dino_Anim.IsInTransition(0))
         {
@@ -115,10 +125,7 @@ public class DinoAnim : MonoBehaviour
             Dino_Anim.SetBool("Attack_3", false);
         }
 
-        if (!Input.GetButton("DS4_Circle"))
-        {
-            hit = true;
-        }
+       
 
         if (Input.GetKeyDown("space")||Input.GetButton("DS4_Triangle"))              //押すと
         {
@@ -133,5 +140,13 @@ public class DinoAnim : MonoBehaviour
         {
             Dino_Anim.SetBool("Stone", false);
         }
+
+
+    }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        jump = true;
     }
 }
