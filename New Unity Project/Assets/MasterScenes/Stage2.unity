@@ -10481,12 +10481,12 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 226510865}
-  m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: 60.8, y: 22.9, z: -33.6}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 0.95000076, y: 10.4, z: 10.300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1010227848}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!114 &226510869
 MonoBehaviour:
@@ -10494,12 +10494,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 226510865}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8d4e9caa3c8dc343a37097693b63f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Dino: {fileID: 39826558}
+  YouG: {fileID: 0}
 --- !u!1 &329375340
 GameObject:
   m_ObjectHideFlags: 0
@@ -11094,6 +11095,7 @@ MonoBehaviour:
   Playertmp: {fileID: 39826558}
   movelate: 4
   Grabflg: 0
+  clip: {fileID: 0}
 --- !u!65 &528986802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11627,6 +11629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da062059d83b8eb4fa94a35a2cd48abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
 --- !u!65 &728430564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12776,7 +12779,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 59.85, y: 12.5, z: -43.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 226510868}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13647,6 +13651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da062059d83b8eb4fa94a35a2cd48abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
 --- !u!65 &1285522230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14027,6 +14032,7 @@ MonoBehaviour:
   Playertmp: {fileID: 39826558}
   movelate: 4
   Grabflg: 0
+  clip: {fileID: 0}
 --- !u!65 &1672381639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14204,6 +14210,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1795643208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1795643209}
+  - component: {fileID: 1795643210}
+  - component: {fileID: 1795643211}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1795643209
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795643208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 127.522575, y: 48.941357, z: -1.125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1795643210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795643208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd3f10cea6db9b4b8cc37e1ecc5b13f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dino: {fileID: 39826558}
+--- !u!114 &1795643211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795643208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d4e9caa3c8dc343a37097693b63f2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dino: {fileID: 39826558}
+  YouG: {fileID: 226510865}
 --- !u!1 &1892078508
 GameObject:
   m_ObjectHideFlags: 0

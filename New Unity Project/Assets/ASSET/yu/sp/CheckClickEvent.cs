@@ -11,23 +11,22 @@ public class CheckClickEvent : MonoBehaviour {
     [SerializeField]
     private life life;
     [SerializeField] private int HP;
-
     life script; //UnityChanScriptが入る変数
 
     //public Text oveText;
 
+   
+
     void Start()
     {
+       
         //oveText.enabled = false;
         sceneName = SceneManager.GetActiveScene().name;
     }
 
     void Update()
     {
-        //if (HP <= 0)
-        //{
-        //    SceneManager.LoadScene("Over");
-        //}    
+ 
     }
 
     void OnTriggerEnter(Collider other)
@@ -64,10 +63,11 @@ public class CheckClickEvent : MonoBehaviour {
             HP = life.Damage(HP, 1);
             if (HP <= 0)
             {
+
                 Debug.Log(HP);
                 //oveText.enabled = true;
                 Destroy(gameObject);
-                SceneManager.LoadScene("Over");
+
             }
         }
     }  
