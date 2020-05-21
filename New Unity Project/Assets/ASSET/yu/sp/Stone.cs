@@ -24,13 +24,20 @@ public class Stone : MonoBehaviour
     float gy;
     float gz;
 
-    //ゲーム起動時に呼び出される
+    //音用
+    AudioSource source;
+    public AudioClip clip;
+
+
+    // Use this for initialization
     void Start()
     {
-        //grabflg = false;
+        source = gameObject.GetComponent<AudioSource>();//再生オブジェクト特定
+    
+    //grabflg = false;
 
-        //Rigidbodyを取得
-        rb = GetComponent<Rigidbody>();
+    //Rigidbodyを取得
+    rb = GetComponent<Rigidbody>();
 
         script = Playertmp.GetComponent<Glag>(); //unitychanの中にあるUnityChanScriptを取得して変数に格納する
 
@@ -119,7 +126,7 @@ public class Stone : MonoBehaviour
 
                 }
 
-                if (axis_R_LR > 0 && Grabflg == true)
+                if (axis_R_LR > 0.7f && Grabflg == true)
                 {
 
                     //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
@@ -172,7 +179,9 @@ public class Stone : MonoBehaviour
         if (other.gameObject.tag == "Yougan")
         {
             Destroy(gameObject, movelate);   //4秒後に隕石が消える
-            //}
+
+            AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
+           
             Debug.Log("当たった!");
             //moveflg = false;
             //movecount += movelate;
