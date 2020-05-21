@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GAMEOVER : MonoBehaviour {
 
     public GameObject Dino;
     private float step_time;
+
+    public Text oveText;
+    public GameObject title;
+    public GameObject rty;
+
     // Use this for initialization
     void Start () {
 		
@@ -19,9 +25,11 @@ public class GAMEOVER : MonoBehaviour {
             step_time += Time.deltaTime;
            // Debug.Log(step_time);
         }
-        if (step_time >= 6.0f)
+        if (step_time >= 4.0f)
         {
-            SceneManager.LoadScene("Over");
+            rty.SetActive(true);
+            title.SetActive(true);
+            oveText.enabled = true;
         }
     }
 }

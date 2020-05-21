@@ -10,7 +10,7 @@ public class KILL : MonoBehaviour {
 
     int HP;
 
-    public Text oveText;
+    //public Text oveText;
   
     void Start()
     {
@@ -18,7 +18,7 @@ public class KILL : MonoBehaviour {
 
         HP = script.hp;
       
-        oveText.enabled = false;
+       // oveText.enabled = false;
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class KILL : MonoBehaviour {
         if (HP <= 0)
         {
             //Debug.Log(HP);
-            oveText.enabled = true;
+           // oveText.enabled = true;
             Destroy(gameObject);
         }
     }

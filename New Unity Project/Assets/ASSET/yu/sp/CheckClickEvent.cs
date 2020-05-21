@@ -13,14 +13,16 @@ public class CheckClickEvent : MonoBehaviour {
     [SerializeField] private int HP;
     life script; //UnityChanScriptが入る変数
 
-    //public Text oveText;
+    public Text oveText;
+    public GameObject title;
+    public GameObject rty;
 
-   
 
     void Start()
     {
-       
-        //oveText.enabled = false;
+        title.SetActive(false);
+        rty.SetActive(false);
+        oveText.enabled = false;
         sceneName = SceneManager.GetActiveScene().name;
     }
 
@@ -40,7 +42,7 @@ public class CheckClickEvent : MonoBehaviour {
             if (HP <= 0)
             {
                 Debug.Log(HP);
-                //oveText.enabled = true;
+                
                 Destroy(gameObject);
                 SceneManager.LoadScene("Over");
             }
