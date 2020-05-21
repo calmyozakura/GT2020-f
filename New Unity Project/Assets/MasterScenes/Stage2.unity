@@ -14009,7 +14009,7 @@ MonoBehaviour:
   Playertmp: {fileID: 39826558}
   movelate: 4
   Grabflg: 0
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: e0ce1602461c09c418265f1e6519795f, type: 3}
 --- !u!65 &1411186510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14376,7 +14376,7 @@ MonoBehaviour:
   Playertmp: {fileID: 39826558}
   movelate: 4
   Grabflg: 0
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: e0ce1602461c09c418265f1e6519795f, type: 3}
 --- !u!65 &1672381639
 BoxCollider:
   m_ObjectHideFlags: 0
