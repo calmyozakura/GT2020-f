@@ -9,7 +9,7 @@ public class Stone : MonoBehaviour
     Rigidbody rb;
     
     [SerializeField] private GameObject Playertmp;
-    [SerializeField] private float movelate = 4f;    //動かなくなったら、次に動くまでの秒数
+    [SerializeField] private float movelate = 3f;    //動かなくなったら、次に動くまでの秒数
 
     //public bool grabflg;    //falseだったら動く　//trueだったら止める
     public bool Grabflg;
