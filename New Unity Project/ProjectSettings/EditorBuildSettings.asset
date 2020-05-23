@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/ASSET/yu/Scenes/stage3.unity
     guid: 9a694a569d4694543854b96212155179
   - enabled: 0
+    path: Assets/MasterScenes/title.unity
+    guid: 1557515dc5bce3e47ae814674f8db5d6
+  - enabled: 0
     path: Assets/MasterScenes/Stage1.unity
     guid: 14bdd66844825254189e4b16aa24289e
   - enabled: 1
@@ -26,7 +29,4 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ASSET/kei/ta.unity
     guid: 5d3562f2b7e472140ac5513191c5018c
-  - enabled: 0
-    path: Assets/MasterScenes/title.unity
-    guid: 1557515dc5bce3e47ae814674f8db5d6
   m_configObjects: {}
