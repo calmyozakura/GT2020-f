@@ -5,6 +5,7 @@ using UnityEngine;
 public class M_part_cont : MonoBehaviour
 {
     public GameObject Dino;
+    public GameObject YouG;
     
 
     // Use this for initialization
@@ -18,7 +19,7 @@ public class M_part_cont : MonoBehaviour
     {
         if (Dino == null)
         {
-            this.gameObject.SetActive(true);
+            YouG.SetActive(true);
         }
     }
 
