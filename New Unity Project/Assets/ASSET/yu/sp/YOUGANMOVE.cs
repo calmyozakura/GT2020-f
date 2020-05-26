@@ -11,9 +11,9 @@ public class YOUGANMOVE : MonoBehaviour
     [SerializeField] private float movelate = 4f;    //動かなくなったら、次に動くまでの秒数
     private float movecount;
     private PLAYERMO PLAYERMO;
-    public float vector = 0.05f;
+    public float vector;
 
-    public AudioSource source;
+    //public AudioSource source;
 
     PLAYERMO script; //UnityChanScriptが入る変数
 

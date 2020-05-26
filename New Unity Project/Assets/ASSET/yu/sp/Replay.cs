@@ -5,17 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class Replay : MonoBehaviour {
 
-    string sceneName;
+    string loadScene;
 
     // Use this for initialization
     void Start () {
-        sceneName = SceneManager.GetActiveScene().name;
+        // 現在のScene名を取得する
+        loadScene = SceneManager.GetActiveScene().name;
     }
 	
     public void RetryButton()
-    {
-        
-        SceneManager.LoadScene(sceneName);
-       
+    {      
+        Debug.Log("hsansnjxnjankjxknxa");
+        //SceneManager.LoadScene("Stage2");
+        // Sceneの読み直し
+        SceneManager.LoadScene(loadScene);
+        //SceneManager.GetActiveScene();
     }
 }

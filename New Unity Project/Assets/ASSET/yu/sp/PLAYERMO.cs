@@ -5,19 +5,24 @@ using UnityEngine;
 public class PLAYERMO : MonoBehaviour
 {
     private float rotate2;
-    public float rotate;
+    
     public float Speed;
     public float vector;
     public float vector2;
     bool Yoin = false;
-    public bool Iswitch = false;
+    private bool Iswitch = false;
     public float playerU = 0;
-    public bool grabflg = false;
-    public bool MagumaSPD = false;
+    private bool grabflg = false;
+    private bool MagumaSPD = false;
+
+    private float waitTimer = 0;
+    private bool ITEMflg = false;
+    private bool Mutekiflg = false;
+    private bool Jumpflg = false;
+    private bool spiderflg = false;
+
     //public bool JumpState = false; //２段以上のジャンプ防止
     //private Stone Stone;
-
-    Stone spript;
 
     //SpriteRenderer Dinasor; //恐竜の画像
     float Axis_UD, Axis_LR, Axis2_UD, Axis2_LR; // Axis = 十字　Axis2 = アナログパッド
@@ -42,30 +47,68 @@ public class PLAYERMO : MonoBehaviour
         transform.Rotate(new Vector3(0, rotate2, 0));
 
 
+        if (ITEMflg == true)
+        {
+            if (++waitTimer / 6 == 30)
+            {
+                //Debug.Log("batauysaibjacj,xjalkcnkjnaxjc");
+                vector = 0.3f;
+                ITEMflg = false;
+            }
+        }
+
+        if (Mutekiflg == true)
+        {
+            if (++waitTimer / 6 == 180)
+            {
+                Debug.Log("muteki");
+                Mutekiflg = false;
+            }
+        }
+        if (Jumpflg == true)
+        {
+            if (++waitTimer / 6 == 120)
+            {
+                Debug.Log("JumpUP");
+                Jumpflg = false;
+                vector2 = 0.17f;
+            }
+        }
+
+        if (spiderflg == true)
+        {
+            if (++waitTimer / 6 == 60)
+            {
+                Debug.Log("spider");
+                spiderflg = false;
+                vector = 0.3f;
+            }
+        }
+
         //キーボード
         if (Input.GetKey(KeyCode.UpArrow))//上
         {
             this.transform.position += new Vector3(0, +vector2, 0);
-            playerU = 1;
+            //playerU = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow))//左
         {
-            if (playerU == 3 || playerU == 0)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
+            //if (playerU == 3 || playerU == 0)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
             this.transform.position += new Vector3(-vector, 0, 0);
-            playerU = 2;
+            //playerU = 2;
             //Dinasor.flipX = false;
             //  this.transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (Input.GetKey(KeyCode.RightArrow))//右
         {
-            if (playerU == 2)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
-            playerU = 3;
+            //if (playerU == 2)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
+            //playerU = 3;
             this.transform.position += new Vector3(+vector, 0, 0);
             //Dinasor.flipX = true;
             // this.transform.localScale = new Vector3(1, 1, 1);
@@ -83,29 +126,30 @@ public class PLAYERMO : MonoBehaviour
         //コントローラー
         if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
         {
-            this.transform.position += new Vector3(0, +vector*1.55f, 0);
+            this.transform.position += new Vector3(0, +vector2, 0);
             playerU = 1;
         }
 
         if (Axis_LR < 0 || Axis2_LR < 0)//左
             
-        {   if (playerU == 3 || playerU == 0)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
+        {
+            //if (playerU == 3 || playerU == 0)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
             this.transform.position += new Vector3(-vector, 0, 0);
-            playerU = 2;
+            //playerU = 2;
             //Dinasor.flipX = false;
             //  this.transform.localScale = new Vector3(-vector, 1, 1);
         }
         else if (Axis_LR > 0 || Axis2_LR > 0)//右
             
         {
-            if (playerU == 2)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
-            playerU = 3;
+            //if (playerU == 2)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
+            //playerU = 3;
             this.transform.position += new Vector3(+vector, 0, 0);
             //Dinasor.flipX = true;
             // this.transform.localScale = new Vector3(1, 1, 1);
@@ -152,21 +196,59 @@ public class PLAYERMO : MonoBehaviour
    }
 
 
-    void OnTriggerStay(Collider other)
-    {
-        if(other.gameObject.tag == "spider")
-        {
-            vector = Speed;
-           
-        }  
-    }
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "spider")
-        {
-            vector = 0.12f;
+    //void OnTriggerStay(Collider other)
+    //{
+    //    if(other.gameObject.tag == "spider")
+    //    {
+    //        vector *= Speed;
+    //    }  
+    //}
+    //void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject.tag == "spider")
+    //    {
+    //        vector = 0.3f;
 
+    //    }
+    //}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "SpeedItem" && ITEMflg == false)
+        {
+            Destroy(other.gameObject);
+            vector *= 1.2f;
+            waitTimer = 0;
+            ITEMflg = true;
         }
+        /***********************************************
+         ******* スターの処理
+         ******************************************************/
+        if (other.gameObject.tag == "Star")
+        {
+            Destroy(other.gameObject);
+            waitTimer = 0;
+            Mutekiflg = true;
+        }
+        if (other.gameObject.tag == "Stone3" && Mutekiflg == true)
+        {
+            Destroy(other.gameObject);
+        }
+        /**********************************************************/
+        if (other.gameObject.tag == "JumpUP")
+        {
+            Destroy(other.gameObject);
+            waitTimer = 0;
+            vector2 *= 1.4f;
+            Jumpflg = true;
+        }
+        if (other.gameObject.tag == "spider" && spiderflg == false)
+        {
+            vector = 0.2f;
+            waitTimer = 0;
+            spiderflg = true;
+        }
+
     }
 }
 
