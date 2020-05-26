@@ -13,9 +13,10 @@ public class GAMEOVER : MonoBehaviour {
     public GameObject title;
     public GameObject rty;
 
+   
     // Use this for initialization
     void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
@@ -30,6 +31,9 @@ public class GAMEOVER : MonoBehaviour {
             rty.SetActive(true);
             title.SetActive(true);
             oveText.enabled = true;
+            
+
+          
         }
     }
 }
