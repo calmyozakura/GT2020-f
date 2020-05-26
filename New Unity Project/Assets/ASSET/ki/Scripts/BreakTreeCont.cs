@@ -5,6 +5,7 @@ using UnityEngine;
 public class BreakTreeCont : MonoBehaviour
 {
     public Animator BTree_anim;
+    public bool BreakFlg=false;
 
     // Use this for initialization
     void Start()
@@ -17,14 +18,14 @@ public class BreakTreeCont : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Attack")
         {
           
            BTree_anim.SetBool("BreakFlg", true);
-            
-           
+
+            BreakFlg = true;
 
         }
     }

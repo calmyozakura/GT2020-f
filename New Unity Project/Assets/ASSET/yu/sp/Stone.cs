@@ -9,7 +9,7 @@ public class Stone : MonoBehaviour
     Rigidbody rb;
     
     [SerializeField] private GameObject Playertmp;
-    [SerializeField] private float movelate = 4f;    //動かなくなったら、次に動くまでの秒数
+    [SerializeField] private float movelate = 3f;    //動かなくなったら、次に動くまでの秒数
 
     //public bool grabflg;    //falseだったら動く　//trueだったら止める
     public bool Grabflg;
@@ -68,7 +68,7 @@ public class Stone : MonoBehaviour
             {
 
                 //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
-                gx = -5f;
+                gx = -7f;
                 gy = 3f;
                 gz = 0;
 
@@ -88,7 +88,7 @@ public class Stone : MonoBehaviour
             {
 
                 //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
-                gx = 7f;
+                gx = 11f;
                 gy = 3f;
                 gz = 0;
 
@@ -110,7 +110,7 @@ public class Stone : MonoBehaviour
                 {
 
                     //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
-                    gx = -5f;
+                    gx = -7f;
                     gy = 3f;
                     gz = 0;
 
@@ -130,7 +130,7 @@ public class Stone : MonoBehaviour
                 {
 
                     //this.transform.position = new Vector3(tmp.x +4  , tmp.y + 3, tmp.z);
-                    gx = 7f;
+                    gx = 11f;
                     gy = 3f;
                     gz = 0;
 
@@ -165,7 +165,7 @@ public class Stone : MonoBehaviour
                         script.grabflg = true;
                         Grabflg = true;
                         this.transform.Translate(0.0f, 1.0f, 0.0f);
-                        gx = -5f;
+                        gx = -7f;
                         gy = 3f;
                         gz = 0;
                     
