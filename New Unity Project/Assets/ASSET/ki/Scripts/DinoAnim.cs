@@ -6,10 +6,15 @@ public class DinoAnim : MonoBehaviour
 {
     public Animator Dino_Anim;
 
-    public bool StopFlg=false;//
+    public bool StopFlg=false;
 
     public bool AttackFlg=false;
     public bool StoneFlg = false;
+    public bool Run = true;
+
+    private Vector3 Dino_Posi;
+    private Vector3 Dino_Old_hi;
+    private Vector3 Dino_New_hi;
 
     bool jump;
     public bool hit;
@@ -24,6 +29,7 @@ public class DinoAnim : MonoBehaviour
     {
         jump = true; hit = true ;
         source = gameObject.GetComponent<AudioSource>();
+        Dino_Old_hi = this.transform.position;
     }
 	
 	// Update is called once per frame
@@ -35,9 +41,12 @@ public class DinoAnim : MonoBehaviour
             jump = false;
         }
 
-        if (!StopFlg)       //攻撃してると入らない
+        if (!StopFlg)       //攻撃と石拾いのモーション中は入らない
         {
-
+            //if(Input.GetKey(KeyCode.UpArrow))//上
+            //{
+            //    Dino_Anim.SetBool("Jump_1",true);
+            //}
             //十字&左アナログパッド、両方の軸を取得
             Axis_LR = Input.GetAxis("DS4_L_CrossLR");
             Axis_UD = Input.GetAxis("DS4_L_CrossUD");
@@ -66,8 +75,9 @@ public class DinoAnim : MonoBehaviour
                 Dino_Anim.SetBool("Run", false);    //止まるモーション
             }
 
+            
 
-            else if (Input.GetKey(KeyCode.LeftArrow)
+            if (Input.GetKey(KeyCode.LeftArrow)
                 || Axis_LR  < 0 
                 || Axis2_LR < 0)      //左を押すと
             {
@@ -80,6 +90,16 @@ public class DinoAnim : MonoBehaviour
                 || Axis2_LR > 0)   //右を押すと
             {
                 Dino_Anim.SetBool("Run", true);     //走るモーション
+            }
+
+            if(Input.GetKey(KeyCode.UpArrow)
+                && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3"))//上
+            {
+                Dino_Anim.SetBool("Jump_1",true);//ジャンプする
+            }
+            if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))
+            {
+                Dino_Anim.SetBool("Jump_1", false);
             }
         }
 
@@ -98,7 +118,7 @@ public class DinoAnim : MonoBehaviour
                      Dino_Anim.SetBool("Attack_1", true);    //アタックモーション
 
             AttackFlg = true;
-
+            StopFlg = true;
             //hit = false;
 
             if (hit == false)//音声単発処理
@@ -117,6 +137,7 @@ public class DinoAnim : MonoBehaviour
         if (Dino_Anim.IsInTransition(0))
         {
             AttackFlg = false;
+            StopFlg = false;
         }
         if(AttackFlg==false)
         {
@@ -141,6 +162,19 @@ public class DinoAnim : MonoBehaviour
             Dino_Anim.SetBool("Stone", false);
         }
 
+        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2"))//着地のモーション
+        {
+            Dino_Old_hi.y = this.transform.position.y;
+            if(Dino_Old_hi.y==Dino_New_hi.y)        //前のフレームとY軸が同じ(落下が終わった)なら
+            {
+                Dino_Anim.SetBool("Randing", true);//着地する
+            }
+            Dino_New_hi = Dino_Old_hi;
+        }
+        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3"))
+        {
+            Dino_Anim.SetBool("Randing", false);
+        }
 
     }
 

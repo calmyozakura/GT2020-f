@@ -106,6 +106,7 @@
     <Compile Include="Assets\ASSET\ki\Scripts\DinoAnim.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\M_Attack_Cont_ki.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\M_AttackActive_Ki.cs" />
+    <Compile Include="Assets\ASSET\ki\Scripts\M_Bullet_Cont.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\M_part_cont.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\MagmaCont_Ki.cs" />
     <Compile Include="Assets\ASSET\yu\sp\Br.cs" />
