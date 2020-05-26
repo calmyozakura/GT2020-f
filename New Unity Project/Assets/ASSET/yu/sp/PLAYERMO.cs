@@ -10,16 +10,16 @@ public class PLAYERMO : MonoBehaviour
     public float vector;
     public float vector2;
     bool Yoin = false;
-    public bool Iswitch = false;
+    private bool Iswitch = false;
     public float playerU = 0;
-    public bool grabflg = false;
-    public bool MagumaSPD = false;
+    private bool grabflg = false;
+    private bool MagumaSPD = false;
 
     private float waitTimer = 0;
-    public bool ITEMflg = false;
-    public bool Mutekiflg = false;
-    public bool Jumpflg = false;
-    public bool spiderflg = false;
+    private bool ITEMflg = false;
+    private bool Mutekiflg = false;
+    private bool Jumpflg = false;
+    private bool spiderflg = false;
 
     //public bool JumpState = false; //２段以上のジャンプ防止
     //private Stone Stone;
@@ -89,26 +89,26 @@ public class PLAYERMO : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))//上
         {
             this.transform.position += new Vector3(0, +vector2, 0);
-            playerU = 1;
+            //playerU = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow))//左
         {
-            if (playerU == 3 || playerU == 0)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
+            //if (playerU == 3 || playerU == 0)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
             this.transform.position += new Vector3(-vector, 0, 0);
-            playerU = 2;
+            //playerU = 2;
             //Dinasor.flipX = false;
             //  this.transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (Input.GetKey(KeyCode.RightArrow))//右
         {
-            if (playerU == 2)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
-            playerU = 3;
+            //if (playerU == 2)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
+            //playerU = 3;
             this.transform.position += new Vector3(+vector, 0, 0);
             //Dinasor.flipX = true;
             // this.transform.localScale = new Vector3(1, 1, 1);
@@ -126,29 +126,30 @@ public class PLAYERMO : MonoBehaviour
         //コントローラー
         if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))//上
         {
-            this.transform.position += new Vector3(0, +vector*1.55f, 0);
+            this.transform.position += new Vector3(0, +vector2, 0);
             playerU = 1;
         }
 
         if (Axis_LR < 0 || Axis2_LR < 0)//左
             
-        {   if (playerU == 3 || playerU == 0)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
+        {
+            //if (playerU == 3 || playerU == 0)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
             this.transform.position += new Vector3(-vector, 0, 0);
-            playerU = 2;
+            //playerU = 2;
             //Dinasor.flipX = false;
             //  this.transform.localScale = new Vector3(-vector, 1, 1);
         }
         else if (Axis_LR > 0 || Axis2_LR > 0)//右
             
         {
-            if (playerU == 2)
-            {
-                transform.Rotate(new Vector3(0, 180, 0));
-            }
-            playerU = 3;
+            //if (playerU == 2)
+            //{
+            //    transform.Rotate(new Vector3(0, 180, 0));
+            //}
+            //playerU = 3;
             this.transform.position += new Vector3(+vector, 0, 0);
             //Dinasor.flipX = true;
             // this.transform.localScale = new Vector3(1, 1, 1);

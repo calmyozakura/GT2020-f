@@ -44,7 +44,7 @@ public class CheckClickEvent : MonoBehaviour {
                 Debug.Log(HP);
                 
                 Destroy(gameObject);
-                SceneManager.LoadScene("Over");
+                //SceneManager.LoadScene("Over");
             }
         }
         if (other.gameObject.tag == "item")
@@ -54,6 +54,13 @@ public class CheckClickEvent : MonoBehaviour {
             Destroy(other.gameObject);
         }
         
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Yougan2")
+        {
+            Destroy(gameObject);
+        }
     }
     void OnParticleCollision(GameObject other)
     {
