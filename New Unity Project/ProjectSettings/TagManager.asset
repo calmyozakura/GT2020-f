@@ -19,6 +19,10 @@ TagManager:
   - spider
   - slider
   - zimen
+  - SpeedItem
+  - Star
+  - Stone3
+  - JumpUP
   layers:
   - Default
   - TransparentFX
