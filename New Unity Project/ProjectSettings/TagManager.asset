@@ -24,6 +24,7 @@ TagManager:
   - Stone3
   - JumpUP
   - Yougan2
+  - Attack
   layers:
   - Default
   - TransparentFX
