@@ -512,10 +512,7 @@ MonoBehaviour:
   Speed: 0.09
   vector: 0.12
   vector2: 0.15
-  Iswitch: 0
   playerU: 0
-  grabflg: 0
-  MagumaSPD: 0
 --- !u!114 &39826563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13927,6 +13924,16 @@ Prefab:
       value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114886394754937514, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: Dino
+      value: 
+      objectReference: {fileID: 39826558}
+    - target: {fileID: 114553492871480704, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: Dino
+      value: 
+      objectReference: {fileID: 39826558}
+    - target: {fileID: 114247924807824078, guid: f5e0d7790017e554ca544549225219ac,
         type: 2}
       propertyPath: Dino
       value: 
