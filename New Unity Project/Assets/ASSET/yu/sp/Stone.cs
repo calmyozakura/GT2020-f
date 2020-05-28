@@ -24,9 +24,12 @@ public class Stone : MonoBehaviour
     float gy;
     float gz;
 
+
+
     //音用
     AudioSource source;
     public AudioClip clip;
+    bool once =false;
 
 
     // Use this for initialization
@@ -179,9 +182,15 @@ public class Stone : MonoBehaviour
         if (other.gameObject.tag == "Yougan")
         {
             Destroy(gameObject, movelate);   //4秒後に隕石が消える
+            waitTimer += Time.deltaTime;
+            if (once == false)
+            {
+                once = true;
+                
+                AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
+               
+            }
 
-            AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
-           
             Debug.Log("当たった!");
             //moveflg = false;
             //movecount += movelate;

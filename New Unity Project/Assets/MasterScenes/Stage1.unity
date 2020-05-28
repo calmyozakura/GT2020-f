@@ -1874,7 +1874,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b6dd1f687a1e7ec4b8f733d5bc38b81e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.534
+  m_Volume: 0.631
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2097,7 +2097,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0ab63679267b0e343b4594e8613674fc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.166
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2194,6 +2194,24 @@ Transform:
   m_Father: {fileID: 1326326321}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &774200271 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1620769597751990, guid: 2f24d7f70b37e4748b40cc08da8c38c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1122150756}
+--- !u!114 &774200276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774200271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58cfb93a8030d734e9d2e445658f22aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sources:
+  - {fileID: 1847740824}
 --- !u!1001 &794639963
 Prefab:
   m_ObjectHideFlags: 0
@@ -8192,7 +8210,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d6ae77143d60b114590c8c2e551c123a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.158
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11659,7 +11677,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b3e7f07d1d100c54ca51840e6823979c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.235
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13034,5 +13052,6 @@ Prefab:
     - {fileID: 114229635326383452, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 114112404830840830, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 114231412867272566, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
+    - {fileID: 82616325874173968, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
   m_IsPrefabParent: 0
