@@ -76,7 +76,7 @@ public class CombineMeshEditor : EditorWindow
         transform.GetComponent<MeshFilter>().sharedMesh = new Mesh();
 
         transform.GetComponent<MeshFilter>().sharedMesh.CombineMeshes(combineInstance.ToArray(), false, false);
-        var o_78_8_637259420121027199 = transform.GetComponent<MeshFilter>().sharedMesh;
+        var o_78_8_637262760493041553 = transform.GetComponent<MeshFilter>().sharedMesh;
         transform.GetComponent<MeshFilter>().sharedMesh.RecalculateBounds();
         MeshRenderer meshRendererCombine = transform.GetComponent<MeshRenderer>();
         if (!meshRendererCombine)
