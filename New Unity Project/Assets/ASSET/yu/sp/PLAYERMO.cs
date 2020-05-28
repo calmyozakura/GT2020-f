@@ -29,11 +29,12 @@ public class PLAYERMO : MonoBehaviour
 
     private Vector3 Position;
 
-    //void Start()
-    //{
-    //    this.Dinasor = GetComponent<SpriteRenderer>();
-    //    Dinasor.flipX = true;
-    //}
+    void Start()
+    {
+       
+        //    this.Dinasor = GetComponent<SpriteRenderer>();
+        //    Dinasor.flipX = true;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -232,6 +233,7 @@ public class PLAYERMO : MonoBehaviour
         }
         if (other.gameObject.tag == "Stone3" && Mutekiflg == true)
         {
+            
             Destroy(other.gameObject);
         }
         /**********************************************************/
