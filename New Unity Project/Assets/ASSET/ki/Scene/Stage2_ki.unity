@@ -13631,11 +13631,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4434077709153006, guid: f5e0d7790017e554ca544549225219ac, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 15.2
+      value: 12.8
       objectReference: {fileID: 0}
     - target: {fileID: 4434077709153006, guid: f5e0d7790017e554ca544549225219ac, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114535116187081408, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: Offset.x
+      value: 12.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114247924807824078, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: Offset.x
+      value: 12.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5e0d7790017e554ca544549225219ac, type: 2}
