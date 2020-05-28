@@ -143,6 +143,12 @@
     <Compile Include="Assets\MasterScenes\camera6.cs" />
     <Compile Include="Assets\MasterScenes\GAMEOVER.cs" />
     <Compile Include="Assets\MasterScenes\Goal２.cs" />
+    <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
+    <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectController.cs" />
+    <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectDemo.cs" />
+    <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
+    <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\RenderEffect.cs" />
+    <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\TransformExtension.cs" />
     <Compile Include="Assets\Rotation.cs" />
     <Compile Include="Assets\script\CameraCont.cs" />
     <Compile Include="Assets\script\CameraCont1.cs" />
@@ -178,15 +184,23 @@
     <None Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort_Transparent.shader" />
+    <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\effect_distortion_mask.shader" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\DO_NOT_WORK_IN_VR.txt" />
+    <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\ASSET\kei\Assset\Lava_Flowing_Shader\ReadMe.txt" />
     <None Include="Assets\ASSET\kei\Assset\ErbGameArt\Procedural fire\Demo scene\Readme.txt" />
+    <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Blended Premmultiply.shader" />
+    <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />
     <None Include="Assets\ASSET\Ultra Skybox Fog\Manual.txt" />
+    <None Include="Assets\Particlecollection_Free samples\READ ME.txt" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\ParticleAddEffect.shader" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
     <None Include="Assets\ASSET\kei\Assset\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Additive.shader" />
     <None Include="Assets\ASSET\Ultra Skybox Fog\Textures\Readme.txt" />
+    <None Include="Assets\Particlecollection_Free samples\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/GT_F/New Unity Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
