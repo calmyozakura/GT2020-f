@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ASSET/yu/Scenes/stage2_2.unity
+- path: Assets/ASSET/kei/Stage222.unity
   isLoaded: 1
   isActive: 1
