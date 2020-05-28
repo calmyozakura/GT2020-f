@@ -239,7 +239,7 @@ public class PLAYERMO : MonoBehaviour
         {
             Destroy(other.gameObject);
             waitTimer = 0;
-            vector2 *= 1.4f;
+            vector2 *= 1.2f;
             Jumpflg = true;
         }
         if (other.gameObject.tag == "spider" && spiderflg == false)
