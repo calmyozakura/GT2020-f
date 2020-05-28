@@ -116,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1575037287079684}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 71.4, y: 5.3, z: 0}
+  m_LocalPosition: {x: 16.9, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4902706596207872}
@@ -131,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1654542102002598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.22000027, y: 0, z: 0}
+  m_LocalPosition: {x: -0.2, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4902706596207872}
@@ -157,7 +157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1344768737641410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 27, z: 0}
+  m_LocalPosition: {x: -10.7, y: -49.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4676655558847892}
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   M_Beam: {fileID: 1344768737641410}
   Dino: {fileID: 0}
-  Offset: {x: -7.94, y: 5, z: 0}
+  Offset: {x: -7.94, y: 4, z: 0}
 --- !u!198 &198157961298996600
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -312,7 +312,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 8
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1022,7 +1022,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 15
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -3854,7 +3854,7 @@ ParticleSystem:
     interiorCollisions: 0
   TriggerModule:
     enabled: 0
-    collisionShape0: {fileID: 0}
+    collisionShape0: {fileID: 4676655558847892}
     collisionShape1: {fileID: 0}
     collisionShape2: {fileID: 0}
     collisionShape3: {fileID: 0}
@@ -4897,7 +4897,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9366,7 +9366,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1344768737641410}
   serializedVersion: 5
   lengthInSec: 7
-  simulationSpeed: 2
+  simulationSpeed: 6
   stopAction: 0
   looping: 0
   prewarm: 0
