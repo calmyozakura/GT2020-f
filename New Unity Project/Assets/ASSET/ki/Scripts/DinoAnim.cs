@@ -15,6 +15,7 @@ public class DinoAnim : MonoBehaviour
     private Vector3 Dino_Posi;
     private Vector3 Dino_Old_hi;
     private Vector3 Dino_New_hi;
+    private int Old, New;
 
     bool jump;
     public bool hit;
@@ -93,7 +94,7 @@ public class DinoAnim : MonoBehaviour
             }
 
             if(Input.GetKey(KeyCode.UpArrow)
-                && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3"))//上
+                && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3")|| Input.GetButton("DS4_Cross"))//上
             {
                 Dino_Anim.SetBool("Jump_1",true);//ジャンプする
             }
@@ -162,10 +163,12 @@ public class DinoAnim : MonoBehaviour
             Dino_Anim.SetBool("Stone", false);
         }
 
-        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2"))//着地のモーション
+        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2")
+            || Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))//着地のモーション
         {
             Dino_Old_hi.y = this.transform.position.y;
-            if(Dino_Old_hi.y==Dino_New_hi.y)        //前のフレームとY軸が同じ(落下が終わった)なら
+           
+            if(Dino_Old_hi.y+0.05==Dino_New_hi.y+0.05)        //前のフレームとY軸が同じ(落下が終わった)なら
             {
                 Dino_Anim.SetBool("Randing", true);//着地する
             }
