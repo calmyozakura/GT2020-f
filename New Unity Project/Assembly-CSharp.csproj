@@ -176,6 +176,7 @@
     <Compile Include="Assets\script\surfing.cs" />
     <Compile Include="Assets\script\youganMOVE.cs" />
     <Compile Include="Assets\script\youganMOVE1.cs" />
+    <Compile Include="Assets\ST.cs" />
     <Compile Include="Assets\TankMovement.cs" />
     <Compile Include="Assets\リジ.cs" />
     <None Include="Assets\MasterCube\README.txt" />

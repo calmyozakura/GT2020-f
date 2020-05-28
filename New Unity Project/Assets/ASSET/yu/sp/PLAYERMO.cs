@@ -50,7 +50,7 @@ public class PLAYERMO : MonoBehaviour
 
         if (ITEMflg == true)
         {
-            if (++waitTimer / 6 == 30)
+            if (++waitTimer / 6 == 24)
             {
                 //Debug.Log("batauysaibjacj,xjalkcnkjnaxjc");
                 vector = 0.3f;
@@ -68,7 +68,7 @@ public class PLAYERMO : MonoBehaviour
         }
         if (Jumpflg == true)
         {
-            if (++waitTimer / 6 == 120)
+            if (++waitTimer / 6 == 30)
             {
                 Debug.Log("JumpUP");
                 Jumpflg = false;
@@ -218,7 +218,7 @@ public class PLAYERMO : MonoBehaviour
         if (other.gameObject.tag == "SpeedItem" && ITEMflg == false)
         {
             Destroy(other.gameObject);
-            vector *= 1.2f;
+            vector += 0.2f;
             waitTimer = 0;
             ITEMflg = true;
         }
@@ -241,7 +241,7 @@ public class PLAYERMO : MonoBehaviour
         {
             Destroy(other.gameObject);
             waitTimer = 0;
-            vector2 *= 1.2f;
+            vector2 += 0.3f;
             Jumpflg = true;
         }
         if (other.gameObject.tag == "spider" && spiderflg == false)
