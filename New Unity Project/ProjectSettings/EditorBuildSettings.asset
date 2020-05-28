@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/ASSET/yu/Scenes/stage2.unity
     guid: 9a73595f54d46e542a752e9ec524267a
   - enabled: 0
@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MasterScenes/title.unity
     guid: 1557515dc5bce3e47ae814674f8db5d6
-  - enabled: 0
+  - enabled: 1
     path: Assets/MasterScenes/Stage1.unity
     guid: 14bdd66844825254189e4b16aa24289e
   - enabled: 0

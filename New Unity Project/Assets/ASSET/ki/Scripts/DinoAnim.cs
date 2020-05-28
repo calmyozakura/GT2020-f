@@ -94,7 +94,7 @@ public class DinoAnim : MonoBehaviour
             }
 
             if(Input.GetKey(KeyCode.UpArrow)
-                && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3")|| Input.GetButton("DS4_Cross"))//上
+               || Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0) && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3"))//上
             {
                 Dino_Anim.SetBool("Jump_1",true);//ジャンプする
             }

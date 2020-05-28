@@ -1,19 +1,20 @@
 WindowsStandalone
 PlayerPath?
-D:/FグルプのFはファンキーのF/stage2/stage2.exe
+C:/Users/oeoem/Desktop/Stage1/Stage1.exe
 SceneListBegin?
-Assets/MasterScenes/Stage2.unity
+Assets/MasterScenes/Stage1.unity
 SceneListEnd?
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SE_Jump
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FPSView
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Fool
-99f84669e4d3cfddd01bd7505e036f6c Assembly-CSharp.dll:.DinoAnim
+565cab07d3a6821573efd973497fc6ba Assembly-CSharp.dll:.DinoAnim
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.zimen
 fde4892ce10282f3d912c48fa7871d6c Assembly-CSharp.dll:.SStone
 7a0bb6e64a1eb2c31c35d0c05f5e0230 Assembly-CSharp.dll:.Rotation
 e917832d8d12a8e05d6fa5fdc1326bae Assembly-CSharp.dll:.ScrollingUVs_Layers
 828dcee69881973870021b2c629471e1 Assembly-CSharp.dll:.YOUGANMOVE
+b740e364d95abdc55ec47bd201fac8e2 Assembly-CSharp.dll:.M_Bullet_Cont
 0cd78cb9b4a6129bc2d2c7b152669a78 Assembly-CSharp.dll:.NAKAZATO
 aa13baec1c19c8fa869cb21cb01a3767 Assembly-CSharp.dll:UnityStandardAssets.Water.WaterBase
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.breakDOWN
@@ -34,6 +35,7 @@ dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics
 2590935d078ca28c0e9631df7a6ca00c Assembly-CSharp.dll:.PLAYERCO
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.breakYO
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Title
+543ce3c182d961761184fd39ea898f29 Assembly-CSharp.dll:.EffectDemo
 8b2e4fe5b7a3ed3b1e2f16f0be392f06 Assembly-CSharp.dll:.Camera2
 f89bb76359cbac8db51f1e5b05df4c9f Assembly-CSharp.dll:.PlayerMo
 61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera3
@@ -44,6 +46,7 @@ db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.CameraCont
 c6e7d8a0362f58224af9319615782e40 Assembly-CSharp.dll:.CameraCONT
 dbf4b23087fb18bbd5a4ac795d20abd5 Assembly-CSharp.dll:.PlayerMM
 c50b51601806214d28b6a9a079ba0a7f Assembly-CSharp.dll:.camera5
+9b911324c30e9834c3e68c494a6b2200 Assembly-CSharp.dll:.M_Beam_Cont
 313d2e9ca7cc82d50e046fe3623709ab Assembly-CSharp.dll:.breakS
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Inseki
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.lasthasi
@@ -52,9 +55,10 @@ cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp.dll:UnityStandardAssets.Water.P
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Water.Displace
 7d6fbb4c22d78e12c1b19772a43401dc Assembly-CSharp.dll:.AnimationScript
 61f5f3388ef75a878064142a68f5c218 Assembly-CSharp.dll:.Camera4
-b9b4b5b6aa64e912ebe770ba26c62ccf Assembly-CSharp.dll:.PLAYERMO
+21621b003033ef1292d6e9d258c0832e Assembly-CSharp.dll:.PLAYERMO
 aa8c9e093cc18545037f2c5e50b25783 Assembly-CSharp.dll:.FootstepSEPlayerSimple
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.CameraCont1
+9a7e649e9c450edfd2ff778c1a711373 Assembly-CSharp.dll:.MasterCube
 80da3bf3747118249a2e465bf0821abd Assembly-CSharp.dll:.nagare
 f956d14588dba956a491701ce71472ba Assembly-CSharp.dll:.KILL
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.spiderweb
@@ -67,16 +71,18 @@ e84404b63ceb046b3c01ce63a8d8f369 Assembly-CSharp.dll:.MagmaCont
 2265052b62c8d1041cc27b1698aad61f Assembly-CSharp.dll:.Br
 487cdd67eb50f59e11ac1cd30353e067 Assembly-CSharp.dll:.Breakrock_1
 2590935d078ca28c0e9631df7a6ca00c Assembly-CSharp.dll:.PlayerC
+fdfaee1b34d01bc0c3ad3999cf0a5646 Assembly-CSharp.dll:.CameraTarget
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TankMovement
 21984f001d5a114ee9fbf62810ee8eb7 Assembly-CSharp.dll:UnityStandardAssets.Water.SpecularLighting
 e69bbf6a73d04dcd436bf32604ad4cb0 Assembly-CSharp.dll:.NAKAZATO3
+e7ec17895ab32b61ba574a2677295077 Assembly-CSharp.dll:.EffectController
 2c62b9ae79b8b54dd7b55fa7d311452b Assembly-CSharp.dll:UnityStandardAssets.Water.Water
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.cameraC
 80dd09be132c60a549693f58e4a8c7f4 Assembly-CSharp.dll:.SE_Break
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.start
 09d8f663b3e5924a9b5fd096be029f73 Assembly-CSharp.dll:.hunkaSW
 16ec7ad2d6869a485ddd436da7db8a5f Assembly-CSharp.dll:.ChangeGravity
-6e8a5213e45b3a5f57b4bc78d5daa766 Assembly-CSharp.dll:.BreakTreeCont
+63fe6790f08b8252df3c6d724fa3ab9a Assembly-CSharp.dll:.BreakTreeCont
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Kill
 e3947917406f6934ef20f2f15dbda3ed Assembly-CSharp.dll:.M_part_cont
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Nakazato
@@ -85,6 +91,7 @@ e3947917406f6934ef20f2f15dbda3ed Assembly-CSharp.dll:.M_part_cont
 2716fc22dbe4918eea100a5410bb6b29 Assembly-CSharp.dll:.G
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Replay
 2b4eb022695c364b140df90542b0ef1b Assembly-CSharp.dll:.kiriO
+a8fe9964c2f8bb196e309629d325ea92 Assembly-CSharp.dll:.Cave_cont
 d918b5b669f81732730115074fb5ff44 Assembly-CSharp.dll:.YOUGAN
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.Funka
 446c28a230c20232ca27ce50ee06cf5e Assembly-CSharp.dll:.Stone
@@ -99,13 +106,16 @@ df386a86ea6ec97d7a00df63a508e363 Assembly-CSharp.dll:.M_AttackActive
 000154ac376187512f66f18489df2215 Assembly-CSharp.dll:.grab
 6746ad828d32ad6e5c07a63950fd4be6 Assembly-CSharp.dll:UnityStandardAssets.Water.WaterTile
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.nowTime
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SelectOnSelf
 51df51ce5bc6c5914f837b8dad6925cb Assembly-CSharp.dll:.camera6
+d86fba70758b5ac7e9bfb0038076a50e Assembly-CSharp.dll:.RenderEffect
 826c23b114e8b17ea59f7c2d380326a4 Assembly-CSharp.dll:.playerCo
 2bf25054163d14d6c349e7ffa47dbf32 Assembly-CSharp.dll:.PlayerM
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Playeroyako
 e6323e01d619877b43af9119a038ca8a Assembly-CSharp.dll:.heart
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.hunka
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Speed
+a8fe9964c2f8bb196e309629d325ea92 Assembly-CSharp.dll:.Cave_cont2
 c0186252e3b039a24c030ab4b527de63 Assembly-CSharp.dll:.M_Attack_Cont_ki
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider

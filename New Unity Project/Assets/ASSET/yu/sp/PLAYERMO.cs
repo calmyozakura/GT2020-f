@@ -78,7 +78,7 @@ public class PLAYERMO : MonoBehaviour
 
         if (spiderflg == true)
         {
-            if (++waitTimer / 6 == 60)
+            if (++waitTimer / 6 == 30)
             {
                 Debug.Log("spider");
                 spiderflg = false;

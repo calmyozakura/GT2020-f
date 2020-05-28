@@ -10943,6 +10943,19 @@ Prefab:
       propertyPath: m_Name
       value: M_Beam (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1443769739834486, guid: 20d1f726ce8fb3d438822e50ece1c3c7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23843876252416414, guid: 20d1f726ce8fb3d438822e50ece1c3c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575037287079684, guid: 20d1f726ce8fb3d438822e50ece1c3c7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20d1f726ce8fb3d438822e50ece1c3c7, type: 2}
   m_IsPrefabParent: 0
@@ -11521,7 +11534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "5/21\u300017\u664205\u520649\u79D2"
+  m_Text: "5/28\u300021\u6642019\u520649\u79D2"
 --- !u!222 &543157585
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14800,6 +14813,26 @@ Prefab:
       propertyPath: Dino
       value: 
       objectReference: {fileID: 39826558}
+    - target: {fileID: 23762609657789006, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23065875202328714, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23539730510822444, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23542857829425956, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5e0d7790017e554ca544549225219ac, type: 2}
   m_IsPrefabParent: 0
@@ -16240,6 +16273,10 @@ Prefab:
       propertyPath: m_Name
       value: Stone_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
   m_IsPrefabParent: 0
@@ -16460,7 +16497,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4068344191150876, guid: 2f29b93fe8a7477438d4e5fcb743e3a2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 263.95
+      value: 76.2
       objectReference: {fileID: 0}
     - target: {fileID: 4068344191150876, guid: 2f29b93fe8a7477438d4e5fcb743e3a2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -16578,6 +16615,10 @@ Prefab:
     - target: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
       propertyPath: m_Name
       value: Stone_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8988c881874f4cb4db33f58b6a8e7416, type: 3}
