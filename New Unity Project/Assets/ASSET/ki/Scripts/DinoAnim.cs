@@ -17,7 +17,7 @@ public class DinoAnim : MonoBehaviour
     private Vector3 Dino_New_hi;
     private int Old, New;
 
-    bool jump;
+    public bool jump;
     public bool hit;
 
     AudioSource source;
@@ -37,11 +37,7 @@ public class DinoAnim : MonoBehaviour
 	void Update ()
 
     {
-        if (Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0))
-        {
-            jump = false;
-        }
-
+        
         if (!StopFlg)       //攻撃と石拾いのモーション中は入らない
         {
             //if(Input.GetKey(KeyCode.UpArrow))//上
@@ -76,27 +72,27 @@ public class DinoAnim : MonoBehaviour
                 Dino_Anim.SetBool("Run", false);    //止まるモーション
             }
 
-            
-
             if (Input.GetKey(KeyCode.LeftArrow)
                 || Axis_LR  < 0 
-                || Axis2_LR < 0)      //左を押すと
+                || Axis2_LR < 0 && jump == true)      //左を押すと
             {
                 Dino_Anim.SetBool("Run", true);     //走るモーション
             }
 
-
             else if (Input.GetKey(KeyCode.RightArrow)
                 || Axis_LR  > 0 
-                || Axis2_LR > 0)   //右を押すと
+                || Axis2_LR > 0 && jump == true)   //右を押すと
             {
                 Dino_Anim.SetBool("Run", true);     //走るモーション
             }
 
             if(Input.GetKey(KeyCode.UpArrow)
-               || Input.GetButton("DS4_Cross") || (Axis_UD > 0 || Axis2_UD < 0) && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3"))//上
+               || Input.GetButton("DS4_Cross") 
+               || (Axis_UD > 0 || Axis2_UD < 0) && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3")
+               && jump==true)//上
             {
                 Dino_Anim.SetBool("Jump_1",true);//ジャンプする
+                jump = false;
             }
             if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))
             {
@@ -163,7 +159,10 @@ public class DinoAnim : MonoBehaviour
             Dino_Anim.SetBool("Stone", false);
         }
 
-        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2")
+        //多分このままだと空中でも暴発しそう…
+        //OncollisionEnterで着地処理をしてます
+
+        /*if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2")
             || Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))//着地のモーション
         {
             Dino_Old_hi.y = this.transform.position.y;
@@ -173,7 +172,8 @@ public class DinoAnim : MonoBehaviour
                 Dino_Anim.SetBool("Randing", true);//着地する
             }
             Dino_New_hi = Dino_Old_hi;
-        }
+        }*/
+
         if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3"))
         {
             Dino_Anim.SetBool("Randing", false);
@@ -184,6 +184,13 @@ public class DinoAnim : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        jump = true;
+        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2")
+            || Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))
+        {
+        
+        Dino_Anim.SetBool("Randing", true);//着地する
+        }
+           jump = true;
+        StopFlg = false;
     }
 }
