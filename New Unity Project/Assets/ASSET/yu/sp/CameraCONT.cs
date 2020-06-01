@@ -5,7 +5,9 @@ using UnityEngine;
 public class CameraCONT : MonoBehaviour {
 
     [SerializeField] private GameObject Yougantmp;
-   
+
+    private bool CameraStop = false;
+
   //  public Transform target;//キャラの座標の入れ物
     public Vector3 offset;//キャラからの距離
                           // Use this for initialization
@@ -28,8 +30,9 @@ public class CameraCONT : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(script.moveflg == true)
-        {
+        //if(script.moveflg == true && CameraStop == false)
+        if (script.moveflg == true && transform.position.x <= 637.7f)
+            {
             transform.Translate(offset.x, offset.y,offset.z);
 
 
@@ -49,4 +52,10 @@ public class CameraCONT : MonoBehaviour {
 
         //transform.Translate(offset.x, 0, 0);
     }
+    public void moveflagfalse()
+    {
+        CameraStop = true;
+        
+    }
+
 }
