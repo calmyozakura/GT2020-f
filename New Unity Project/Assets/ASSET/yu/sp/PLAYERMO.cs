@@ -29,9 +29,13 @@ public class PLAYERMO : MonoBehaviour
 
     private Vector3 Position;
 
+
+    public AudioClip clip;
+    AudioSource source;
+
     void Start()
     {
-       
+        source = gameObject.GetComponent<AudioSource>();//再生オブジェクト特定
         //    this.Dinasor = GetComponent<SpriteRenderer>();
         //    Dinasor.flipX = true;
     }
@@ -233,7 +237,8 @@ public class PLAYERMO : MonoBehaviour
         }
         if (other.gameObject.tag == "Stone3" && Mutekiflg == true)
         {
-            
+            AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
+
             Destroy(other.gameObject);
         }
         /**********************************************************/
