@@ -683,6 +683,7 @@ MonoBehaviour:
   vector: 0.3
   vector2: 0.17
   playerU: 0
+  clip: {fileID: 0}
 --- !u!114 &39826563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11189,7 +11190,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4844682267393874, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.934
+      value: 0.938
       objectReference: {fileID: 0}
     - target: {fileID: 4844682267393874, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -11248,20 +11249,20 @@ Prefab:
     - target: {fileID: 198978512798790284, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
       propertyPath: prewarm
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
       propertyPath: prewarm
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011736158321640, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.4
+      value: 10.2
       objectReference: {fileID: 0}
     - target: {fileID: 4011736158321640, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -81.3
+      value: -60.4
       objectReference: {fileID: 0}
     - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
@@ -11270,7 +11271,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4304843220279404, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -59.1
+      value: -55.1
       objectReference: {fileID: 0}
     - target: {fileID: 198978512798790284, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
@@ -11285,7 +11286,7 @@ Prefab:
     - target: {fileID: 198978512798790284, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
       propertyPath: NoiseModule.strength.scalar
-      value: 1.53
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 199996356817679604, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
@@ -11423,12 +11424,12 @@ Prefab:
     - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
       propertyPath: NoiseModule.strengthY.scalar
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
@@ -11464,6 +11465,26 @@ Prefab:
         type: 2}
       propertyPath: TrailModule.ratio
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198978512798790284, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198978512798790284, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: ClampVelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198978512798790284, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: VelocityModule.orbitalZ.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
