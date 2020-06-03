@@ -21,18 +21,23 @@ public class SingleDemo: MonoBehaviour {
 	public GameObject[] FX02;
 	public GameObject[] DieAnim;
 	public GameObject Elemental;
-	
-	void Start () {
+
+    Bosson bosson;
+
+    void Start () {
 		cam = Camera.main;
 		spin = false;
 		transform.localScale = new Vector3(size,size,size);
 		anim = GetComponentInChildren<Animator>();
 		DeactivateDieMesh();
 		CheckStartFX();
-	}
-	
-	
-	public void Spin(){
+
+        bosson = GetComponent<Bosson>();
+
+    }
+
+
+    public void Spin(){
 		spin = !spin;
 		T.eulerAngles = Vector3.zero;
 	}
@@ -89,6 +94,7 @@ public class SingleDemo: MonoBehaviour {
 	public void Activate(){
 		CheckStatus();
 		anim.Play("activate");
+        bosson.BossFlg = 3;
 	}
 
 	public void Atk01(){
