@@ -31,7 +31,7 @@ public class CameraCONT : MonoBehaviour {
     void FixedUpdate()
     {
         //if(script.moveflg == true && CameraStop == false)
-        if (script.moveflg == true && transform.position.x <= 1094.5f)
+        if (script.moveflg == true && transform.position.x <= 1490.5f)
             {
             transform.Translate(offset.x, offset.y,offset.z);
 
