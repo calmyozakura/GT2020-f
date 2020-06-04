@@ -290,7 +290,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: walk
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -315,7 +315,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: activate
-  m_Speed: 1
+  m_Speed: 0.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110138172}
@@ -365,7 +365,7 @@ AnimatorStateMachine:
     m_Position: {x: 660, y: -36, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110291630}
-    m_Position: {x: 660, y: 24, z: 0}
+    m_Position: {x: 732, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110207484}
     m_Position: {x: 336, y: 144, z: 0}
