@@ -6,7 +6,7 @@ public class SingleDemo: MonoBehaviour {
 	public float speed = 10.0f;
 	
 	public int curmat;
-	
+    public bool ATKFlg = false;
 	bool spin;
 	public bool Fire;
 	
@@ -21,7 +21,7 @@ public class SingleDemo: MonoBehaviour {
 	public GameObject[] FX02;
 	public GameObject[] DieAnim;
 	public GameObject Elemental;
-
+    
     Bosson bosson;
 
     void Start () {
@@ -82,7 +82,8 @@ public class SingleDemo: MonoBehaviour {
 	public void Walk(){
 		CheckStatus();
 		anim.Play("walk");
-	}
+        ATKFlg = false;
+    }
 	public void Run(){
 		CheckStatus();
 		anim.Play("run");
@@ -100,11 +101,14 @@ public class SingleDemo: MonoBehaviour {
 	public void Atk01(){
 		CheckStatus();
 		anim.Play("attack01");
+        Debug.Log("アタック");
+        ATKFlg = true;
 	}
 	public void Atk02(){
 		CheckStatus();
 		anim.Play("attack02");
-	}
+        ATKFlg = true;
+    }
 		
 	public void die(){
 		CheckStatus();

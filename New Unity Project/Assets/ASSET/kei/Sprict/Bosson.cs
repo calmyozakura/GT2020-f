@@ -8,6 +8,9 @@ public class Bosson : MonoBehaviour {
     private float Timer ;
 
     public GameObject beam;
+    public GameObject ATK;
+    public GameObject zimen;
+    public GameObject giru;
     SingleDemo singledemo;
 
     // Use this for initialization
@@ -20,7 +23,8 @@ public class Bosson : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        if (singledemo.ATKFlg == true) ATK.gameObject.SetActive(true);
+        else ATK.gameObject.SetActive(false);
         switch (BossFlg)
         {
             case 1:
@@ -48,7 +52,7 @@ public class Bosson : MonoBehaviour {
                 if (++Timer / 6 == 6)
                 {
                     beam.gameObject.SetActive(true);
-                    BossFlg = 5;
+                    BossFlg = 8;
                     Timer = 0;
                 }
                 break;
@@ -77,6 +81,17 @@ public class Bosson : MonoBehaviour {
                     Timer = 0;
                 }
                 break;
+            case 8:
+                if (++Timer / 6 == 18)
+                {
+                    singledemo.Atk01();
+                    Timer = 0;
+                    zimen.gameObject.SetActive(true);
+                    BossFlg = 4;
+                }
+
+                 break;
+            
         }
 
    
