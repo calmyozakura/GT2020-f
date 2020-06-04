@@ -6,6 +6,8 @@ public class Bosson : MonoBehaviour {
 
     public int BossFlg = 1;
     private float Timer ;
+
+    public GameObject beam;
     SingleDemo singledemo;
 
     // Use this for initialization
@@ -19,18 +21,19 @@ public class Bosson : MonoBehaviour {
     void FixedUpdate()
     {
 
-        switch (BossFlg) {
+        switch (BossFlg)
+        {
             case 1:
-              singledemo.IdleActivate();
+                singledemo.IdleActivate();
                 if (++Timer / 6 == 66)
                 {
-                   BossFlg = 2;
+                    BossFlg = 2;
                     Timer = 0;
                 }
                 break;
             case 2:
                 singledemo.Activate();
-              break;
+                break;
             case 3:
                 if (++Timer / 6 == 66)
                 {
@@ -38,7 +41,43 @@ public class Bosson : MonoBehaviour {
                     Timer = 0;
                 }
                 break;
-      }
+            case 4:
+
+                singledemo.Walk();
+
+                if (++Timer / 6 == 6)
+                {
+                    beam.gameObject.SetActive(true);
+                    BossFlg = 5;
+                    Timer = 0;
+                }
+                break;
+
+            case 5:
+                if (++Timer / 6 == 18)
+                {
+                    singledemo.Atk01();
+                   
+                    BossFlg = 6;
+                    Timer = 0;
+                }
+                break;
+            case 6:
+
+                if (++Timer / 6 == 18) { 
+                    BossFlg = 7;
+                    Timer = 0;
+                }
+                break;
+            case 7:
+                singledemo.Atk02();
+                if (++Timer / 6 == 18)
+                {
+                    BossFlg = 4;
+                    Timer = 0;
+                }
+                break;
+        }
 
    
 

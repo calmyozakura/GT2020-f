@@ -85,6 +85,7 @@
     <Compile Include="Assets\ASSET\kei\FireIceElemental\DestroyTime.cs" />
     <Compile Include="Assets\ASSET\kei\FireIceElemental\SingleDemo.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\Bossanime.cs" />
+    <Compile Include="Assets\ASSET\kei\Sprict\BossBr.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\Bosson.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\breakDOWN.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\breakI.cs" />

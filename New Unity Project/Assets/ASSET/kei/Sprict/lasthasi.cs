@@ -21,7 +21,7 @@ public class lasthasi : MonoBehaviour
     {
         if (other.gameObject.tag == "Yougan")
         {
-            Destroy(gameObject,9);
+            Destroy(gameObject);
 
         }
 
