@@ -37,7 +37,7 @@ public class SE_Break : MonoBehaviour {
                 {
                     if (++WaitTimer / 6 == 2)
                     {
-                        sources[0].Play();
+                       sources[0].Play();
                         WaitTimer = 0;
                     }
                 }

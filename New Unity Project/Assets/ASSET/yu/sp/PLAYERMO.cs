@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PLAYERMO : MonoBehaviour
 {
@@ -17,10 +18,12 @@ public class PLAYERMO : MonoBehaviour
 
     private float waitTimer = 0;
     private bool ITEMflg = false;
-    private bool Mutekiflg = false;
+    public bool Mutekiflg = false;
     private bool Jumpflg = false;
     private bool spiderflg = false;
+    private bool Sousa = false;         //プレイヤー操作のフラグ
 
+    public int suuti = 0;
     //public bool JumpState = false; //２段以上のジャンプ防止
     //private Stone Stone;
 
@@ -89,36 +92,58 @@ public class PLAYERMO : MonoBehaviour
                 vector = 0.3f;
             }
         }
-
-        //キーボード
-        if (Input.GetKey(KeyCode.UpArrow))//上
+        if (Sousa == true)
         {
-            this.transform.position += new Vector3(0, +vector2, 0);
-            //playerU = 1;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))//左
-        {
-            //if (playerU == 3 || playerU == 0)
-            //{
-            //    transform.Rotate(new Vector3(0, 180, 0));
-            //}
-            this.transform.position += new Vector3(-vector, 0, 0);
-            //playerU = 2;
-            //Dinasor.flipX = false;
-            //  this.transform.localScale = new Vector3(-1, 1, 1);
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))//右
-        {
-            //if (playerU == 2)
-            //{
-            //    transform.Rotate(new Vector3(0, 180, 0));
-            //}
-            //playerU = 3;
             this.transform.position += new Vector3(+vector, 0, 0);
-            //Dinasor.flipX = true;
-            // this.transform.localScale = new Vector3(1, 1, 1);
-        }
 
+            if (++waitTimer / 6 == 60)
+            {
+                switch (suuti)
+                {
+                    case 0:
+                        break;
+                    case 1:
+                        SceneL();
+                        break;
+                    case 2:
+
+                        break;
+                }
+             //   SceneManager.LoadScene("Stage2");
+
+                Sousa = false;
+            }
+        }
+        if (Sousa == false) {
+            //キーボード
+            if (Input.GetKey(KeyCode.UpArrow))//上
+            {
+                this.transform.position += new Vector3(0, +vector2, 0);
+                //playerU = 1;
+            }
+            if (Input.GetKey(KeyCode.LeftArrow))//左
+            {
+                //if (playerU == 3 || playerU == 0)
+                //{
+                //    transform.Rotate(new Vector3(0, 180, 0));
+                //}
+                this.transform.position += new Vector3(-vector, 0, 0);
+                //playerU = 2;
+                //Dinasor.flipX = false;
+                //  this.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))//右
+            {
+                //if (playerU == 2)
+                //{
+                //    transform.Rotate(new Vector3(0, 180, 0));
+                //}
+                //playerU = 3;
+                this.transform.position += new Vector3(+vector, 0, 0);
+                //Dinasor.flipX = true;
+                // this.transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
 
 
         //十字&左アナログパッド、両方の軸を取得
@@ -237,7 +262,7 @@ public class PLAYERMO : MonoBehaviour
         }
         if (other.gameObject.tag == "Stone3" && Mutekiflg == true)
         {
-            AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
+          //  AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
 
             Destroy(other.gameObject);
         }
@@ -257,6 +282,19 @@ public class PLAYERMO : MonoBehaviour
         }
 
     }
+    void OnCollisionEnter(Collision other)
+    {
+
+        if (other.gameObject.tag == "Stop")
+        {
+            suuti += 1;
+            Sousa = true;
+        }
+    }
+    public void SceneL()
+    {
+        SceneManager.LoadScene("Stage2");
+    } 
 }
 
 
@@ -265,20 +303,13 @@ public class PLAYERMO : MonoBehaviour
 //        return grabflg;
 //    }
 //}
-   
- 
 
-        
-    //void OnCollisionEnter(Collision collision)
-    //{
 
-    //    if (collision.gameObject.CompareTag("Line"))
-    //    {
-    //        Iswitch = true;
-    //    }
-    //}
 
-    //public bool Insekiswitch()
-    //{
-    //    return Iswitch;
-    //}
+
+
+
+//public bool Insekiswitch()
+//{
+//    return Iswitch;
+//}

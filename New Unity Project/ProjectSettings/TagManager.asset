@@ -25,6 +25,7 @@ TagManager:
   - JumpUP
   - Yougan2
   - Attack
+  - Stop
   layers:
   - Default
   - TransparentFX
