@@ -56,7 +56,7 @@ public class Bossanime : MonoBehaviour
 
             //等速アニメーション
             this.transform.position += new Vector3(vector, 0, 0);
-            singledemo.Walk();
+            
 
             //加速アニメーション
             //this.transform.position += new Vector3(vector, 0, 0);
