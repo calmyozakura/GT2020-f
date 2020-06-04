@@ -13,14 +13,17 @@ public class Bossanime : MonoBehaviour
     private PLAYERMO PLAYERMO;
     public float vector;
 
-     SingleDemo  singledemo;
+    public GameObject Circle;
 
+    SingleDemo  singledemo;
+    Bosson bosson;
 
         PLAYERMO script; //UnityChanScriptが入る変数
 
     void Start()
     {
         singledemo = GetComponent<SingleDemo>();
+        bosson = GetComponent<Bosson>();
     }
 
     // Update is called once per frame
@@ -28,32 +31,37 @@ public class Bossanime : MonoBehaviour
 
     void FixedUpdate()
     {
-        //if (script.MagumaSPD == true)
-        //{
-        //    vector += 0.02f;
-        //}
-        if (movecount > 0)
+        if (bosson.BossFlg > 3)
         {
-            movecount -= Time.deltaTime;
+            Destroy(Circle.gameObject);
+            
+            //if (script.MagumaSPD == true)
+            //{
+            //    vector += 0.02f;
+            //}
+            if (movecount > 0)
+            {
+                movecount -= Time.deltaTime;
+            }
+
+            if (moveflg == false && movecount < 0)
+            {
+                moveflg = true;
+            }
+
+            if (!moveflg) return;
+
+            //オブジェクト拡大
+            //this.transform.localScale = new Vector3(vector, 3, 1);
+
+            //等速アニメーション
+            this.transform.position += new Vector3(vector, 0, 0);
+            singledemo.Walk();
+
+            //加速アニメーション
+            //this.transform.position += new Vector3(vector, 0, 0);
+            // this.transform.localScale = new Vector3(4, 1, 1);
         }
-
-        if (moveflg == false && movecount < 0)
-        {
-            moveflg = true;
-        }
-
-        if (!moveflg) return;
-
-        //オブジェクト拡大
-        //this.transform.localScale = new Vector3(vector, 3, 1);
-
-        //等速アニメーション
-        this.transform.position += new Vector3(vector, 0, 0);
-        singledemo.Run();
-
-        //加速アニメーション
-        //this.transform.position += new Vector3(vector, 0, 0);
-        // this.transform.localScale = new Vector3(4, 1, 1);
     }
 
     private void OnTriggerEnter(Collider other)
