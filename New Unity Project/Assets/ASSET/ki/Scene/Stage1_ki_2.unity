@@ -1865,6 +1865,11 @@ Prefab:
       propertyPath: m_Name
       value: Cave (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23456130656728160, guid: 87d0bc28e9a643a4ba8270d4c24dd3e7,
+        type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87d0bc28e9a643a4ba8270d4c24dd3e7, type: 2}
   m_IsPrefabParent: 0
@@ -18769,7 +18774,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4844682267393874, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.505
+      value: 0.636
       objectReference: {fileID: 0}
     - target: {fileID: 4844682267393874, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -18802,6 +18807,31 @@ Prefab:
     - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
         type: 2}
       propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199469207342137246, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: m_RenderAlignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 199469207342137246, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: m_EnableGPUInstancing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199469207342137246, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199469207342137246, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: m_UseCustomVertexStreams
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199469207342137246, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -19581,7 +19611,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2054578321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.3, y: 3, z: 0}
+  m_LocalPosition: {x: -25.2, y: 3, z: 0}
   m_LocalScale: {x: 64.65479, y: 3.0000029, z: 5}
   m_Children:
   - {fileID: 2028254802}
