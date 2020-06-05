@@ -2800,7 +2800,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "6/4 17\u664259\u520650\u79D2"
+  m_Text: "6/5 11\u664259\u520650\u79D2"
 --- !u!222 &413918061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12665,11 +12665,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1925655750922130, guid: 6ad0497738130b6429e01e813933424d,
     type: 2}
   m_PrefabInternal: {fileID: 1173689888}
---- !u!1 &1173689891 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1826700528693008, guid: 6ad0497738130b6429e01e813933424d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1173689888}
 --- !u!114 &1173689892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17709,7 +17704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nakazato: 3
   iwa: 0
-  part1: {fileID: 1173689891}
+  part1: {fileID: 0}
 --- !u!114 &1901607515
 MonoBehaviour:
   m_ObjectHideFlags: 0
