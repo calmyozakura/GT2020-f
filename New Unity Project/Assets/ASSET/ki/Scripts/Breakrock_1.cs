@@ -6,34 +6,42 @@ public class Breakrock_1 : MonoBehaviour
 {
     public GameObject iwa;
     public GameObject part1;
-    public GameObject part2;
+   
+
+    private Vector3 Iwa_posi;
+    public Vector3 offset;
+
+    public bool BreakFlg;
 
 	// Use this for initialization
 	void Start ()
     {
-		
-	}
+        Iwa_posi = iwa.transform.position;
+        BreakFlg = false;
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (iwa==null)
+        //if (BreakFlg == true)
+        if(iwa==null&&BreakFlg==false)//ストーンが壊れてれば
         {
-            part1.gameObject.SetActive(true);
-            part2.gameObject.SetActive(true);
+            part1.gameObject.SetActive(false);
+            part1.transform.position = Iwa_posi+offset;
+            part1.gameObject.SetActive(true);//パーティクルをアクティブに
+           
+            BreakFlg = true;
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Attack")
+        if (other.gameObject.tag == "Attack")//攻撃が当たると
         {
-
-            Destroy(iwa.gameObject);//デストロイ
-            part1.gameObject.SetActive(true);
-            part2.gameObject.SetActive(true);
-
-
+           Destroy(iwa.gameObject);//デストロイ
+            //BreakFlg = true;
+          
+         
         }
     }
 }
