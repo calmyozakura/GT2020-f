@@ -61,5 +61,8 @@ public class Camera2 : MonoBehaviour {
             //transform.Translate(offset.x, 0, 0);
 
             transform.position = new Vector3(Playertmp.transform.position.x - offset.x, startPosition.y + TAKASA, startPosition.z );
+
+        
+
     }
 }

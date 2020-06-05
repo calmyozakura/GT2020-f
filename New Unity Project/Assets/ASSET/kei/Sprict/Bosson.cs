@@ -86,11 +86,18 @@ public class Bosson : MonoBehaviour {
                 {
                     singledemo.Atk01();
                     Timer = 0;
+                    
+                    BossFlg = 9;
+                }
+                break;
+            case 9:
+                if(++Timer / 6 == 12)
+                {
                     zimen.gameObject.SetActive(true);
+                    Timer = 0;
                     BossFlg = 4;
                 }
-
-                 break;
+                break;
             
         }
 
