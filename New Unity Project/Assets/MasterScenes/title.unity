@@ -658,6 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a5975898ce2b84b9a978c7a205993d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dino_Anim: {fileID: 479114349}
   vector: 0.2
   vector2: 0.17
 --- !u!65 &479114345
@@ -782,6 +783,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!95 &479114349 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95959930314072418, guid: af990fa0ebfeff441b8673160d157c8e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1925363109}
 --- !u!114 &479114350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,6 +1480,11 @@ Prefab:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 7a10272eac22a074ab746ceda4bf923f, type: 3}
+    - target: {fileID: 114825020229262252, guid: af990fa0ebfeff441b8673160d157c8e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114726841379885182, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 114274096050630058, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}

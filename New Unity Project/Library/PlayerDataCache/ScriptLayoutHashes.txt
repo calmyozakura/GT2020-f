@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-D:/GT_F/dainarunner/dainarunner.exe
+D:/F-team/dainarunner/dainarunner.exe
 SceneListBegin?
 Assets/MasterScenes/title.unity
 Assets/MasterScenes/Stage1.unity
@@ -67,7 +67,7 @@ aa8c9e093cc18545037f2c5e50b25783 Assembly-CSharp.dll:.FootstepSEPlayerSimple
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:.CameraCont1
 9a7e649e9c450edfd2ff778c1a711373 Assembly-CSharp.dll:.MasterCube
 80da3bf3747118249a2e465bf0821abd Assembly-CSharp.dll:.nagare
-83a2974648d776aad7b8e1847ca5faed Assembly-CSharp.dll:.Dinoout
+d403256545ae441fd1c55d5c4b85abbb Assembly-CSharp.dll:.Dinoout
 f956d14588dba956a491701ce71472ba Assembly-CSharp.dll:.KILL
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.spiderweb
 a723fbedae099b288a2c2e28fddfb6d7 Assembly-CSharp.dll:.surfing

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Dinoout : MonoBehaviour {
 
+    public Animator Dino_Anim;
+
     public float vector;
     public float vector2;
     private bool migi = false;
@@ -19,7 +21,7 @@ public class Dinoout : MonoBehaviour {
 	void Update () {
         
         this.transform.position += new Vector3(+vector, 0, 0);
-
+        Dino_Anim.SetBool("Run", true);     //走るモーション
     }
     //void FixedUpdate()
     //{
