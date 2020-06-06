@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ASSET/ki/Scene/Stage1_ki_2.unity
+- path: Assets/MasterScenes/Stage1.unity
   isLoaded: 1
   isActive: 1
