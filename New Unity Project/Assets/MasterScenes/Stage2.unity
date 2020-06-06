@@ -477,6 +477,10 @@ Prefab:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 7a10272eac22a074ab746ceda4bf923f, type: 3}
+    - target: {fileID: 1201755499240698, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114726841379885182, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 114274096050630058, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
@@ -12177,7 +12181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &614476910
 Transform:
   m_ObjectHideFlags: 0
@@ -12476,6 +12480,11 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &690990339 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1781416956088862, guid: f5e0d7790017e554ca544549225219ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 1274665647}
 --- !u!1 &727915785
 GameObject:
   m_ObjectHideFlags: 0
@@ -15721,7 +15730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1126651917
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16301,7 +16310,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1781416956088862, guid: f5e0d7790017e554ca544549225219ac, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114886394754937514, guid: f5e0d7790017e554ca544549225219ac,
         type: 2}
@@ -16341,6 +16350,36 @@ Prefab:
     - target: {fileID: 23542857829425956, guid: f5e0d7790017e554ca544549225219ac,
         type: 2}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114247924807824078, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: M_Bullet_Part
+      value: 
+      objectReference: {fileID: 690990339}
+    - target: {fileID: 114886394754937514, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: M_Bullet_Part
+      value: 
+      objectReference: {fileID: 690990339}
+    - target: {fileID: 65674002774227208, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65966175682957078, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65712628598313102, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65892409521018572, guid: f5e0d7790017e554ca544549225219ac,
+        type: 2}
+      propertyPath: m_Size.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
