@@ -14,6 +14,7 @@ public class Camera2 : MonoBehaviour {
     Vector3 tmp, tmp1;              //tmp 溶岩；tmp1　プレイヤー
     YOUGANMOVE script;
     PLAYERMO script1;
+    Bosson bosson;
 
     private Vector3 startPosition;
 
@@ -23,6 +24,7 @@ public class Camera2 : MonoBehaviour {
 
         //プレイヤー座標
         script1 = Playertmp.GetComponent<PLAYERMO>(); //unitychanの中にあるUnityChanScriptを取得して変数に格納する
+        bosson = GetComponent<Bosson>();
 
         tmp1 = Playertmp.transform.position;
         Playertmp.transform.position = new Vector3(tmp1.x, tmp1.y, tmp1.z);
@@ -44,15 +46,22 @@ public class Camera2 : MonoBehaviour {
         offset.x = ((Playertmp.transform.position.x - Yougantmp.transform.position.x - Yougantmp.transform.position.x /2 ) / 2);
         if (Playertmp.transform.position.x - Yougantmp.transform.position.x <= 20)
         {
-            startPosition.z -= 0.05f;
+           // startPosition.z -= 0.05f;
         }
         else if (Playertmp.transform.position.x - Yougantmp.transform.position.x <= 50)
         {
-            startPosition.z -= 0.03f;
+           // startPosition.z -= 0.03f;
         }
         else if (Playertmp.transform.position.x - Yougantmp.transform.position.x >= 50 && startPosition.z < -50)
         {
-            startPosition.z += 0.03f;
+           // startPosition.z += 0.03f;
+        }
+
+
+        if (Playertmp.transform.position.x - Yougantmp.transform.position.x >= 50)
+        {
+            Debug.Log("aaaaaa");  
+            bosson.BossFlg = 10;
         }
 
         TAKASA = Playertmp.transform.position.y - 1;
