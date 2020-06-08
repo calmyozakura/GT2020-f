@@ -88,10 +88,13 @@ public class DinoAnim : MonoBehaviour
 
             if(Input.GetKey(KeyCode.UpArrow)
                || Input.GetButton("DS4_Cross") 
-               || (Axis_UD > 0 || Axis2_UD < 0) && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3")
+               //|| (Axis_UD > 0 || Axis2_UD < 0) 
+               && !Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3")
+               
                && jump==true)//上
             {
                 Dino_Anim.SetBool("Jump_1",true);//ジャンプする
+                Dino_Anim.SetBool("Landing", false);
                 jump = false;
             }
             if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))
@@ -169,14 +172,14 @@ public class DinoAnim : MonoBehaviour
            
             if(Dino_Old_hi.y+0.05==Dino_New_hi.y+0.05)        //前のフレームとY軸が同じ(落下が終わった)なら
             {
-                Dino_Anim.SetBool("Randing", true);//着地する
+                Dino_Anim.SetBool("Landing", true);//着地する
             }
             Dino_New_hi = Dino_Old_hi;
         }*/
 
         if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_3"))
         {
-            Dino_Anim.SetBool("Randing", false);
+           // Dino_Anim.SetBool("Landing", false);
         }
 
     }
@@ -184,11 +187,11 @@ public class DinoAnim : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2")
-            || Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))
+        //if (Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_2")
+        //    || Dino_Anim.GetCurrentAnimatorStateInfo(0).IsName("Dino_Jump_1"))
         {
         
-        Dino_Anim.SetBool("Randing", true);//着地する
+             Dino_Anim.SetBool("Landing", true);//着地する
         }
            jump = true;
         StopFlg = false;
