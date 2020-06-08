@@ -98,10 +98,18 @@ public class Bosson : MonoBehaviour {
                     BossFlg = 4;
                 }
                 break;
-            
+            case 10:
+                if (++Timer / 6 == 12)
+                {
+                    singledemo.Run();
+                    Timer = 0;
+                    //BossFlg = 4;
+                }
+                break;
+
         }
 
-   
+        Debug.Log(BossFlg);
 
     }
 }
