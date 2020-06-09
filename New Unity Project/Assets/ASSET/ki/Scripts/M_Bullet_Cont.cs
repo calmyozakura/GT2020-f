@@ -11,6 +11,9 @@ public class M_Bullet_Cont : MonoBehaviour
     private Vector3 Dino_Posi;
     public Vector3 Offset;
 
+    public AudioSource[] sources;
+
+
 	// Use this for initialization
 	void Start ()
     {
@@ -23,15 +26,21 @@ public class M_Bullet_Cont : MonoBehaviour
     {
 		
 	}
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
+
+
             M_Bullet_Part.SetActive(false);
             Dino_Posi = Dino.transform.position;
             M_Bullet_Part.transform.position = Dino_Posi+Offset;
             M_Bullet_Part.SetActive(true);
 
+            if(!sources[0].isPlaying)
+                sources[0].Play();
+             
         }
     }
 }
