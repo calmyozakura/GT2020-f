@@ -38,7 +38,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ASSET/ki/Scene/Stage1_ki_2.unity
     guid: 41197e2b46be6ac44a532a945dd21dff
-  - enabled: 1
+  - enabled: 0
     path: Assets/ASSET/kei/Stageee3.unity
     guid: afc2648a2f18e1146a02c3198e6517fc
+  - enabled: 1
+    path: Assets/MasterScenes/Stage_3.unity
+    guid: 318389a99cf024d44b587b6df3a970ad
   m_configObjects: {}
