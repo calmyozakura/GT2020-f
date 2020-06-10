@@ -1,0 +1,46 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Bossbomb : MonoBehaviour
+{
+    public GameObject iwa;
+    public GameObject part1;
+
+
+    private Vector3 Iwa_posi;
+    public Vector3 offset;
+
+    public bool BreakFlg;
+
+    // Use this for initialization
+    void Start()
+    {
+        Iwa_posi = iwa.transform.position;
+        BreakFlg = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //if (BreakFlg == true)
+        if (iwa == null && BreakFlg == false)//ストーンが壊れてれば
+        {
+            part1.gameObject.SetActive(false);
+            part1.transform.position = Iwa_posi + offset;
+            part1.gameObject.SetActive(true);//パーティクルをアクティブに
+
+            BreakFlg = true;
+        }
+    }
+
+    void OnParticleCollision(GameObject other)
+    {
+        //Debug.Log("衝突");
+        if (other.gameObject.tag == "Yougan")
+        {
+
+            Destroy(iwa.gameObject);//デストロイ
+        }
+    }
+}
