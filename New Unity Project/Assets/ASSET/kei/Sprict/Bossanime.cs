@@ -31,10 +31,10 @@ public class Bossanime : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (bosson.BossFlg > 3)
+        if (bosson.BossFlg > 3 && bosson.BossFlg != 12 && bosson.BossFlg != 11)
         {
             Destroy(Circle.gameObject);
-            
+
             //if (script.MagumaSPD == true)
             //{
             //    vector += 0.02f;
@@ -44,24 +44,20 @@ public class Bossanime : MonoBehaviour
                 movecount -= Time.deltaTime;
             }
 
-            if (moveflg == false && movecount < 0)
-            {
-                moveflg = true;
-            }
-
-            if (!moveflg) return;
+            if (bosson.BossFlg > 3 ) moveflg = true;
 
             //オブジェクト拡大
             //this.transform.localScale = new Vector3(vector, 3, 1);
 
-            //等速アニメーション
-            this.transform.position += new Vector3(vector, 0, 0);
-            
+                //等速アニメーション
+                this.transform.position += new Vector3(vector, 0, 0);
+
 
             //加速アニメーション
             //this.transform.position += new Vector3(vector, 0, 0);
             // this.transform.localScale = new Vector3(4, 1, 1);
         }
+        else moveflg = false;
     }
 
     private void OnTriggerEnter(Collider other)
