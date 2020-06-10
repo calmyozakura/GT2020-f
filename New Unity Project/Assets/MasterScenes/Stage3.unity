@@ -8440,6 +8440,11 @@ Prefab:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114714277394065808, guid: af990fa0ebfeff441b8673160d157c8e,
+        type: 2}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 75199fd0e865111449962e30515c8fdd, type: 3}
     m_RemovedComponents:
     - {fileID: 114726841379885182, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 114274096050630058, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}

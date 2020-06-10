@@ -33,7 +33,7 @@ public class PLAYERMO : MonoBehaviour
     private Vector3 Position;
 
 
-    public AudioClip clip;
+    public AudioClip[] clip;
     AudioSource source;
 
     void Start()
@@ -246,6 +246,7 @@ public class PLAYERMO : MonoBehaviour
     {
         if (other.gameObject.tag == "SpeedItem" && ITEMflg == false)
         {
+            source.PlayOneShot(clip[0], 0.8f);
             Destroy(other.gameObject);
             vector += 0.2f;
             waitTimer = 0;
@@ -259,16 +260,23 @@ public class PLAYERMO : MonoBehaviour
             Destroy(other.gameObject);
             waitTimer = 0;
             Mutekiflg = true;
+            //source.volume = 1;
+            //AudioSource.PlayClipAtPoint(clip[0], transform.position);
+
+            source.PlayOneShot(clip[0], 0.8f);
         }
         if (other.gameObject.tag == "Stone3" && Mutekiflg == true)
         {
-          //  AudioSource.PlayClipAtPoint(clip, transform.position);//一時的に残留してオブジェクトを再生する
+            //AudioSource.PlayClipAtPoint(clip[1], transform.position);//一時的に残留してオブジェクトを再生する
 
+            source.PlayOneShot(clip[1], 0.6f);
             Destroy(other.gameObject);
         }
         /**********************************************************/
         if (other.gameObject.tag == "JumpUP")
         {
+
+            source.PlayOneShot(clip[0], 0.8f);
             Destroy(other.gameObject);
             waitTimer = 0;
             vector2 += 0.3f;

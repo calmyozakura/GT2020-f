@@ -17550,6 +17550,7 @@ Prefab:
     - {fileID: 114828094041737708, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 65990487441251540, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 65815242167577464, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
+    - {fileID: 82602506136727806, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1901607509 stripped
@@ -17643,7 +17644,9 @@ MonoBehaviour:
   playerU: 0
   Mutekiflg: 0
   suuti: 0
-  clip: {fileID: 0}
+  clip:
+  - {fileID: 8300000, guid: 75199fd0e865111449962e30515c8fdd, type: 3}
+  - {fileID: 8300000, guid: 0ab63679267b0e343b4594e8613674fc, type: 3}
 --- !u!114 &1901607517
 MonoBehaviour:
   m_ObjectHideFlags: 0
