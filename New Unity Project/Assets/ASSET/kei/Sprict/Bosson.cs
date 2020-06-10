@@ -11,13 +11,20 @@ public class Bosson : MonoBehaviour {
     public GameObject ATK;
     public GameObject zimen;
     public GameObject giru;
+    public GameObject cros;
+    public GameObject cros2;
     SingleDemo singledemo;
+    Bossanime BOSSanime;
+    public Animator Boss;
+    public int StopCount;
+
 
     // Use this for initialization
     void Start () {
 
         singledemo = GetComponent<SingleDemo>();
-
+        StopCount = 0;
+        BOSSanime = GetComponent<Bossanime>();
     }
 
     // Update is called once per frame
@@ -28,6 +35,7 @@ public class Bosson : MonoBehaviour {
         switch (BossFlg)
         {
             case 1:
+                
                 singledemo.IdleActivate();
                 if (++Timer / 6 == 66)
                 {
@@ -41,7 +49,8 @@ public class Bosson : MonoBehaviour {
             case 3:
                 if (++Timer / 6 == 66)
                 {
-                    BossFlg = 4;
+                    BossFlg = 12;
+                    //BossFlg = 11;
                     Timer = 0;
                 }
                 break;
@@ -49,9 +58,9 @@ public class Bosson : MonoBehaviour {
 
                 singledemo.Walk();
 
-                if (++Timer / 6 == 6)
+                if (++Timer / 6 == 24)
                 {
-                    beam.gameObject.SetActive(true);
+                  
                     BossFlg = 8;
                     Timer = 0;
                 }
@@ -86,14 +95,16 @@ public class Bosson : MonoBehaviour {
                 {
                     singledemo.Atk01();
                     Timer = 0;
-                    
-                    BossFlg = 9;
+                    Boss.SetFloat("Stop", 1.0f);//一時停止 0が停止 1が再開
+                    BossFlg = 11;
                 }
                 break;
             case 9:
                 if(++Timer / 6 == 12)
                 {
+                     
                     zimen.gameObject.SetActive(true);
+                   
                     Timer = 0;
                     BossFlg = 4;
                 }
@@ -106,10 +117,42 @@ public class Bosson : MonoBehaviour {
                     //BossFlg = 4;
                 }
                 break;
+             case 11:
+                singledemo.Run();
+                BOSSanime.moveflg = false;
+                Boss.SetFloat("Stop", 0.0f);//一時停止 0が停止 1が再開
+                if (++Timer / 6 >= 30)
+                {
+                    cros.gameObject.SetActive(true);
+                    if (Timer / 6 == 36)
+                    {
+                        cros2.gameObject.SetActive(true);
+                        Timer = 0;
+                    }
+                }
+                 break;
 
+            case 12:
+                {
+                    BOSSanime.moveflg = false;
+                    zimen.gameObject.SetActive(true);
+                    singledemo.Run();
+                    Boss.SetFloat("Stop", 0.0f);//一時停止 0が停止 1が再開
+                  if(++Timer / 6 == 60)
+                    {
+                        zimen.gameObject.SetActive(false);
+                        BossFlg = 4;
+                        Timer = 0;
+                    }
+                }
+
+                break;
         }
-
-        Debug.Log(BossFlg);
+        if (Input.GetKey(KeyCode.DownArrow)){
+            // BossFlg = 11;
+            Boss.SetFloat("Stop", 0.0f);//一時停止 0が停止 1が再開
+        }
+            Debug.Log(BossFlg);
 
     }
 }
