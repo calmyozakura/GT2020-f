@@ -32,13 +32,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ASSET/yu/Scenes/title.unity
     guid: d59dfcf072de5b144aadb5297f798d40
+  - enabled: 0
+    path: Assets/ASSET/ki/Scene/Stage3_ki_2.unity
+    guid: e5beb2a3ee0c81c4baff5a152a8976be
   - enabled: 1
-    path: Assets/ASSET/yu/Scenes/PV.unity
-    guid: b56ede6b7ad2e4a4a86b4c3249029b1d
-  - enabled: 0
-    path: Assets/ASSET/yu/Scenes/stage1_2.unity
-    guid: 2b859b57a22816746bd68b68f8962838
-  - enabled: 0
-    path: Assets/ASSET/yu/Scenes/stage2_3.unity
-    guid: e282e29d1eefe1441a42b05907f2a958
+    path: Assets/ASSET/ki/Scene/Stage1_ki_2.unity
+    guid: 41197e2b46be6ac44a532a945dd21dff
   m_configObjects: {}

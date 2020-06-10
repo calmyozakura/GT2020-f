@@ -1,8 +1,8 @@
 WindowsStandalone
 PlayerPath?
-D:/PVP/OP1/OP1.exe
+D:/GT_F/New Unity Project/ビルド/20年６月10日/20年６月10日.exe
 SceneListBegin?
-Assets/ASSET/yu/Scenes/PV.unity
+Assets/ASSET/ki/Scene/Stage1_ki_2.unity
 SceneListEnd?
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SE_Jump
