@@ -17877,11 +17877,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1919533639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe14742d054564d42a3edf0f0421aa23, type: 3}
+  m_Script: {fileID: 11500000, guid: d518c610d75bba04281b6f1331a9e85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   goalText: {fileID: 1975039625}
-  _nextSceneRate: 5
+  _nextSceneRate: 0
 --- !u!65 &1919533641
 BoxCollider:
   m_ObjectHideFlags: 0
