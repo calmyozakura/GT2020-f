@@ -58,7 +58,7 @@ public class Bosson : MonoBehaviour {
 
                 singledemo.Walk();
 
-                if (++Timer / 6 == 24)
+                if (++Timer / 6 == 76)
                 {
                   
                     BossFlg = 8;
@@ -96,7 +96,7 @@ public class Bosson : MonoBehaviour {
                     singledemo.Atk01();
                     Timer = 0;
                     Boss.SetFloat("Stop", 1.0f);//一時停止 0が停止 1が再開
-                    BossFlg = 11;
+                    BossFlg = 12;
                 }
                 break;
             case 9:
@@ -128,6 +128,7 @@ public class Bosson : MonoBehaviour {
                     {
                         cros2.gameObject.SetActive(true);
                         Timer = 0;
+                        BossFlg = 4;
                     }
                 }
                  break;
@@ -138,7 +139,7 @@ public class Bosson : MonoBehaviour {
                     zimen.gameObject.SetActive(true);
                     singledemo.Run();
                     Boss.SetFloat("Stop", 0.0f);//一時停止 0が停止 1が再開
-                  if(++Timer / 6 == 60)
+                  if(++Timer / 6 == 48)
                     {
                         zimen.gameObject.SetActive(false);
                         BossFlg = 4;
@@ -148,10 +149,10 @@ public class Bosson : MonoBehaviour {
 
                 break;
         }
-        if (Input.GetKey(KeyCode.DownArrow)){
-            // BossFlg = 11;
-            Boss.SetFloat("Stop", 0.0f);//一時停止 0が停止 1が再開
-        }
+        //if (Input.GetKey(KeyCode.DownArrow)){
+        //    // BossFlg = 11;
+        //    Boss.SetFloat("Stop", 0.0f);//一時停止 0が停止 1が再開
+        //}
             Debug.Log(BossFlg);
 
     }
