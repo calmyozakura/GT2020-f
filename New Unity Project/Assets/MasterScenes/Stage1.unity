@@ -17126,7 +17126,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855361214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3, y: 25.1, z: -61.3}
+  m_LocalPosition: {x: 33, y: 25.1, z: -61.3}
   m_LocalScale: {x: 2.9622808, y: 2.000002, z: 1}
   m_Children:
   - {fileID: 1096974564}
@@ -17569,10 +17569,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901607509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e25d11289fbad9498c235f34ce9d0b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c2b653eaea74e142b784a2295e82253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nakazato: 0
+  iwakowasi: 3
+  iwa: 0
+  part1: {fileID: 1096974560}
 --- !u!114 &1901607514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17581,12 +17583,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901607509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075dc9e9d06387d4abd84ca43bdf77cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f51f992132e2d140ba1322fafd1c322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nakazato: 3
-  iwa: 0
-  part1: {fileID: 0}
+  iwaKOwasi: 0
 --- !u!114 &1901607515
 MonoBehaviour:
   m_ObjectHideFlags: 0

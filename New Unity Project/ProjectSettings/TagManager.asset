@@ -28,6 +28,8 @@ TagManager:
   - Stop
   - HUnka
   - HUnkaTmeru
+  - Clear
+  - title
   layers:
   - Default
   - TransparentFX
