@@ -111,6 +111,7 @@
     <Compile Include="Assets\ASSET\kei\Sprict\YOUGAN.cs" />
     <Compile Include="Assets\ASSET\kei\Sprict\YouganATK.cs" />
     <Compile Include="Assets\ASSET\ki\NewBehaviourScript.cs" />
+    <Compile Include="Assets\ASSET\ki\Scripts\Boss_Last.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\Breakrock_1.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\BreakTreeCont.cs" />
     <Compile Include="Assets\ASSET\ki\Scripts\Cave_cont.cs" />

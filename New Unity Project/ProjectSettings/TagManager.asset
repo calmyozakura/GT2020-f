@@ -28,6 +28,7 @@ TagManager:
   - Stop
   - HUnka
   - HUnkaTmeru
+  - Water
   layers:
   - Default
   - TransparentFX
