@@ -14,6 +14,7 @@ public class Bosson : MonoBehaviour {
     public GameObject cros;
     public GameObject cros2;
     public GameObject BossMagma;
+    public GameObject Steam;
     SingleDemo singledemo;
     Bossanime BOSSanime;
     public Animator Boss;
@@ -21,6 +22,8 @@ public class Bosson : MonoBehaviour {
 
     public int NewDrug;
     public float Move;
+    public GameObject LastATK;
+    
 
     public bool MizuFlg;
 
@@ -31,6 +34,7 @@ public class Bosson : MonoBehaviour {
         StopCount = 0;
         BOSSanime = GetComponent<Bossanime>();
         MizuFlg = false;
+        
     }
 
 
@@ -57,7 +61,7 @@ public class Bosson : MonoBehaviour {
                 case 1:
 
                     singledemo.IdleActivate();
-                    if (++Timer / 6 == 66)
+                    if (++Timer / 6 == 22)
                     {
                         BossFlg = 2;
                         Timer = 0;
@@ -179,9 +183,12 @@ public class Bosson : MonoBehaviour {
         else
         {
             singledemo.Run();
-            Boss.SetFloat("Stop", 0.5f);//一時停止 0が停止 1が再開
+            Boss.SetFloat("Stop", 1.0f);//一時停止 0が停止 1が再開
             BossMagma.gameObject.SetActive(false);
+            Steam.gameObject.SetActive(true);
+            LastATK.gameObject.SetActive(true);
             this.GetComponent<Rigidbody>().drag = NewDrug;
+            
             //this.GetComponent<Transform>().position
             //Destroy(this.gameObject);//デストロイ
 

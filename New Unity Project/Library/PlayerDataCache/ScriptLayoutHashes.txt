@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-D:/GT_F/New Unity Project/ビルド/DinosaurRunner/DinosaurRunner.exe
+D:/GT_F/DinosaurRunner/DinosaurRunner.exe
 SceneListBegin?
 Assets/MasterScenes/title.unity
 Assets/MasterScenes/Stage1.unity
@@ -11,7 +11,7 @@ SceneListEnd?
 8c82641d1687c3064f59c20d9881018e Assembly-CSharp.dll:.Goal２
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SE_Jump
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FPSView
-3c4d20bf3648ef033c9d9ada2bc4abf2 Assembly-CSharp.dll:.Bosson
+7d19ce4e3e2cabb7b76ba6a2dfa1a5a9 Assembly-CSharp.dll:.Bosson
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BossATK
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack

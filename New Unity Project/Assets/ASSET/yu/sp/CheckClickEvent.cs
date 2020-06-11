@@ -79,6 +79,23 @@ public class CheckClickEvent : MonoBehaviour {
 
             }
         }
-    }  
+    }
+    void OnParticleTrigger(GameObject other)
+    {
+        if (other.gameObject.tag == "Yougan")
+        {
+
+            Debug.Log("ダメージ");
+            HP = life.Damage(HP, 1);
+            if (HP <= 0)
+            {
+
+                Debug.Log(HP);
+                //oveText.enabled = true;
+                Destroy(gameObject);
+
+            }
+        }
+    }
 }
 
