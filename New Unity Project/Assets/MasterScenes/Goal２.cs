@@ -54,7 +54,7 @@ public class Goal２ : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("Stage3");
+            SceneManager.LoadScene("Stage_3");
         }
     }
     //public void LoadScene()
