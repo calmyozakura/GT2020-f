@@ -560,6 +560,16 @@ Prefab:
       propertyPath: TrailModule.lifetime.scalar
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 23828198944757716, guid: 063ae9813ea77714985d245e757a9a9f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23828198944757716, guid: 063ae9813ea77714985d245e757a9a9f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b53a109a36a11f140b73835cdd1b8e14, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 063ae9813ea77714985d245e757a9a9f, type: 2}
   m_IsPrefabParent: 0
@@ -1113,7 +1123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "6/4 17\u664259\u520650\u79D2"
+  m_Text: "6/11 19\u664240\u5206\n"
 --- !u!222 &539748585
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1943,7 +1953,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4180839608036802, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4416935309879348, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
@@ -1951,7 +1961,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4696932053656886, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114825020229262252, guid: af990fa0ebfeff441b8673160d157c8e,
         type: 2}
