@@ -28,7 +28,12 @@ TagManager:
   - Stop
   - HUnka
   - HUnkaTmeru
+<<<<<<< HEAD
   - Water
+=======
+  - Clear
+  - title
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
