@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/ASSET/kei/taaaaaaaaaaaaaa.unity
-=======
-- path: Assets/MasterScenes/Stage1.unity
->>>>>>> master
+- path: Assets/MasterScenes/title.unity
   isLoaded: 1
   isActive: 1

@@ -17028,6 +17028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalText: {fileID: 1964041126}
   _nextSceneRate: 5
+  SceneNonber: 1
 --- !u!65 &1853694363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17357,7 +17358,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4845936931154746, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.2
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 4845936931154746, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -17409,7 +17410,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4865926344198688, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4256278766721372, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
@@ -17502,7 +17503,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4742008953627942, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114726841379885182, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
@@ -18891,7 +18892,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4844682267393874, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.505
+      value: 0.718
       objectReference: {fileID: 0}
     - target: {fileID: 4844682267393874, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -18925,6 +18926,16 @@ Prefab:
         type: 2}
       propertyPath: CollisionModule.collisionMessages
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198716982677545394, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198978512798790284, guid: 678974b21ad7acc4bb107afc123ae6eb,
+        type: 2}
+      propertyPath: prewarm
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 678974b21ad7acc4bb107afc123ae6eb, type: 2}
@@ -19703,7 +19714,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2054578321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.3, y: 3, z: 0}
+  m_LocalPosition: {x: -5.5, y: 3, z: 0}
   m_LocalScale: {x: 64.65479, y: 3.0000029, z: 5}
   m_Children:
   - {fileID: 2028254802}

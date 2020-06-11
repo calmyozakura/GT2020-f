@@ -3,37 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Yougan
-  - Stone
-  - In
-  - Magma
-  - Goal
-  - Inseki
-  - Stone2
-  - Speed
-  - turi
-  - K
-  - item
-  - Sa
-  - spider
-  - slider
-  - zimen
-  - SpeedItem
-  - Star
-  - Stone3
-  - JumpUP
-  - Yougan2
-  - Attack
-  - Stop
-  - HUnka
-  - HUnkaTmeru
-<<<<<<< HEAD
-  - Water
-=======
-  - Clear
-  - title
->>>>>>> master
+  tags: []
   layers:
   - Default
   - TransparentFX

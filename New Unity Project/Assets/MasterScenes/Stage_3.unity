@@ -1029,7 +1029,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 123317649}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0.3, z: -8}
+  m_LocalPosition: {x: 10, y: 0.3, z: -8}
   m_LocalScale: {x: 13, y: 13, z: 13}
   m_Children:
   - {fileID: 1544817906}
@@ -21988,7 +21988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &573121460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41189,6 +41189,20 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -16
       objectReference: {fileID: 0}
+    - target: {fileID: 65330814067011982, guid: 6ad0497738130b6429e01e813933424d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 65330814067011982, guid: 6ad0497738130b6429e01e813933424d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822375137927740, guid: 6ad0497738130b6429e01e813933424d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114535353239263108, guid: 6ad0497738130b6429e01e813933424d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6ad0497738130b6429e01e813933424d, type: 2}
@@ -50068,7 +50082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1888234955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50666,6 +50680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalText: {fileID: 0}
   _nextSceneRate: 5
+  SceneNonber: 3
 --- !u!65 &1947900098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50885,6 +50900,16 @@ Prefab:
     - target: {fileID: 1510429240438728, guid: 6ad0497738130b6429e01e813933424d, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 65330814067011982, guid: 6ad0497738130b6429e01e813933424d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 65330814067011982, guid: 6ad0497738130b6429e01e813933424d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114535353239263108, guid: 6ad0497738130b6429e01e813933424d, type: 2}
