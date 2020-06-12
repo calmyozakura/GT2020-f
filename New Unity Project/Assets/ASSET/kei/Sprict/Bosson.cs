@@ -183,7 +183,7 @@ public class Bosson : MonoBehaviour {
         else
         {
             singledemo.Run();
-            Boss.SetFloat("Stop", 1.0f);//一時停止 0が停止 1が再開
+            Boss.SetFloat("Stop", 0.5f);//一時停止 0が停止 1が再開
             BossMagma.gameObject.SetActive(false);
             Steam.gameObject.SetActive(true);
             LastATK.gameObject.SetActive(true);
