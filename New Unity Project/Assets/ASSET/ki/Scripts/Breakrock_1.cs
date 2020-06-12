@@ -43,11 +43,17 @@ public class Breakrock_1 : MonoBehaviour
 
 
         }
+        
+        if (other.gameObject.tag == "Yougan")
+        {
+
+            Destroy(iwa.gameObject);//デストロイ
+        }
 
     }
     void OnParticleCollision(GameObject other)
     {
-        //Debug.Log("衝突");
+        
         if (other.gameObject.tag == "Yougan")
         {
 
