@@ -72,5 +72,14 @@ public class Bossanime : MonoBehaviour
         {
             vector = 0.07f;
         }
+
+        if (other.gameObject.tag == "Water")//水に落ちると
+        {
+
+            vector = 0.0f;
+
+
+        }
     }
+
 }

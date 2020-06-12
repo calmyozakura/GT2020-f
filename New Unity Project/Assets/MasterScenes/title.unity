@@ -560,6 +560,16 @@ Prefab:
       propertyPath: TrailModule.lifetime.scalar
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 23828198944757716, guid: 063ae9813ea77714985d245e757a9a9f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23828198944757716, guid: 063ae9813ea77714985d245e757a9a9f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b53a109a36a11f140b73835cdd1b8e14, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 063ae9813ea77714985d245e757a9a9f, type: 2}
   m_IsPrefabParent: 0
@@ -598,7 +608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.7, y: 39.199997}
+  m_AnchoredPosition: {x: -9.7, y: -62}
   m_SizeDelta: {x: 161, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &353254914
@@ -1076,9 +1086,9 @@ RectTransform:
   m_Father: {fileID: 700699083}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 310, y: 101}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 310, y: -45}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539748584
@@ -1113,7 +1123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "6/4 17\u664259\u520650\u79D2"
+  m_Text: "6/12 7\u664200\u5206\n"
 --- !u!222 &539748585
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2067,7 +2077,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4180839608036802, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4416935309879348, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
@@ -2075,7 +2085,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4696932053656886, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114825020229262252, guid: af990fa0ebfeff441b8673160d157c8e,
         type: 2}
@@ -2099,6 +2109,11 @@ Prefab:
     - target: {fileID: 114714277394065808, guid: af990fa0ebfeff441b8673160d157c8e,
         type: 2}
       propertyPath: Speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114714277394065808, guid: af990fa0ebfeff441b8673160d157c8e,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

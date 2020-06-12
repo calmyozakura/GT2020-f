@@ -14,18 +14,21 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/MasterScenes/title.unity
     guid: 1557515dc5bce3e47ae814674f8db5d6
   - enabled: 1
     path: Assets/MasterScenes/Stage1.unity
     guid: 14bdd66844825254189e4b16aa24289e
-  - enabled: 0
+  - enabled: 1
     path: Assets/MasterScenes/Stage2.unity
     guid: 79b29a9ea9d4e6c4a9eb0a50b13a30dc
-  - enabled: 0
-    path: Assets/MasterScenes/Stage3.unity
-    guid: d202a81d797ecc143b28828751302a3e
+  - enabled: 1
+    path: Assets/MasterScenes/Stage_3.unity
+    guid: 318389a99cf024d44b587b6df3a970ad
+  - enabled: 1
+    path: Assets/MasterScenes/clear.unity
+    guid: 5fa62f0b15153e14391317a2e1b876d4
   - enabled: 0
     path: Assets/ASSET/kei/ta.unity
     guid: 5d3562f2b7e472140ac5513191c5018c
@@ -35,4 +38,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ASSET/ki/Scene/Stage3_ki_2.unity
     guid: e5beb2a3ee0c81c4baff5a152a8976be
+  - enabled: 0
+    path: Assets/ASSET/ki/Scene/Stage1_ki_2.unity
+    guid: 41197e2b46be6ac44a532a945dd21dff
+  - enabled: 0
+    path: Assets/ASSET/kei/Stageee3.unity
+    guid: afc2648a2f18e1146a02c3198e6517fc
   m_configObjects: {}

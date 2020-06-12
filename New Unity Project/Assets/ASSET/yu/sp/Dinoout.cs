@@ -18,7 +18,8 @@ public class Dinoout : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate()
+    {
         
         this.transform.position += new Vector3(+vector, 0, 0);
         Dino_Anim.SetBool("Run", true);     //走るモーション

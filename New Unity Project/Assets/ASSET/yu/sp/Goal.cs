@@ -10,6 +10,8 @@ public class Goal : MonoBehaviour {
     [SerializeField] private float _nextSceneRate;
     private float nextSceneTime;
 
+    public int SceneNonber;
+
     //public bool goalOn;
 
     // Use this for initialization
@@ -17,6 +19,7 @@ public class Goal : MonoBehaviour {
         goalText.enabled = false;
         //goalOn = false;
         Invoke("ChangeScene", 1.5f);
+        
     }
 	
 	// Update is called once per frame
@@ -52,7 +55,7 @@ public class Goal : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("Stage2");
+            SceneManager.LoadScene(SceneNonber+1);
         }
     }
     //public void LoadScene()
