@@ -53,7 +53,20 @@ public class CheckClickEvent : MonoBehaviour {
 
             Destroy(other.gameObject);
         }
-        
+        if (other.gameObject.tag == "Boss")
+        {
+
+            Debug.Log("ダメージ");
+            HP = life.Damage(HP, 100);
+            if (HP <= 0)
+            {
+                Debug.Log(HP);
+
+                Destroy(gameObject);
+                //SceneManager.LoadScene("Over");
+            }
+        }
+
     }
     void OnCollisionEnter(Collision other)
     {
@@ -82,7 +95,7 @@ public class CheckClickEvent : MonoBehaviour {
     }
     void OnParticleTrigger(GameObject other)
     {
-        if (other.gameObject.tag == "Yougan")
+        if (other.gameObject.tag == "Yougan2")
         {
 
             Debug.Log("ダメージ");
