@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sa
+  - Water
+  - Yougan
+  - Stone
+  - In
+  - Yougan2
+  - Attack
+  - item
+  - K
+  - Stone2
+  - Boss
   layers:
   - Default
   - TransparentFX
