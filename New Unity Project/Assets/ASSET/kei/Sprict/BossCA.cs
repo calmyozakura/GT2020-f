@@ -32,7 +32,7 @@ public class BossCA : MonoBehaviour
     void FixedUpdate()
     {
         //if(script.moveflg == true && CameraStop == false)
-        if (script.moveflg == true && transform.position.x <= 1490.5f)
+        if (script.moveflg == true && transform.position.x <= 980.5f)
         {
             transform.Translate(offset.x, offset.y, offset.z);
 
