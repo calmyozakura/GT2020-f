@@ -5,7 +5,7 @@ using UnityEngine;
 public class SE_Break : MonoBehaviour {
 
 
-    private float WaitTimer = 0;
+    //private float WaitTimer = 0;
     bool SE_BREAK=false;
     int s;
     public AudioSource[] sources;
@@ -37,16 +37,18 @@ public class SE_Break : MonoBehaviour {
                 if (Input.GetKey(KeyCode.C)
                  || Input.GetButton("DS4_Circle"))
                 {
-                    if (++WaitTimer / 6 == 2)
-                    {
-                       sources[s].Play();
-                        WaitTimer = 0;s = 1;
-                    }
+                    
+                       sources[0].Play();
+                        s = 1;
+                    
                 }
             
             }
 
 
     }
-   
+    private void OnTriggerExit(Collider other)
+    {
+        s = 0;
+    }
 }
