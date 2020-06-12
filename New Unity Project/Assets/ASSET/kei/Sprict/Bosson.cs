@@ -186,8 +186,11 @@ public class Bosson : MonoBehaviour {
             Boss.SetFloat("Stop", 0.5f);//一時停止 0が停止 1が再開
             BossMagma.gameObject.SetActive(false);
             Steam.gameObject.SetActive(true);
-            LastATK.gameObject.SetActive(true);
             this.GetComponent<Rigidbody>().drag = NewDrug;
+
+            
+          
+                LastATK.gameObject.SetActive(true);
             
             //this.GetComponent<Transform>().position
             //Destroy(this.gameObject);//デストロイ

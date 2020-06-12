@@ -923,8 +923,14 @@ MonoBehaviour:
   giru: {fileID: 1776294322}
   cros: {fileID: 0}
   cros2: {fileID: 0}
+  BossMagma: {fileID: 0}
+  Steam: {fileID: 0}
   Boss: {fileID: 0}
   StopCount: 0
+  NewDrug: 0
+  Move: 0
+  LastATK: {fileID: 0}
+  MizuFlg: 0
 --- !u!65 &123317654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5915,7 +5921,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ca776e0f5673c9b41afe8710f02d0ffe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 14f75b73b68027540b79a3de557c70c0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.067
   m_Pitch: 1
@@ -6314,6 +6320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26432684738b5494a934e74e556582cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iwa: {fileID: 0}
+  part1: {fileID: 0}
 --- !u!54 &1192420686
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8440,11 +8448,6 @@ Prefab:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114714277394065808, guid: af990fa0ebfeff441b8673160d157c8e,
-        type: 2}
-      propertyPath: clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 75199fd0e865111449962e30515c8fdd, type: 3}
     m_RemovedComponents:
     - {fileID: 114726841379885182, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
     - {fileID: 114274096050630058, guid: af990fa0ebfeff441b8673160d157c8e, type: 2}
@@ -8547,8 +8550,7 @@ MonoBehaviour:
   playerU: 0
   Mutekiflg: 0
   suuti: 0
-  clip:
-  - {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &1516214442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16534,6 +16536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalText: {fileID: 0}
   _nextSceneRate: 5
+  SceneNonber: 0
 --- !u!65 &1947900098
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -42,7 +42,7 @@ public class Goal : MonoBehaviour {
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player" && nextSceneTime > 0)
+        if (other.gameObject.tag == "Yougan" && nextSceneTime > 0)
         {
             //rB.AddForce(-rbVelo.x * 0.8f, 0, -rbVelo.z * 0.8f, ForceMode.Impulse);
             goalText.enabled = true;
